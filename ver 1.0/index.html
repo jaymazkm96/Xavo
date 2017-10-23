@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+		<meta name="description" content="">
+		<meta name="author" content="Kalyan Majumdar">
+
+		<title>Xavotsav 2018</title>
+
+		<!-- Bootstrap Core CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- Custom CSS -->
+		<link href="css/style.css" rel="stylesheet">
+		
+		<!-- Custom Fonts -->
+		<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Jura:300,400" rel="stylesheet" type="text/css">
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+
+	<body id="page-top" class="index" onload="myFunction();">
+		<div id="loader"></div>
+		<!-- Navigation -->
+		<div id="totality" class="animate-bottom">
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header page-scroll">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand page-scroll" href="#page-top">Xavotsav</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="hidden">
+							<a href="#page-top"></a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#about">About Us</a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#events">Event Details</a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#college">Colleges</a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#sponsors">Sponsors</a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#starnite">Star Nite</a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#team">Team</a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#past">Past Line-up</a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#login"><span class="glyphicon glyphicon-log-in"></span>&nbsp;&nbsp;Log-in</a>
+						</li>
+					</ul>
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container-fluid -->
+		</nav>
+		
+		<header>
+			<div class="stars" style="background-attachment:fixed"></div>
+			<div class="twinkling" style="background-attachment:fixed"></div>
+			<div class="clouds" style="background-attachment:fixed"></div>
+	
+			<div class="container">
+				<div class="intro-text">
+					<h1 class="intro-heading" style="text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #ff00de , 0 0 70px #ff00de , 0 0 80px #ff00de , 0 0 100px #ff00de ;"><span style="font-size:80px;">X</span>AVOTSAV 2018</h1>
+					<!-- INSERT LINK TO GALLERY HERE LATER a href="#gallery" class="page-scroll btn btn-xl">Xavotsav 2018 Revisited :: Gallery</a-->
+					<a href="#details" class="page-scroll"><div class="arrow bounce"></div></a>
+				</div>
+			</div>
+		</header>
+		
+		<section id="details">
+			Test
+		</section>
+		
+		
+		
+		</div>
+		
+		<!-- jQuery -->
+		<script src="js/jquery.js"></script>
+
+		<!-- Bootstrap Core JavaScript -->
+		<script src="js/bootstrap.min.js"></script>
+
+		<!-- Plugin JavaScript -->
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+		<script src="js/classie.js"></script>
+		<script src="js/cbpAnimatedHeader.js"></script>
+
+		<!-- Custom Theme JavaScript -->
+		<script src="js/spacex.js"></script>
+		
+		<script>
+			$(window).scroll(function() {
+				if ($(this).scrollTop()>10)
+				 {
+					$('.arrow').fadeOut();
+				 }
+				else
+				 {
+				  $('.arrow').fadeIn();
+				 }
+			 });
+		</script>
+		
+		<script>
+			var myVar;
+
+			function myFunction() {
+				myVar = setTimeout(showPage, 3000);
+			}
+
+			function showPage() {
+			  document.getElementById("loader").style.display = "none";
+			  document.getElementById("totality").style.display = "block";
+			}
+		</script>
+	</body>
+</html>
