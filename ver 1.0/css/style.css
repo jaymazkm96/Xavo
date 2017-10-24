@@ -341,7 +341,6 @@
 /* ---- HEADER ---- */
 
 header{
-	width:100%;
 	text-align:center;
 	height:700px;
 	position:relative;
@@ -350,6 +349,7 @@ header{
 header .intro-text{
 	padding-top:300px;
 	padding-bottom:50px;
+	float:center;
 }
 
 header .intro-text .intro-heading{
@@ -371,3 +371,48 @@ header .intro-text .intro-heading{
 		margin-bottom:50px
 	}
 }
+
+/* ---- END HEADER ---- */
+
+/* ---- COUNTER ---- */
+.counter{
+	margin-top:350px;
+	font-size:30px;
+	color:white;
+	vertical-align:middle;
+	display:block;
+	font-family:Jura,sans-serif;
+	text-transform:uppercase;
+}
+
+.circle {
+    background: rgba(255,255,255,.2);
+    border-radius: 200px;
+	height:200px;
+	width:200px;
+    color: white;
+    font-weight: bold;
+    display: table;
+    margin: 260px auto;
+	border:2px solid rgba(100,100,255,.7);
+	-webkit-box-shadow: 0px 0px 10px 10px rgba(150, 50, 150, 0.7);
+	-moz-box-shadow:    0px 0px 10px 10px rgba(150, 50, 150, 0.7);
+	box-shadow:         0px 0px 10px 10px rgba(150, 50, 150, 0.7);
+}
+.circle p {
+    vertical-align: middle;
+    display: table-cell;
+}
+
+@media (max-width:1024px){
+	.counter{
+		display:none;
+	}
+	.circle{
+		display:none;
+	}
+	.circle p{
+		display:none;
+	}
+}
+/* ---- END COUNTER ---- */

@@ -28,7 +28,7 @@
 		<![endif]-->
 	</head>
 
-	<body id="page-top" class="index" onload="myFunction();">
+	<body id="page-top" class="index" onload="myFunction();" style="overflow-x:hidden;">
 		<div id="loader"></div>
 		<!-- Navigation -->
 		<div id="totality" class="animate-bottom">
@@ -86,18 +86,46 @@
 			<div class="stars" style="background-attachment:fixed"></div>
 			<div class="twinkling" style="background-attachment:fixed"></div>
 			<div class="clouds" style="background-attachment:fixed"></div>
-	
-			<div class="container">
-				<div class="intro-text">
-					<h1 class="intro-heading" style="text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #ff00de , 0 0 70px #ff00de , 0 0 80px #ff00de , 0 0 100px #ff00de ;"><span style="font-size:80px;">X</span>AVOTSAV 2018</h1>
-					<!-- INSERT LINK TO GALLERY HERE LATER a href="#gallery" class="page-scroll btn btn-xl">Xavotsav 2018 Revisited :: Gallery</a-->
-					<a href="#details" class="page-scroll"><div class="arrow bounce"></div></a>
+			
+			<!--div class="row">
+				<div class="col-md-4" style="float:left;">
+					<div class="counter"></div>
+				</div>
+				<div class="col-md-4" style="float:center">
+					<div class="container">
+						<div class="intro-text">
+							<h1 class="intro-heading" style="text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #ff00de , 0 0 70px #ff00de , 0 0 80px #ff00de , 0 0 100px #ff00de ;"><span style="font-size:80px;">X</span>AVOTSAV 2018</h1>
+							<!-- INSERT LINK TO GALLERY HERE LATER a href="#gallery" class="page-scroll btn btn-xl">Xavotsav 2018 Revisited :: Gallery</a-->
+							<!--a href="#details" class="page-scroll"><div class="arrow bounce"></div></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="fa fa-rocket" aria-hidden="true"></div>
+				</div>
+			</div-->
+			<div class="row">
+				<div class="col-md-4 block">
+					<div class="circle" style="z-index:10">
+						<p class="counter text-center" id="timer"></p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="intro-text">
+						<h1 class="intro-heading" style="text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #ff00de , 0 0 70px #ff00de , 0 0 80px #ff00de , 0 0 100px #ff00de ;"><span style="font-size:80px;">X</span>AVOTSAV 2018</h1>
+						<!-- INSERT LINK TO GALLERY HERE LATER a href="#gallery" class="page-scroll btn btn-xl">Xavotsav 2018 Revisited :: Gallery</a-->
+						<a href="#details" class="page-scroll"><div class="arrow bounce"></div></a>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="animated-rocket"></div>
 				</div>
 			</div>
 		</header>
 		
 		<section id="details">
 			Test
+			<div style="height:400px"></div>
 		</section>
 		
 		
@@ -118,30 +146,66 @@
 		<!-- Custom Theme JavaScript -->
 		<script src="js/spacex.js"></script>
 		
+		<!-- Timer JavaScript -->
+		<script type="text/javascript" src="js/TimeCircles.js"></script>
+		
+		<!-- ARROW BOUNCE -->
 		<script>
 			$(window).scroll(function() {
 				if ($(this).scrollTop()>10)
-				 {
+				{
 					$('.arrow').fadeOut();
-				 }
+				}
 				else
-				 {
-				  $('.arrow').fadeIn();
-				 }
+				{
+					$('.arrow').fadeIn();
+				}
 			 });
 		</script>
 		
+		<!-- LOADER -->
 		<script>
 			var myVar;
 
 			function myFunction() {
-				myVar = setTimeout(showPage, 3000);
+				myVar = setTimeout(showPage, 200);
 			}
 
 			function showPage() {
-			  document.getElementById("loader").style.display = "none";
-			  document.getElementById("totality").style.display = "block";
+				document.getElementById("loader").style.display = "none";
+				document.getElementById("totality").style.display = "block";
 			}
+		</script>
+		
+		<!-- TIMER -->
+		<script>
+			// Set the date we're counting down to
+			var countDownDate = new Date("Jan 21, 2018 00:00:00").getTime();
+
+			// Update the count down every 1 second
+			var x = setInterval(function() {
+
+				// Get todays date and time
+				var now = new Date().getTime();
+
+				// Find the distance between now an the count down date
+				var distance = countDownDate - now;
+
+				// Time calculations for days, hours, minutes and seconds
+				var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+				var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+				var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+				var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+				// Display the result in an element with id="demo"
+				document.getElementById("timer").innerHTML = "<span style='color:rgba(250,50,50,.9);text-shadow: rgba(150,50,150,1) 0 0 10px;font-size:40px;font-weight:bold;'>" + days + "</span><br/>days to go";
+
+				// If the count down is finished, write some text 
+				if (distance < 0) {
+					clearInterval(x);
+					document.getElementById("timer").innerHTML = "EXPIRED";
+				}
+			}, 1000);
 		</script>
 	</body>
 </html>

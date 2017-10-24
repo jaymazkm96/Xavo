@@ -58,17 +58,17 @@ $(document).ready(function(){
 	        "Hours": {
 	            "text": "Hrs",
 	            "color": "#ffffff",
-	            "show": true
+	            "show": false
 	        },
 	        "Minutes": {
 	            "text": "Mins",
 	            "color": "#ffffff",
-	            "show": true
+	            "show": false
 	        },
 	        "Seconds": {
 	            "text": "Secs",
 	            "color": "#ffffff",
-	            "show": true
+	            "show": false
 	        }
 	    }
 	});
