@@ -4,54 +4,72 @@
     padding: 0;
 }
 
+a,a:hover,a:focus,a:active,a.active{
+	outline:0;
+}
+
+a{
+	color:#fed136;
+}
+
+a:hover,a:focus,a:active,a.active{
+	color:#fec503;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	text-transform:uppercase;
+	font-weight:700;
+}
+
 /* ---- SCROLLBAR ---- */
 /* ---- END SCROLLBAR ---- */
 
 
 /* ---- LOADER ---- */
 #loader {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  z-index: 1;
-  width: 150px;
-  height: 150px;
-  margin: -75px 0 0 -75px;
-  border: 16px solid #f3f3f3;
-  border-radius: 50%;
-  border-top: 16px solid #3498db;
-  width: 120px;
-  height: 120px;
-  -webkit-animation: spin 2s linear infinite;
-  animation: spin 2s linear infinite;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	z-index: 1;
+	width: 150px;
+	height: 150px;
+	margin: -75px 0 0 -75px;
+	border: 16px solid #f3f3f3;
+	border-radius: 50%;
+	border-top: 16px solid #3498db;
+	width: 120px;
+	height: 120px;
+	-webkit-animation: spin 2s linear infinite;
+	animation: spin 2s linear infinite;
 }
 
 @-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
+	0% { -webkit-transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(360deg); }
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
 }
 
 .animate-bottom {
-  position: relative;
-  -webkit-animation-name: animatebottom;
-  -webkit-animation-duration: 1s;
-  animation-name: animatebottom;
-  animation-duration: 1s
+	position: relative;
+	-webkit-animation-name: animatebottom;
+	-webkit-animation-duration: 1s;
+	animation-name: animatebottom;
+	animation-duration: 1s
 }
 
 @-webkit-keyframes animatebottom {
-  from { bottom:0px; opacity:0 } 
-  to { bottom:0px; opacity:1 }
+	from { bottom:0px; opacity:0 } 
+	to { bottom:0px; opacity:1 }
 }
 
 @keyframes animatebottom { 
-  from{ bottom:0px; opacity:0 } 
-  to{ bottom:0; opacity:1 }
+	from{ bottom:0px; opacity:0 } 
+	to{ bottom:0; opacity:1 }
 }
 
 #totality {
@@ -347,7 +365,7 @@ header{
 }
 
 header .intro-text{
-	padding-top:300px;
+	margin-top:300px;
 	padding-bottom:50px;
 	float:center;
 }
@@ -416,3 +434,97 @@ header .intro-text .intro-heading{
 	}
 }
 /* ---- END COUNTER ---- */
+
+/* ---- CONTACT ---- */
+section{
+	padding:40px 0;
+	color:#CCC;
+}
+
+section h2.section-heading{
+	font-size:40px;
+	margin-top:0;
+	margin-bottom:15px;
+}
+
+section h3.section-subheading{
+	font-size:16px;
+	font-family:"Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+	text-transform:none;
+	font-style:italic;
+	font-weight:400;
+	margin-bottom:75px;
+}
+
+@media (min-width:768px){
+	section{
+		padding:100px 0
+	}
+}
+
+section#details{
+	background-image:url(../img/bg/bg2.jpg);
+	background-position:center center;
+	background-repeat:none;
+	background-size:cover;
+}
+
+section#contact{
+	background-color:#222;
+	background-image:url(../img/map-image.png);
+	background-position:center;
+	background-repeat:no-repeat;
+	font-family:"Jura","sans-serif";
+}
+
+section#contact .section-heading{
+	color:#fff;
+}
+
+footer{
+	padding:25px 0;
+	text-align:center;
+}
+
+footer span.copyright{
+	line-height:40px;
+	font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	text-transform:uppercase;
+	text-transform:none;
+}
+
+footer ul.quicklinks{
+	margin-bottom:0;
+	line-height:40px;
+	font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	text-transform:uppercase;
+	text-transform:none;
+}
+
+ul.social-buttons{
+	margin-bottom:0;
+}
+
+ul.social-buttons li a{
+	display:block;
+	background-color:#222;
+	height:40px;
+	width:40px;
+	border-radius:100%;
+	font-size:20px;
+	line-height:40px;
+	color:#fff;
+	outline:0;
+	-webkit-transition:all .3s;
+	-moz-transition:all .3s;
+	transition:all .3s;
+}
+
+ul.social-buttons li a:hover,ul.social-buttons li a:focus,ul.social-buttons li a:active{
+	background-color:#fed136;
+}
+
+.btn:focus,.btn:active,.btn.active,.btn:active:focus{
+	outline:0;
+}
+/* ---- END CONTACT ---- */
