@@ -307,7 +307,7 @@
 						<p>e-mail : <a href="mailto:eventsxavo18@gmail.com">eventsxavo18@gmail.com</a></p>
 					</div>
 					
-					<div class="col-md-4" id="googleMap" style="align:center;height:250px;position:relative;">
+					<div class="col-md-4" id="googleMap">
 					</div>
 					
 					<div class="col-md-4 text-center" style="text-decoration:none;text-transform:uppercase;letter-spacing:1px;font-weight:400;font-family:'Jura',sans-serif;color:#CCC;">
@@ -447,12 +447,12 @@
 			
 			var mapOptions = {
 				center:location,
-				zoom:7,
+				zoom:14,
 				panControl: false,
 				mapTypeId: google.maps.MapTypeId.ROADMAP
             }
 				
-            var map = new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+            var map = new google.maps.Map(mapCanvas,mapOptions);
             
             var marker = new google.maps.Marker({
 				position: location,

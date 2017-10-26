@@ -463,18 +463,27 @@ section h3.section-subheading{
 }
 
 section#details{
-	background-image:url(../img/bg/bg3.jpg);
-	background-position:center center;
+	background-image:url(../img/bg/bg2.png);
+	background-position:0 0;
 	background-repeat:none;
 	background-size:cover;
 }
 
 section#contact{
 	background-color:#222;
-	background-image:url(../img/map-image.png);
+	background-image:url(../img/map-image.png);/*others/banner.jpg);*/
 	background-position:center;
 	background-repeat:no-repeat;
 	font-family:"Jura","sans-serif";
+	background-size:cover;
+	text-shadow:0 0 5px rgba(0,0,0,1);/*, 0 0 10px rgba(255,249,91,1) , 0 0 15px rgba(204,67,249,1) , 0 0 20px rgba(102,165,0,1);*/
+}
+
+#googleMap {
+	align:center;
+	height:250px;
+    padding: 0;
+    position : relative !important; 
 }
 
 section#contact .section-heading{
