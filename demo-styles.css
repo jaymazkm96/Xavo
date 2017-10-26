@@ -79,10 +79,19 @@ list-style: none;
   margin: auto auto 0em auto;
   opacity: 0.4;
   transition: .6s;
+  /*animation-name: imageopa;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;*/
 
     }
 .tile img.center:hover{
+	
     opacity:1;
+}
+@keyframes imageopa{
+	from {opacity: inherit;}
+	to {opacity: 0.4;}
 }
     
 .tile img.top
@@ -173,10 +182,18 @@ list-style: none;
     background-image: url('../img/B.jpg');
     opacity: 0.95;
     transition: .2s ;
-    box-shadow: 5px 5px 5px rgba(233, 1, 102, 0.3);
+    box-shadow: 5px 5px 5px rgba(233, 1, 102, 0.2);
+	animation-name: glowchange;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
 }
 .image1:hover{
     opacity:1;
+}
+@keyframes glowchange{
+	from {box-shadow: 5px 5px 5px rgba(233, 1, 102, 0.2);}
+	to {box-shadow: 5px 5px 5px rgba(133, 1, 102, 1);}
 }
 
 
