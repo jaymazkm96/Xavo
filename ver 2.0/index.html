@@ -45,7 +45,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand page-scroll" href="#page-top">Xavotsav</a>
+					<a class="navbar-brand page-scroll" href="#page-top"><img src="img/others/xavotextsmall.png" style="width:100px;margin-top:-4px;@media (max-width:768px){margin-top:0px;}"/></a>
 				</div>
 
 				<!-- Collect the nav links, forms, and other content for toggling -->
@@ -98,13 +98,22 @@
 				</div>
 				<div class="col-md-4">
 					<div class="intro-text">
-						<h1 class="intro-heading" style="text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #ff00de , 0 0 70px #ff00de , 0 0 80px #ff00de , 0 0 100px #ff00de ;"><span style="font-size:80px;">X</span>AVOTSAV 2018</h1>
+						<h1 class="intro-heading" style="text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #ff00de , 0 0 70px #ff00de , 0 0 80px #ff00de , 0 0 100px #ff00de ;"><img src="img/others/xavotext2.png"/></h1>
 						<!-- INSERT LINK TO GALLERY HERE LATER a href="#gallery" class="page-scroll btn btn-xl">Xavotsav 2018 Revisited :: Gallery</a-->
 						<a href="#details" class="page-scroll"><div class="arrow bounce"></div></a>
 					</div>
 				</div>
 				<div class="col-md-4">
-					<div class="animated-rocket"></div>
+					<div class="view" style="margin-top:100px;">
+						<div class="plane main">
+							<div class="circle"></div>
+							<div class="circle"></div>
+							<div class="circle"></div>
+							<div class="circle"></div>
+							<div class="circle"></div>
+							<div class="circle"></div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</header>
@@ -195,7 +204,7 @@
 					</div>
 					
 					<div class="col-xs-12 col-md-4">
-						<div class="panel panel-primary" style="box-shadow: 0px 1px 15px 5px #111;">
+						<div class="panel panel-primary" style="box-shadow: 0px 1px 10px 2px rgba(255,255,255,.4);">
 							<div class="panel-heading text-center">
 								Latest News
 							</div>
@@ -407,7 +416,7 @@
 				var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 				var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-				// Display the result in an element with id="demo"
+				// Display the result in an element with id="timer"
 				document.getElementById("timer").innerHTML = "<span style='color:rgba(250,50,50,.9);text-shadow: rgba(150,50,150,1) 0 0 10px;font-size:50px;font-weight:bold;margin-top:-10px;'>" + days + "</span><br/>days to go";
 
 				// If the count down is finished, write some text 
@@ -419,49 +428,49 @@
 		</script>
 		
 	
-	<script type="text/javascript">
-		$(document).ready(function () {
-			function TileAnimate() {
-				$(".tile-content").hover(function (event) {
-					event.stopPropagation();
+		<script type="text/javascript">
+			$(document).ready(function () {
+				function TileAnimate() {
+					$(".tile-content").hover(function (event) {
+						event.stopPropagation();
 
-					if (!$(this).hasClass('.tile-content .content.one')) {
-						$(this).dequeue().stop().animate({ top: "-145px" });
-					}
-				}, function () {
-					$(this).addClass('animated').animate({ top: "0" }, "normal", "linear", function () {
-						$(this).removeClass('animated').dequeue();
+						if (!$(this).hasClass('.tile-content .content.one')) {
+							$(this).dequeue().stop().animate({ top: "-125px" });
+						}
+					}, function () {
+						$(this).addClass('animated').animate({ top: "0" }, "normal", "linear", function () {
+							$(this).removeClass('animated').dequeue();
+						});
 					});
+				}
+				TileAnimate();
+			});
+		</script>
+		
+		<!-- Google Maps API -->
+		<script type="text/javascript">
+			function myMap() {
+				var location = new google.maps.LatLng(22.5485021,88.3556462);
+
+				var mapCanvas = document.getElementById('googleMap');
+				
+				var mapOptions = {
+					center:location,
+					zoom:14,
+					panControl: false,
+					mapTypeId: google.maps.MapTypeId.ROADMAP
+				}
+					
+				var map = new google.maps.Map(mapCanvas,mapOptions);
+				
+				var marker = new google.maps.Marker({
+					position: location,
+					map: map,
+					title: "St. Xavier's College (Autonomous), Kolkata"
 				});
 			}
-			TileAnimate();
-		});
-    </script>
-	
-	<!-- Google Maps API -->
-	<script type="text/javascript">
-		function myMap() {
-			var location = new google.maps.LatLng(22.5485021,88.3556462);
-
-			var mapCanvas = document.getElementById('googleMap');
-			
-			var mapOptions = {
-				center:location,
-				zoom:14,
-				panControl: false,
-				mapTypeId: google.maps.MapTypeId.ROADMAP
-            }
-				
-            var map = new google.maps.Map(mapCanvas,mapOptions);
-            
-            var marker = new google.maps.Marker({
-				position: location,
-				map: map,
-				title: "St. Xavier's College (Autonomous), Kolkata"
-            });
-		}
-	</script>
-	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBK_nsGp6o6i0sYC73mB6BHzlGXVynPNxU&callback=myMap" type="text/javascript"></script>
+		</script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBK_nsGp6o6i0sYC73mB6BHzlGXVynPNxU&callback=myMap" type="text/javascript"></script>
 
 	</body>
 </html>
