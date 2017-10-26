@@ -75,9 +75,9 @@ list-style: none;
     }
 .tile img.center
 {
-  display: block;
+  display: cover;
   margin: auto auto 0em auto;
-  opacity: 0.4;
+  opacity: 0.7;
   transition: .6s;
 
     }
