@@ -25,12 +25,26 @@ $result = mysqli_query($connect, $query);
      
     <script type="text/javascript" src="http://www.prepbootstrap.com/Content/js/gridData.js"  media='all'></script>
      
-     
+     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Jura:300,400" rel="stylesheet" type="text/css">
      
      
      
  </head>  
  <body>  
+     
+      <style>
+    
+        h1 {
+	font-family: Jura;
+/*	font-size: 24px;*/
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+/*	line-height: 26.4px;*/
+}
+    </style>
+     
        <div id="wrapper">
         <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
             <div class="navbar-header">
@@ -40,7 +54,7 @@ $result = mysqli_query($connect, $query);
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Back to Admin</a>
+                <a class="navbar-brand" href="index.html">Registration Panel</a>
             </div>
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
@@ -48,35 +62,14 @@ $result = mysqli_query($connect, $query);
 
                     
                    
-                    <li ><a href="p1.php"><i class="fa fa-font"></i> P1</a></li>
+                    <li ><a href="p1.php"><i class="fa fa-font"></i> Participants</a></li>
                    
-                   <li class="selected"><a href="events.html"><i class="fa fa-newspaper-o"></i> Events</a></li>
+                   <li class="selected"><a href="events.php"><i class="fa fa-newspaper-o"></i> Events</a></li>
                    
-                    <li><a href="#"><i class="fa fa-list-ul"></i> Bootstrap Elements</a></li>
-                    <li><a href="#"><i class="fa fa-table"></i > Bootstrap Grid</a></li>            
+                               
                 </ul>
                 <ul class="nav navbar-nav navbar-right navbar-user">
-                    <li class="dropdown messages-dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> Messages <span class="badge">2</span> <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li class="dropdown-header">2 New Messages</li>
-                            <li class="message-preview">
-                                <a href="#">
-                                    <span class="avatar"><i class="fa fa-bell"></i></span>
-                                    <span class="message">Security alert</span>
-                                </a>
-                            </li>
-                            <li class="divider"></li>
-                            <li class="message-preview">
-                                <a href="#">
-                                    <span class="avatar"><i class="fa fa-bell"></i></span>
-                                    <span class="message">Security alert</span>
-                                </a>
-                            </li>
-                            <li class="divider"></li>
-                            <li><a href="#">Go to Inbox <span class="badge">2</span></a></li>
-                        </ul>
-                    </li>
+                   
                      <li>
                         <a href="#" ><i class="fa fa-user"></i> College Rep Name</a>
                         
@@ -89,10 +82,10 @@ $result = mysqli_query($connect, $query);
             </div>
         </nav>
 <div id="page-wrapper">
-  <br /><br />  
+  <br />  
     <div class="row">
   <div  >  
-   <h3 align="center">Insert Data Through Bootstrap Modal by using Ajax PHP</h3>  
+   <h1 align="center">Add Participant Name(s) To This Event</h1>  
    <br />  
    <div >
        <div class="col-lg-12">
@@ -108,7 +101,7 @@ $result = mysqli_query($connect, $query);
                 
                     <div class="panel panel-primary">
                         <div class="panel-heading">
-                            <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> P1 </h3>
+                            <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> Participants </h3>
                         </div>
                         <div class="panel-body">
                             <div id="shieldui-grid1"></div>
@@ -126,7 +119,7 @@ $result = mysqli_query($connect, $query);
       ?>
       <tr>
        <td><?php echo $row["name"]; ?></td>
-       <td><input type="button" name="view" value="view" id="<?php echo $row["id"]; ?>" class="btn btn-info btn-xs view_data" /></td>
+       <td><input type="button" name="view" value="View" id="<?php echo $row["id"]; ?>" class="btn btn-info btn-xs view_data" /></td>
       </tr>
       <?php
       }
@@ -156,7 +149,7 @@ $result = mysqli_query($connect, $query);
   <div class="modal-content">
    <div class="modal-header">
     <button type="button" class="close" data-dismiss="modal">&times;</button>
-    <h4 class="modal-title">PHP Ajax Insert Data in MySQL By Using Bootstrap Modal</h4>
+    <h4 class="modal-title">Participant List</h4>
    </div>
    <div class="modal-body">
     <!-- 
@@ -201,7 +194,7 @@ Modal Body
   <div class="modal-content">
    <div class="modal-header">
     <button type="button" class="close" data-dismiss="modal">&times;</button>
-    <h4 class="modal-title">Employee Details</h4>
+    <h4 class="modal-title">Participant Details</h4>
    </div>
    <div class="modal-body" id="employee_detail">
     

@@ -45,9 +45,22 @@
 
     <script type="text/javascript" src="http://www.shieldui.com/shared/components/latest/js/shieldui-all.min.js"  media='all'></script>
     <script type="text/javascript" src="http://www.prepbootstrap.com/Content/js/gridData.js"  media='all'></script>
+    <link href="https://fonts.googleapis.com/css?family=Jura:300,400" rel="stylesheet" type="text/css">
+    
 <!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
     </head>
     <body >
+         <style>
+    
+        h1 {
+	font-family: Jura;
+/*	font-size: 24px;*/
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+/*	line-height: 26.4px;*/
+}
+    </style>
         <div id="wrapper">
             <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
             <div class="navbar-header">
@@ -70,32 +83,10 @@
                     
                     <li class="selected"><a href="events.html"><i class="fa fa-newspaper-o"></i> Events</a></li>
                     
-                    <li><a href="#"><i class="fa fa-list-ul"></i> Bootstrap Elements</a></li>
-                    
-                    <li><a href="#"><i class="fa fa-table"></i> Bootstrap Grid</a></li>
+                  
                 </ul>
                 <ul class="nav navbar-nav navbar-right navbar-user">
-                    <li class="dropdown messages-dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> Messages <span class="badge">2</span> <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li class="dropdown-header">2 New Messages</li>
-                            <li class="message-preview">
-                                <a href="#">
-                                    <span class="avatar"><i class="fa fa-bell"></i></span>
-                                    <span class="message">Security alert</span>
-                                </a>
-                            </li>
-                            <li class="divider"></li>
-                            <li class="message-preview">
-                                <a href="#">
-                                    <span class="avatar"><i class="fa fa-bell"></i></span>
-                                    <span class="message">Security alert</span>
-                                </a>
-                            </li>
-                            <li class="divider"></li>
-                            <li><a href="#">Go to Inbox <span class="badge">2</span></a></li>
-                        </ul>
-                    </li>
+                    
                     <li>
                         <a href="#" ><i class="fa fa-user"></i> College Rep Name</a>
                         

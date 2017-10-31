@@ -6,7 +6,7 @@
  <!DOCTYPE html>  
  <html>  
       <head>  
-           <title>participants</title>  
+           <title>Dashboard</title>  
            <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>P1-Dark Theme</title> 
@@ -24,9 +24,21 @@
     <script type="text/javascript" src="http://www.shieldui.com/shared/components/latest/js/shieldui-all.min.js"  media='all'></script>
      
     <script type="text/javascript" src="http://www.prepbootstrap.com/Content/js/gridData.js"  media='all'></script>
+          <link href="https://fonts.googleapis.com/css?family=Jura:300,400" rel="stylesheet" type="text/css">
           
       </head>  
       <body> 
+          <style>
+    
+        h1 {
+	font-family: Jura;
+/*	font-size: 24px;*/
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+/*	line-height: 26.4px;*/
+}
+    </style>
           <div id="wrapper">
               <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
             <div class="navbar-header">
@@ -36,41 +48,20 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Back to Admin</a>
+                <a class="navbar-brand" href="index.html">Registration Panel</a>
             </div>
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
                     <li><a href="index.html"><i class="fa fa-bullseye"></i> Dashboard</a></li>
 
                    
-                    <li class="selected"><a href="p1.php"><i class="fa fa-font"></i> P1</a></li>
+                    <li class="selected"><a href="p1.php"><i class="fa fa-font"></i> Participants</a></li>
                                       
                     <li><a href="events.php"><i class="fa fa-newspaper-o"></i> Events</a></li>
-                    <li><a href="#"><i class="fa fa-list-ul"></i> Bootstrap Elements</a></li>
-                    <li><a href="#"><i class="fa fa-table"></i > Bootstrap Grid</a></li>            
+                              
                 </ul>
                 <ul class="nav navbar-nav navbar-right navbar-user">
-                    <li class="dropdown messages-dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> Messages <span class="badge">2</span> <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li class="dropdown-header">2 New Messages</li>
-                            <li class="message-preview">
-                                <a href="#">
-                                    <span class="avatar"><i class="fa fa-bell"></i></span>
-                                    <span class="message">Security alert</span>
-                                </a>
-                            </li>
-                            <li class="divider"></li>
-                            <li class="message-preview">
-                                <a href="#">
-                                    <span class="avatar"><i class="fa fa-bell"></i></span>
-                                    <span class="message">Security alert</span>
-                                </a>
-                            </li>
-                            <li class="divider"></li>
-                            <li><a href="#">Go to Inbox <span class="badge">2</span></a></li>
-                        </ul>
-                    </li>
+                    
                      <li>
                         <a href="#" ><i class="fa fa-user"></i> College Rep Name</a>
                         
@@ -99,7 +90,7 @@
                     
                     <div class="panel panel-primary">
                         <div class="panel-heading">
-                            <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> P1 </h3>
+                            <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> Participants </h3>
                         </div>
                         <div class="panel-body">
                             <div id="shieldui-grid1" ></div>
@@ -139,7 +130,7 @@
            <div class="modal-content">  
                 <div class="modal-header">  
                      <button type="button" class="close" data-dismiss="modal">&times;</button>  
-                     <h4 class="modal-title">participant Details</h4>  
+                     <h4 class="modal-title">Participant Details</h4>  
                 </div>  
                 <div class="modal-body" id="employee_detail">  
                 </div>  
@@ -154,7 +145,7 @@
            <div class="modal-content">  
                 <div class="modal-header">  
                      <button type="button" class="close" data-dismiss="modal">&times;</button>  
-                     <h4 class="modal-title">PHP Ajax Update MySQL Data Through Bootstrap Modal</h4>  
+                     <h4 class="modal-title">Enter The Details</h4>  
                 </div>  
                 <div class="modal-body">  
                      <form method="post" id="insert_form">  
