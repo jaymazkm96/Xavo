@@ -305,7 +305,7 @@
 		</section>
 	
 		<!-- Contact Section -->
-		<section id="contact" style="background-attachment:fixed;"">
+		<section id="contact" style="background-attachment:fixed;">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-4 text-center" style="text-decoration:none;text-transform:uppercase;letter-spacing:1px;font-weight:400;font-family:'Jura',sans-serif;color:#CCC;">
@@ -419,7 +419,7 @@
 				var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 				// Display the result in an element with id="timer"
-				document.getElementById("timer").innerHTML = "<span style='color:rgba(250,50,50,.9);text-shadow: rgba(150,50,150,1) 0 0 10px;font-size:50px;font-weight:bold;margin-top:-10px;'>" + days + "</span><br/>days to go";
+				document.getElementById("timer").innerHTML = "<span style='color:rgba(250,50,50,.9);text-shadow: rgba(150,50,150,1) 0 0 10px;font-size:50px;font-weight:bold;margin-top:-10px;'>" + days + "</span><br/>days to go<br/><span style='color:rgba(150,150,150,.9);text-shadow: rgba(50,50,50,.5) 0 0 10px;font-size:24px;'>"+ ("0" + hours).slice(-2) + " : " + ("0" + minutes).slice(-2) + " : " + ("0" + seconds).slice(-2) +"</span>";
 
 				// If the count down is finished, write some text 
 				if (distance < 0) {
@@ -463,13 +463,13 @@
 					mapTypeId: google.maps.MapTypeId.ROADMAP
 				}
 					
-				var map = new google.maps.Map(mapCanvas,mapOptions);
+				var map = new google.maps.Map(mapCanvas,mapOptions);/*
 				
 				var marker = new google.maps.Marker({
 					position: location,
 					map: map,
 					title: "St. Xavier's College (Autonomous), Kolkata"
-				});
+				});*/
 			}
 		</script>
 		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBK_nsGp6o6i0sYC73mB6BHzlGXVynPNxU&callback=myMap" type="text/javascript"></script>

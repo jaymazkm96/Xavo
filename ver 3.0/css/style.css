@@ -394,7 +394,6 @@ header .intro-text .intro-heading{
 
 /* ---- COUNTER ---- */
 .counter{
-	margin-top:350px;
 	font-size:30px;
 	color:white;
 	vertical-align:middle;
@@ -613,6 +612,7 @@ section#details{
 	background-position:center center;
 	background-repeat:none;
 	background-size:cover;
+	box-shadow: 0 0 25px 20px rgba(0,0,0,1);
 }
 
 @media (max-width:768px){
@@ -642,10 +642,9 @@ section#contact{
 }
 
 #googleMap {
-	align:center;
 	height:250px;
     padding: 0;
-    position : relative !important; 
+	z-order:10;
 }
 
 section#contact .section-heading{
