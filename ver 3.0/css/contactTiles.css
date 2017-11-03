@@ -1,0 +1,430 @@
+@import url(https://fonts.googleapis.com/css?family=Arapey:400italic);
+.div_test {
+  width: 100%;
+  padding-bottom: 30px;
+  text-align: center;
+  background: url(http://eskipaper.com/images/beautiful-blurred-wallpaper-2.jpg) no-repeat center top;
+  font-size: 62.5%;
+}
+@media screen and (max-width: 600px) {
+  .div_test {
+    font-size: 42.5%;
+  }
+}
+
+.component_meet_your_team {
+  	/* clear fix
+  -----------------------------------*/
+  	/* My Hexagon
+  -----------------------------------*/
+}
+.component_meet_your_team .header {
+  float: left;
+  width: 100%;
+  padding: 5px 0px 30px;
+  box-sizing: border-box;
+  font-family: 'Arapey', 'sans-serif';
+}
+.component_meet_your_team h1 {
+  font-size: 5em;
+  color: #fff;
+}
+.component_meet_your_team div[onclick] {
+  cursor: pointer;
+}
+.component_meet_your_team .clearfix {
+  zoom: 1;
+}
+.component_meet_your_team .clearfix::after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+.component_meet_your_team .box_hexagon {
+  display: inline-block;
+  text-align: left;
+  padding-bottom: 70px;
+}
+.component_meet_your_team .hexagon_wrap {
+  float: left;
+  width: 260px;
+  height: 242px;
+  margin-right: 20px;
+}
+.component_meet_your_team .hexagon_wrap:nth-child(7n - 3) {
+  clear: left;
+}
+.component_meet_your_team .hexagon_wrap:nth-child(7n - 6) {
+  clear: left;
+  margin-left: 140px;
+}
+.component_meet_your_team .hexagon_wrap:nth-child(7n) {
+  margin-right: 0px;
+}
+.component_meet_your_team .hexagon_wrap:nth-child(7n - 4) {
+  margin-right: 0px;
+}
+.component_meet_your_team .hexagon_out {
+  position: relative;
+  display: inline-block;
+  float: left;
+  width: 260px;
+  height: 300px;
+  -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+          clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+.component_meet_your_team .hexagon_out .hexagon {
+  position: relative;
+  display: inline-block;
+  float: left;
+  width: 260px;
+  height: 300px;
+  -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+          clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+.component_meet_your_team .hexagon_out .hexagon .hexagon_bg {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+          clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+.component_meet_your_team .hexagon_out .front {
+  opacity: 0;
+}
+.component_meet_your_team .hexagon_out .front .hexagon_bg {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+}
+.component_meet_your_team .hexagon_out .back .hexagon_bg {
+  -webkit-backface-visibility: visible !important;
+          backface-visibility: visible !important;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  -webkit-filter: FlipH;
+          filter: FlipH;
+  -ms-filter: "FlipH";
+}
+@media screen and (max-width: 1170px) {
+  .component_meet_your_team .hexagon_wrap {
+    float: left;
+    width: 220px;
+    height: 210px;
+    margin-right: 20px;
+  }
+  .component_meet_your_team .hexagon_wrap:nth-child(7n - 3) {
+    clear: left;
+  }
+  .component_meet_your_team .hexagon_wrap:nth-child(7n - 6) {
+    clear: left;
+    margin-left: 120px;
+  }
+  .component_meet_your_team .hexagon_wrap:nth-child(7n) {
+    margin-right: 0px;
+  }
+  .component_meet_your_team .hexagon_wrap:nth-child(7n - 4) {
+    margin-right: 0px;
+  }
+  .component_meet_your_team .hexagon_out {
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: 220px;
+    height: 260px;
+    -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+            clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  }
+  .component_meet_your_team .hexagon_out .hexagon {
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: 220px;
+    height: 260px;
+    -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+            clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  }
+  .component_meet_your_team .hexagon_out .hexagon .hexagon_bg {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+            clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  }
+  .component_meet_your_team .hexagon_out .front {
+    opacity: 0;
+  }
+  .component_meet_your_team .hexagon_out .front .hexagon_bg {
+    -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
+  }
+  .component_meet_your_team .hexagon_out .back .hexagon_bg {
+    -webkit-backface-visibility: visible !important;
+            backface-visibility: visible !important;
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    -webkit-filter: FlipH;
+            filter: FlipH;
+    -ms-filter: "FlipH";
+  }
+}
+@media screen and (max-width: 970px) {
+  .component_meet_your_team .hexagon_wrap {
+    float: left;
+    width: 160px;
+    height: 147px;
+    margin-right: 15px;
+  }
+  .component_meet_your_team .hexagon_wrap:nth-child(7n - 3) {
+    clear: left;
+  }
+  .component_meet_your_team .hexagon_wrap:nth-child(7n - 6) {
+    clear: left;
+    margin-left: 87.5px;
+  }
+  .component_meet_your_team .hexagon_wrap:nth-child(7n) {
+    margin-right: 0px;
+  }
+  .component_meet_your_team .hexagon_wrap:nth-child(7n - 4) {
+    margin-right: 0px;
+  }
+  .component_meet_your_team .hexagon_out {
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: 160px;
+    height: 180px;
+    -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+            clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  }
+  .component_meet_your_team .hexagon_out .hexagon {
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: 160px;
+    height: 180px;
+    -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+            clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  }
+  .component_meet_your_team .hexagon_out .hexagon .hexagon_bg {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+            clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  }
+  .component_meet_your_team .hexagon_out .front {
+    opacity: 0;
+  }
+  .component_meet_your_team .hexagon_out .front .hexagon_bg {
+    -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
+  }
+  .component_meet_your_team .hexagon_out .back .hexagon_bg {
+    -webkit-backface-visibility: visible !important;
+            backface-visibility: visible !important;
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    -webkit-filter: FlipH;
+            filter: FlipH;
+    -ms-filter: "FlipH";
+  }
+}
+@media screen and (max-width: 700px) {
+  .component_meet_your_team .hexagon_wrap {
+    float: left;
+    width: 130px;
+    height: 115px;
+    margin-right: 10px;
+  }
+  .component_meet_your_team .hexagon_wrap:nth-child(7n - 3) {
+    clear: left;
+  }
+  .component_meet_your_team .hexagon_wrap:nth-child(7n - 6) {
+    clear: left;
+    margin-left: 70px;
+  }
+  .component_meet_your_team .hexagon_wrap:nth-child(7n) {
+    margin-right: 0px;
+  }
+  .component_meet_your_team .hexagon_wrap:nth-child(7n - 4) {
+    margin-right: 0px;
+  }
+  .component_meet_your_team .hexagon_out {
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: 130px;
+    height: 140px;
+    -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+            clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  }
+  .component_meet_your_team .hexagon_out .hexagon {
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: 130px;
+    height: 140px;
+    -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+            clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  }
+  .component_meet_your_team .hexagon_out .hexagon .hexagon_bg {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+            clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  }
+  .component_meet_your_team .hexagon_out .front {
+    opacity: 0;
+  }
+  .component_meet_your_team .hexagon_out .front .hexagon_bg {
+    -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
+  }
+  .component_meet_your_team .hexagon_out .back .hexagon_bg {
+    -webkit-backface-visibility: visible !important;
+            backface-visibility: visible !important;
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    -webkit-filter: FlipH;
+            filter: FlipH;
+    -ms-filter: "FlipH";
+  }
+}
+@media screen and (max-width: 600px) {
+  .component_meet_your_team .hexagon_wrap {
+    float: left;
+    width: 130px;
+    height: 130px;
+    margin-right: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 15px;
+  }
+  .component_meet_your_team .hexagon_wrap:nth-child(7n - 3) {
+    clear: left;
+  }
+  .component_meet_your_team .hexagon_wrap:nth-child(7n - 6) {
+    clear: left;
+    margin-left: 70px;
+  }
+  .component_meet_your_team .hexagon_wrap:nth-child(7n) {
+    margin-right: 0px;
+  }
+  .component_meet_your_team .hexagon_wrap:nth-child(7n - 4) {
+    margin-right: 0px;
+  }
+  .component_meet_your_team .hexagon_wrap:nth-child(7n - 3) {
+    clear: none;
+  }
+  .component_meet_your_team .hexagon_wrap:nth-child(7n - 6) {
+    clear: none;
+    margin-left: 5px;
+  }
+  .component_meet_your_team .hexagon_wrap:nth-child(7n) {
+    margin-right: 5px;
+  }
+  .component_meet_your_team .hexagon_wrap:nth-child(7n - 4) {
+    margin-right: 5px;
+  }
+  .component_meet_your_team .hexagon_wrap:nth-child(3n - 2) {
+    clear: left;
+  }
+  .component_meet_your_team .hexagon_out {
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: 130px;
+    height: 130px;
+    -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+            clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+    -webkit-clip-path: none;
+            clip-path: none;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .component_meet_your_team .hexagon_out .hexagon {
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: 130px;
+    height: 130px;
+    -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+            clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  }
+  .component_meet_your_team .hexagon_out .hexagon .hexagon_bg {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+            clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  }
+  .component_meet_your_team .hexagon_out .front {
+    opacity: 0;
+  }
+  .component_meet_your_team .hexagon_out .front .hexagon_bg {
+    -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
+  }
+  .component_meet_your_team .hexagon_out .back .hexagon_bg {
+    -webkit-backface-visibility: visible !important;
+            backface-visibility: visible !important;
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    -webkit-filter: FlipH;
+            filter: FlipH;
+    -ms-filter: "FlipH";
+  }
+  .component_meet_your_team .hexagon_out .hexagon {
+    -webkit-clip-path: none;
+            clip-path: none;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .component_meet_your_team .hexagon_out .hexagon .hexagon_bg {
+    border-radius: 50%;
+    overflow: hidden;
+    -webkit-clip-path: none;
+            clip-path: none;
+  }
+}
+@media screen and (max-width: 440px) {
+  .component_meet_your_team .hexagon_wrap:nth-child(3n - 2) {
+    clear: none;
+  }
+  .component_meet_your_team .hexagon_wrap:nth-child(2n - 1) {
+    clear: left;
+  }
+}
