@@ -54,11 +54,353 @@ body {
 	font-weight: 500;
 /*	line-height: 26.4px;*/
 }
+        
+       
+/* ---- ANIMATED BACKDROP ---- */
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-webkit-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-moz-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-ms-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+
+@keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-webkit-keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-moz-keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-ms-keyframes move-clouds-back {
+    from {background-position: 0;}
+    to {background-position:10000px 0;}
+}
+
+        
+ 
+/* Retina display */
+@media screen and (min-width: 1024px){
+    .stars, .twinkling, .clouds {
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	width:100%;
+	height:1150px;
+	display:block;
+}
+
+.stars {
+	background:#000 url(img/stars.png) repeat fixed center center;
+	z-index:-3;
+	position:absolute;
+    background-size: 100% ;
+}
+
+.twinkling{
+	background:transparent url(img/twinkling.png) repeat fixed center center;
+	z-index:-2;
+
+	-moz-animation:move-twink-back 200s linear infinite;
+	-ms-animation:move-twink-back 200s linear infinite;
+	-o-animation:move-twink-back 200s linear infinite;
+	-webkit-animation:move-twink-back 200s linear infinite;
+	animation:move-twink-back 200s linear infinite;
+	position:absolute;
+     
+}
+
+.clouds{
+    background:transparent url(img/clouds3.png) repeat fixed center center;
+    z-index:-1;
+
+	-moz-animation:move-clouds-back 200s linear infinite;
+	-ms-animation:move-clouds-back 200s linear infinite;
+	-o-animation:move-clouds-back 200s linear infinite;
+	-webkit-animation:move-clouds-back 200s linear infinite;
+	animation:move-clouds-back 200s linear infinite;
+	position:absolute;
+     background-size: cover;
+}
+}
+
+/* Desktop */
+@media screen and (min-width: 980px) and (max-width: 1024px){
+   .stars, .twinkling, .clouds {
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	width:100%;
+	height:1150px;
+	display:block;
+}
+
+.stars {
+	background:#000 url(img/stars.png) repeat fixed center center;
+	z-index:-3;
+	position:absolute;
+    background-size: 100% ;
+}
+
+.twinkling{
+	background:transparent url(img/twinkling.png) repeat fixed center center;
+	z-index:-2;
+
+	-moz-animation:move-twink-back 200s linear infinite;
+	-ms-animation:move-twink-back 200s linear infinite;
+	-o-animation:move-twink-back 200s linear infinite;
+	-webkit-animation:move-twink-back 200s linear infinite;
+	animation:move-twink-back 200s linear infinite;
+	position:absolute;
+     
+}
+
+.clouds{
+    background:transparent url(img/clouds3.png) repeat fixed center center;
+    z-index:-1;
+
+	-moz-animation:move-clouds-back 200s linear infinite;
+	-ms-animation:move-clouds-back 200s linear infinite;
+	-o-animation:move-clouds-back 200s linear infinite;
+	-webkit-animation:move-clouds-back 200s linear infinite;
+	animation:move-clouds-back 200s linear infinite;
+	position:absolute;
+     background-size:cover;
+}
+}
+
+/* Tablet */
+@media screen and (min-width: 760px) and (max-width: 980px){
+    .stars, .twinkling, .clouds {
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	width:100%;
+	height:1600px;
+	display:block;
+}
+
+.stars {
+	background:#000 url(img/stars.png) repeat fixed center center;
+	z-index:-3;
+	position:absolute;
+    background-size: 100% ;
+}
+
+.twinkling{
+	background:transparent url(img/twinkling.png) repeat fixed center center;
+	z-index:-2;
+
+	-moz-animation:move-twink-back 200s linear infinite;
+	-ms-animation:move-twink-back 200s linear infinite;
+	-o-animation:move-twink-back 200s linear infinite;
+	-webkit-animation:move-twink-back 200s linear infinite;
+	animation:move-twink-back 200s linear infinite;
+	position:absolute;
+     
+}
+
+.clouds{
+    background:transparent url(img/clouds3.png) repeat fixed center center;
+    z-index:-1;
+
+	-moz-animation:move-clouds-back 200s linear infinite;
+	-ms-animation:move-clouds-back 200s linear infinite;
+	-o-animation:move-clouds-back 200s linear infinite;
+	-webkit-animation:move-clouds-back 200s linear infinite;
+	animation:move-clouds-back 200s linear infinite;
+	position:absolute;
+     background-size: cover;
+}
+}
+
+/* Mobile HD */
+@media screen and (min-width: 350px) and (max-width: 760px){
+    .stars, .twinkling, .clouds {
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	width:100%;
+	height:1600px;
+	display:block;
+}
+
+.stars {
+	background:#000 url(img/stars.png) repeat fixed center center;
+	z-index:-3;
+	position:absolute;
+    background-size: 100% ;
+}
+
+.twinkling{
+	background:transparent url(img/twinkling.png) repeat fixed center center;
+	z-index:-2;
+
+	-moz-animation:move-twink-back 200s linear infinite;
+	-ms-animation:move-twink-back 200s linear infinite;
+	-o-animation:move-twink-back 200s linear infinite;
+	-webkit-animation:move-twink-back 200s linear infinite;
+	animation:move-twink-back 200s linear infinite;
+	position:absolute;
+     
+}
+
+.clouds{
+    background:transparent url(img/clouds3.png) repeat fixed center center;
+    z-index:-1;
+
+	-moz-animation:move-clouds-back 200s linear infinite;
+	-ms-animation:move-clouds-back 200s linear infinite;
+	-o-animation:move-clouds-back 200s linear infinite;
+	-webkit-animation:move-clouds-back 200s linear infinite;
+	animation:move-clouds-back 200s linear infinite;
+	position:absolute;
+     background-size: cover;
+}
+}
+
+/* Mobile LD */
+@media screen and (max-width: 350px){
+   .stars, .twinkling, .clouds {
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	width:100%;
+	height:1600px;
+	display:block;
+}
+
+.stars {
+	background:#000 url(img/stars.png) repeat fixed center center;
+	z-index:-3;
+	position:absolute;
+    background-size: 100% ;
+}
+
+.twinkling{
+	background:transparent url(img/twinkling.png) repeat fixed center center;
+	z-index:-2;
+
+	-moz-animation:move-twink-back 200s linear infinite;
+	-ms-animation:move-twink-back 200s linear infinite;
+	-o-animation:move-twink-back 200s linear infinite;
+	-webkit-animation:move-twink-back 200s linear infinite;
+	animation:move-twink-back 200s linear infinite;
+	position:absolute;
+     
+}
+
+.clouds{
+    background:transparent url(img/clouds3.png) repeat fixed center center;
+    z-index:-1;
+
+	-moz-animation:move-clouds-back 200s linear infinite;
+	-ms-animation:move-clouds-back 200s linear infinite;
+	-o-animation:move-clouds-back 200s linear infinite;
+	-webkit-animation:move-clouds-back 200s linear infinite;
+	animation:move-clouds-back 200s linear infinite;
+	position:absolute;
+     background-size: cover;
+}
+}     
+  
+        
+/* ---- COUNTER ---- */
+.counter{
+	font-size:30px;
+	color:white;
+	vertical-align:middle;
+	display:block;
+	font-family:Jura,sans-serif;
+	text-transform:uppercase;
+}
+
+.circle {
+    background: rgba(255,255,255,.2);
+    border-radius: 200px;
+	height:200px;
+	width:200px;
+    color: white;
+    font-weight: bold;
+    display: table;
+    margin: 260px auto;
+	border:2px solid rgba(100,100,255,.7);
+	-webkit-box-shadow: 0px 0px 10px 10px rgba(150, 50, 150, 0.7);
+	-moz-box-shadow:    0px 0px 10px 10px rgba(150, 50, 150, 0.7);
+	box-shadow:         0px 0px 10px 10px rgba(150, 50, 150, 0.7);
+}
+.circle p {
+    vertical-align: middle;
+    display: table-cell;
+}
+
+@media (max-width:1024px){
+	.counter{
+		display:none;
+	}
+	.circle{
+		display:none;
+	}
+	.circle p{
+		display:none;
+	}
+}
+
+/*@keyframes glow{
+	0%{
+		-webkit-box-shadow: 0px 0px 10px 10px rgba(150, 50, 150, 0.7);
+		-moz-box-shadow:    0px 0px 10px 10px rgba(150, 50, 150, 0.7);
+		box-shadow:         0px 0px 10px 10px rgba(150, 50, 150, 0.7);
+		background: rgba(255,255,255,.2);
+	}
+	50%{
+		-webkit-box-shadow: 0px 0px 10px 12px rgba(150, 50, 150, 0.7);
+		-moz-box-shadow:    0px 0px 10px 12px rgba(150, 50, 150, 0.7);
+		box-shadow:         0px 0px 10px 12px rgba(150, 50, 150, 0.7);
+		background: rgba(255,255,255,.25);
+	}
+	100%{
+		-webkit-box-shadow: 0px 0px 10px 10px rgba(150, 50, 150, 0.7);
+		-moz-box-shadow:    0px 0px 10px 10px rgba(150, 50, 150, 0.7);
+		box-shadow:         0px 0px 10px 10px rgba(150, 50, 150, 0.7);
+		background: rgba(255,255,255,.2);
+	}
+}
+/* ---- END COUNTER ---- */
+
+        
+        
     </style>
 
     
-    
-    
+    <div class='container'>
+    	<div class="stars  responsive-image" style="background-attachment:fixed"></div>
+			<div class="twinkling " style="background-attachment:fixed" ></div>
+    <div class="clouds responsiv-image" style="background-attachment:fixed"></div>
     
     <div id="wrapper">
           <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -72,7 +414,7 @@ body {
                 <a class="navbar-brand" href="index.html">Registration Panel</a>
             </div>
             <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul id="active" class="nav navbar-nav side-nav">
+                <ul id="active" class="nav navbar-nav side-nav" style="overflow-y: hidden">
                     <li class="selected"><a href="index.html"><i class="fa fa-bullseye"></i> Dashboard</a></li>
                     
                     
@@ -81,8 +423,13 @@ body {
                    
                     
                     <li><a href="events.php"><i class="fa fa-newspaper-o"></i> Events</a></li>
-                    
                    
+                    
+                    <div class="circle" style="z-index:10">
+						<p class="counter text-center" id="timer"></p>
+					</div>
+                    
+                    
                 </ul>
                 <ul class="nav navbar-nav navbar-right navbar-user">
                    
@@ -387,6 +734,8 @@ body {
             
         </div>
     </div>
+    </div>
+    </div>
     <!-- /#wrapper -->
 
     
@@ -407,6 +756,37 @@ body {
 				}
 				TileAnimate();
 			});
+		</script>
+    
+    <!-- TIMER -->
+		<script>
+			// Set the date we're counting down to
+			var countDownDate = new Date("Jan 21, 2018 00:00:00").getTime();
+
+			// Update the count down every 1 second
+			var x = setInterval(function() {
+
+				// Get todays date and time
+				var now = new Date().getTime();
+
+				// Find the distance between now an the count down date
+				var distance = countDownDate - now;
+
+				// Time calculations for days, hours, minutes and seconds
+				var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+				var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+				var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+				var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+				// Display the result in an element with id="timer"
+				document.getElementById("timer").innerHTML = "<span style='color:rgba(250,50,50,.9);text-shadow: rgba(150,50,150,1) 0 0 10px;font-size:50px;font-weight:bold;margin-top:-10px;'>" + days + "</span><br/>days to go<br/><span style='color:rgba(150,150,150,.9);text-shadow: rgba(50,50,50,.5) 0 0 10px;font-size:24px;'>"+ ("0" + hours).slice(-2) + " : " + ("0" + minutes).slice(-2) + " : " + ("0" + seconds).slice(-2) +"</span>";
+
+				// If the count down is finished, write some text 
+				if (distance < 0) {
+					clearInterval(x);
+					document.getElementById("timer").innerHTML = "The Day is Here";
+				}
+			}, 1000);
 		</script>
 </body>
 </html>
