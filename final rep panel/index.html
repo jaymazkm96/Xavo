@@ -25,7 +25,7 @@
 
     <script type="text/javascript" src="http://www.shieldui.com/shared/components/latest/js/shieldui-all.min.js"  media='all'></script>
     <script type="text/javascript" src="http://www.prepbootstrap.com/Content/js/gridData.js"  media='all'></script>
-    
+
      <link rel="stylesheet" type="text/css" href="css/demo-styles.css" meadia='all'/>
     <link rel="stylesheet" type="text/css" href="css/fluid_grid.css" meadia='all'/>
 
@@ -43,9 +43,9 @@ body {
 }
 </style>
 -->
-    
+
     <style>
-    
+
         h1 {
 	font-family: Jura;
 /*	font-size: 24px;*/
@@ -54,8 +54,8 @@ body {
 	font-weight: 500;
 /*	line-height: 26.4px;*/
 }
-        
-       
+
+
 /* ---- ANIMATED BACKDROP ---- */
 @keyframes move-twink-back {
     from {background-position:0 0;}
@@ -91,8 +91,8 @@ body {
     to {background-position:10000px 0;}
 }
 
-        
- 
+
+
 /* Retina display */
 @media screen and (min-width: 1024px){
     .stars, .twinkling, .clouds {
@@ -123,7 +123,7 @@ body {
 	-webkit-animation:move-twink-back 200s linear infinite;
 	animation:move-twink-back 200s linear infinite;
 	position:absolute;
-     
+
 }
 
 }
@@ -158,7 +158,7 @@ body {
 	-webkit-animation:move-twink-back 200s linear infinite;
 	animation:move-twink-back 200s linear infinite;
 	position:absolute;
-     
+
 }
 
 }
@@ -193,7 +193,7 @@ body {
 	-webkit-animation:move-twink-back 200s linear infinite;
 	animation:move-twink-back 200s linear infinite;
 	position:absolute;
-     
+
 }
 
 }
@@ -228,7 +228,7 @@ body {
 	-webkit-animation:move-twink-back 200s linear infinite;
 	animation:move-twink-back 200s linear infinite;
 	position:absolute;
-     
+
 }
 
 }
@@ -263,12 +263,12 @@ body {
 	-webkit-animation:move-twink-back 200s linear infinite;
 	animation:move-twink-back 200s linear infinite;
 	position:absolute;
-     
+
 }
 
-}     
-  
-        
+}
+
+
 /* ---- COUNTER ---- */
 .counter{
 	font-size:30px;
@@ -281,7 +281,7 @@ body {
 
 .circle {
     background: rgba(255,255,255,.2);
-    border-radius: 200px;
+  
 	height:200px;
 	width:200px;
     color: white;
@@ -332,16 +332,16 @@ body {
 }
 /* ---- END COUNTER ---- */
 
-        
-        
+
+
     </style>
 
-    
+
     <div class='container'>
     	<div class="stars  responsive-image" style="background-attachment:fixed"></div>
 			<div class="twinkling " style="background-attachment:fixed" ></div>
     <div class="clouds responsiv-image" style="background-attachment:fixed"></div>
-    
+
     <div id="wrapper">
           <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
             <div class="navbar-header">
@@ -356,30 +356,30 @@ body {
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul id="active" class="nav navbar-nav side-nav" style="overflow-y: hidden">
                     <li class="selected"><a href="index.html"><i class="fa fa-bullseye"></i> Dashboard</a></li>
-                    
-                    
-                    
+
+
+
                     <li><a href="p1.php"><i class="fa fa-font"></i> Participants</a></li>
-                   
-                    
+
+
                     <li><a href="events.php"><i class="fa fa-newspaper-o"></i> Events</a></li>
-                   
-                    
+
+
                     <div class="circle" style="z-index:10">
 						<p class="counter text-center" id="timer"></p>
 					</div>
-                    
-                    
+
+
                 </ul>
                 <ul class="nav navbar-nav navbar-right navbar-user">
-                   
+
                     <li>
                         <a href="#" ><i class="fa fa-user"></i> College Rep Name</a>
-                        
+
                     </li>
                      <li>
                         <a href="#" ><i class="fa fa-sign-out"></i> Log Out</a>
-                        
+
                     </li>
                     <li class="divider-vertical"></li>
                     <li>
@@ -392,16 +392,16 @@ body {
         </nav>
 
         <div id="page-wrapper">
-                      <br />     
-           
+                      <br />
+
                 <h1 align="center">Dashboard </h1>
                 <br />
             <div class="container-fluid">
                  <div class="row">
               <div class="col-lg-12">
-                    
+
                     <div class="container" >
-                        
+
                  <div class="grid_full ">
 							<div class="tile grey1" >
 								<div class="tile-content">
@@ -414,107 +414,107 @@ body {
 								</div>
 							</div>
 						</div>
-                        
-                 
-                       
-                  
-                   
+
+
+
+
+
                 </div>
-               
-               
+
+
                    </div>
             </div>
             <br />
             <div class="row">
 
                  <div class="col-md-8">
-                     
+
                       <div class="panel panel-primary">
                         <div class="panel-heading">
                             <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> Events Participation Detail </h3>
                         </div>
                         <div class="panel-body feed" style="overflow: auto">
                             <div id="shieldui-grid1" ></div>
-                             <div >  
-                          <table class="table table-bordered" class="table-responsive" class="container" >  
-                               <tr>  
-                                    <th width="30%">EVENT</th>  
-                                    <th width="30%">GENRE</th>  
+                             <div >
+                          <table class="table table-bordered" class="table-responsive" class="container" >
+                               <tr>
+                                    <th width="30%">EVENT</th>
+                                    <th width="30%">GENRE</th>
                                     <th width="40%">Groups / Participants</th>
-                                   
-                               </tr>  
-                             
-                              <tr>  
-                                    <td>Event 3</td>  
-                                    <td>Genre 2</td>  
+
+                               </tr>
+
+                              <tr>
+                                    <td>Event 3</td>
+                                    <td>Genre 2</td>
                                     <td>8</td>
                                 </tr>
-                              
-                              <tr>  
-                                    <td>Event 3</td>  
-                                    <td>Genre 2</td>  
+
+                              <tr>
+                                    <td>Event 3</td>
+                                    <td>Genre 2</td>
                                     <td>8</td>
                                 </tr>
-                              
-                              <tr>  
-                                    <td>Event 3</td>  
-                                    <td>Genre 2</td>  
+
+                              <tr>
+                                    <td>Event 3</td>
+                                    <td>Genre 2</td>
                                     <td>8</td>
                                 </tr>
-                              
-                              <tr>  
-                                    <td>Event 3</td>  
-                                    <td>Genre 2</td>  
+
+                              <tr>
+                                    <td>Event 3</td>
+                                    <td>Genre 2</td>
                                     <td>8</td>
                                 </tr>
-                              <tr>  
-                                    <td>Event 6</td>  
-                                    <td>Genre 4</td>  
+                              <tr>
+                                    <td>Event 6</td>
+                                    <td>Genre 4</td>
                                     <td>3</td>
                                 </tr>
-                              <tr>  
-                                    <td>Event 9</td>  
-                                    <td>Genre 3</td>  
+                              <tr>
+                                    <td>Event 9</td>
+                                    <td>Genre 3</td>
                                     <td>10</td>
                                 </tr>
-                              <tr>  
-                                    <td>Event 8</td>  
-                                    <td>Genre 4</td>  
+                              <tr>
+                                    <td>Event 8</td>
+                                    <td>Genre 4</td>
                                     <td>6</td>
                                 </tr>
-                              <tr>  
-                                    <td>Event 3</td>  
-                                    <td>Genre 3</td>  
+                              <tr>
+                                    <td>Event 3</td>
+                                    <td>Genre 3</td>
                                     <td>4</td>
                                 </tr>
-                               <tr>  
-                                    <td>Event 3</td>  
-                                    <td>Genre 3</td>  
+                               <tr>
+                                    <td>Event 3</td>
+                                    <td>Genre 3</td>
                                     <td>4</td>
                                 </tr>
-                              <tr>  
-                                    <td>Event 3</td>  
-                                    <td>Genre 3</td>  
+                              <tr>
+                                    <td>Event 3</td>
+                                    <td>Genre 3</td>
                                     <td>3</td>
                                 </tr>
-                              <tr>  
-                                    <td>Event 3</td>  
-                                    <td>Genre 3</td>  
+                              <tr>
+                                    <td>Event 3</td>
+                                    <td>Genre 3</td>
                                     <td>3</td>
                                 </tr>
-                              <tr>  
-                                    <td>Event 3</td>  
-                                    <td>Genre 3</td>  
+                              <tr>
+                                    <td>Event 3</td>
+                                    <td>Genre 3</td>
                                     <td>3</td>
                                 </tr>
-                                
-                                 
-                          </table>  
-                     </div>  
+
+
+                          </table>
+                     </div>
                         </div>
                     </div>
                      </div>
-                
+
                 <div class="col-md-4">
                     <div class="panel panel-primary">
                         <div class="panel-heading">
@@ -624,8 +624,8 @@ body {
                             </section>
 -->
 
-                          
-                             
+
+
 
                         </div>
                     </div>
@@ -671,14 +671,14 @@ body {
                     </div>
             </div>
             </div>
-            
+
         </div>
     </div>
     </div>
     </div>
     <!-- /#wrapper -->
 
-    
+
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script type="text/javascript">
 			$(document).ready(function () {
@@ -697,7 +697,7 @@ body {
 				TileAnimate();
 			});
 		</script>
-    
+
     <!-- TIMER -->
 		<script>
 			// Set the date we're counting down to
@@ -721,7 +721,7 @@ body {
 				// Display the result in an element with id="timer"
 				document.getElementById("timer").innerHTML = "<span style='color:rgba(250,50,50,.9);text-shadow: rgba(150,50,150,1) 0 0 10px;font-size:50px;font-weight:bold;margin-top:-10px;'>" + days + "</span><br/>days to go<br/><span style='color:rgba(150,150,150,.9);text-shadow: rgba(50,50,50,.5) 0 0 10px;font-size:24px;'>"+ ("0" + hours).slice(-2) + " : " + ("0" + minutes).slice(-2) + " : " + ("0" + seconds).slice(-2) +"</span>";
 
-				// If the count down is finished, write some text 
+				// If the count down is finished, write some text
 				if (distance < 0) {
 					clearInterval(x);
 					document.getElementById("timer").innerHTML = "The Day is Here";
