@@ -76,6 +76,12 @@ header{
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
+@media (max-width:600px){
+	#title{
+		font-size:28px;
+		font-weight:180;
+	}
+}
 
 @keyframes animStar {
 	from {
@@ -86,3 +92,96 @@ header{
 	}
 }
 /* ---- END HEADER ---- */
+
+.rule{
+	height:1px;
+	background:radial-gradient(ellipse at center, rgba(255,255,255,1) 0%,rgba(20,28,38,1) 40%, rgba(14,19,26,1) 70%);
+}
+
+section#team{
+	z-index:10;
+	background:radial-gradient(ellipse at top, #1b2735 0%, #090a0f 100%);
+}
+
+/* TILES */
+.person{
+	height:250px;
+	background:linear-gradient(transparent 0%,transparent 100%);
+	-webkit-box-shadow: 0px 10px 20px -5px rgba(0,0,0,0.0);
+	-moz-box-shadow: 0px 10px 20px -5px rgba(0,0,0,0.0);
+	box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.0);
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+}
+
+.person:hover{
+	background:linear-gradient(transparent 0%,transparent 40%,rgba(20,28,38,1) 100%);
+	-webkit-box-shadow: 0px 10px 20px -5px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 10px 20px -5px rgba(0,0,0,0.75);
+	box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
+}
+
+.person-img{
+	border-radius:100%;
+	width:180px;
+	height:180px;
+	vertical-align:middle;
+	background-size:contain;
+	background-repeat:no-repeat;
+	transition:all 0.3s;
+}
+
+.person-img:hover{
+	filter:grayscale(50%);
+}
+
+.person-img ul.contact-buttons{
+	margin-bottom:0;
+	padding-top:70px;
+	padding-left:10px;
+	opacity:0;
+	-webkit-transition:all .3s;
+	-moz-transition:all .3s;
+	transition:all .3s;
+	filter:none;
+}
+
+.person-img:hover ul.contact-buttons{
+	opacity:1;
+}
+
+.person ul.contact-buttons li a{
+	display:block;
+	background-color:#222;
+	height:40px;
+	width:40px;
+	border-radius:100%;
+	font-size:20px;
+	line-height:40px;
+	color:#fff;
+	outline:0;
+	-webkit-transition:all .3s;
+	-moz-transition:all .3s;
+	transition:all .3s;
+}
+
+.person ul.contact-buttons li a:hover,.person ul.contact-buttons li a:focus,.person ul.contact-buttons li a:active{
+	background-color:#fed136;
+}
+
+.person-name{
+	text-transform:uppercase;
+	font-family:"jura",sans-serif;
+	font-weight:200;
+	font-size:20px;
+	color:#fff;
+}
+
+.person-desig{
+	font-family:"jura",sans-serif;
+	font-weight:100;
+	font-size:14px;
+	text-decoration:italic;
+	color:#c0c0c0;
+}

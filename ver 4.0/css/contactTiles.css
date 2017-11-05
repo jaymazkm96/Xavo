@@ -70,11 +70,15 @@ header{
 	font-size: 50px;
 	letter-spacing: 10px;
 	padding-left: 10px;
+	float:center;
+	width:100%;
+	
 }
 #title span {
 	background: -webkit-linear-gradient(white, #38495a);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+	float:center;
 }
 
 @keyframes animStar {
@@ -86,3 +90,29 @@ header{
 	}
 }
 /* ---- END HEADER ---- */
+
+/* ---- CONTACT TILES ---- */
+section{
+	padding:40px 0;
+	color:#CCC;
+}
+
+@media (min-width:768px){
+	section{
+		padding:100px 0
+	}
+}
+section#team{
+	background-image:url(../img/bg/bg2.png);
+	background-position:center center;
+	background-repeat:none;
+	background-size:cover;
+	box-shadow: 0 0 25px 20px rgba(0,0,0,1);
+}
+
+@media (max-width:768px){
+	section#team{
+		background-size:fill;
+	}
+}
+/* ---- END CONTACT TILES ---- */
