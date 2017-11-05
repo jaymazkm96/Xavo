@@ -2,6 +2,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
@@ -19,6 +25,15 @@
 
     <script type="text/javascript" src="http://www.shieldui.com/shared/components/latest/js/shieldui-all.min.js"  media='all'></script>
     <script type="text/javascript" src="http://www.prepbootstrap.com/Content/js/gridData.js"  media='all'></script>
+    
+     <link rel="stylesheet" type="text/css" href="css/demo-styles.css" meadia='all'/>
+    <link rel="stylesheet" type="text/css" href="css/fluid_grid.css" meadia='all'/>
+
+     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+   <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Jura:300,400" rel="stylesheet" type="text/css">
 </head>
 <body>
 <!--
@@ -28,6 +43,305 @@ body {
 }
 </style>
 -->
+    
+    <style>
+    
+        h1 {
+	font-family: Jura;
+/*	font-size: 24px;*/
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+/*	line-height: 26.4px;*/
+}
+        
+       
+/* ---- ANIMATED BACKDROP ---- */
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-webkit-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-moz-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-ms-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+
+@keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-webkit-keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-moz-keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-ms-keyframes move-clouds-back {
+    from {background-position: 0;}
+    to {background-position:10000px 0;}
+}
+
+        
+ 
+/* Retina display */
+@media screen and (min-width: 1024px){
+    .stars, .twinkling, .clouds {
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	width:100%;
+	height:1150px;
+	display:block;
+}
+
+.stars {
+	background:#000 url(img/stars.png) repeat fixed center center;
+	z-index:-3;
+	position:absolute;
+    background-size: 2000px ;
+}
+
+.twinkling{
+	background:transparent url(img/twinkling.png) repeat fixed center center;
+	z-index:-2;
+
+	-moz-animation:move-twink-back 200s linear infinite;
+	-ms-animation:move-twink-back 200s linear infinite;
+	-o-animation:move-twink-back 200s linear infinite;
+	-webkit-animation:move-twink-back 200s linear infinite;
+	animation:move-twink-back 200s linear infinite;
+	position:absolute;
+     
+}
+
+}
+
+/* Desktop */
+@media screen and (min-width: 980px) and (max-width: 1024px){
+   .stars, .twinkling, .clouds {
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	width:100%;
+	height:1150px;
+	display:block;
+}
+
+.stars {
+	background:#000 url(img/stars.png) repeat fixed center center;
+	z-index:-3;
+	position:absolute;
+    background-size: 2000px ;
+}
+
+.twinkling{
+	background:transparent url(img/twinkling.png) repeat fixed center center;
+	z-index:-2;
+
+	-moz-animation:move-twink-back 200s linear infinite;
+	-ms-animation:move-twink-back 200s linear infinite;
+	-o-animation:move-twink-back 200s linear infinite;
+	-webkit-animation:move-twink-back 200s linear infinite;
+	animation:move-twink-back 200s linear infinite;
+	position:absolute;
+     
+}
+
+}
+
+/* Tablet */
+@media screen and (min-width: 760px) and (max-width: 980px){
+    .stars, .twinkling, .clouds {
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	width:100%;
+	height:1600px;
+	display:block;
+}
+
+.stars {
+	background:#000 url(img/stars.png) repeat fixed center center;
+	z-index:-3;
+	position:absolute;
+    background-size: 2000px ;
+}
+
+.twinkling{
+	background:transparent url(img/twinkling.png) repeat fixed center center;
+	z-index:-2;
+
+	-moz-animation:move-twink-back 200s linear infinite;
+	-ms-animation:move-twink-back 200s linear infinite;
+	-o-animation:move-twink-back 200s linear infinite;
+	-webkit-animation:move-twink-back 200s linear infinite;
+	animation:move-twink-back 200s linear infinite;
+	position:absolute;
+     
+}
+
+}
+
+/* Mobile HD */
+@media screen and (min-width: 350px) and (max-width: 760px){
+    .stars, .twinkling, .clouds {
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	width:100%;
+	height:1600px;
+	display:block;
+}
+
+.stars {
+	background:#000 url(img/stars.png) repeat fixed center center;
+	z-index:-3;
+	position:absolute;
+    background-size: 2000px ;
+}
+
+.twinkling{
+	background:transparent url(img/twinkling.png) repeat fixed center center;
+	z-index:-2;
+
+	-moz-animation:move-twink-back 200s linear infinite;
+	-ms-animation:move-twink-back 200s linear infinite;
+	-o-animation:move-twink-back 200s linear infinite;
+	-webkit-animation:move-twink-back 200s linear infinite;
+	animation:move-twink-back 200s linear infinite;
+	position:absolute;
+     
+}
+
+}
+
+/* Mobile LD */
+@media screen and (max-width: 350px){
+   .stars, .twinkling, .clouds {
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	width:100%;
+	height:1600px;
+	display:block;
+}
+
+.stars {
+	background:#000 url(img/stars.png) repeat fixed center center;
+	z-index:-3;
+	position:absolute;
+    background-size: 2000px ;
+}
+
+.twinkling{
+	background:transparent url(img/twinkling.png) repeat fixed center center;
+	z-index:-2;
+
+	-moz-animation:move-twink-back 200s linear infinite;
+	-ms-animation:move-twink-back 200s linear infinite;
+	-o-animation:move-twink-back 200s linear infinite;
+	-webkit-animation:move-twink-back 200s linear infinite;
+	animation:move-twink-back 200s linear infinite;
+	position:absolute;
+     
+}
+
+}     
+  
+        
+/* ---- COUNTER ---- */
+.counter{
+	font-size:30px;
+	color:white;
+	vertical-align:middle;
+	display:block;
+	font-family:Jura,sans-serif;
+	text-transform:uppercase;
+}
+
+.circle {
+    background: rgba(255,255,255,.2);
+    border-radius: 200px;
+	height:200px;
+	width:200px;
+    color: white;
+    font-weight: bold;
+    display: table;
+    margin: 260px auto;
+	border:2px solid rgba(100,100,255,.7);
+	-webkit-box-shadow: 0px 0px 10px 10px rgba(150, 50, 150, 0.7);
+	-moz-box-shadow:    0px 0px 10px 10px rgba(150, 50, 150, 0.7);
+	box-shadow:         0px 0px 10px 10px rgba(150, 50, 150, 0.7);
+}
+.circle p {
+    vertical-align: middle;
+    display: table-cell;
+}
+
+@media (max-width:1024px){
+	.counter{
+		display:none;
+	}
+	.circle{
+		display:none;
+	}
+	.circle p{
+		display:none;
+	}
+}
+
+/*@keyframes glow{
+	0%{
+		-webkit-box-shadow: 0px 0px 10px 10px rgba(150, 50, 150, 0.7);
+		-moz-box-shadow:    0px 0px 10px 10px rgba(150, 50, 150, 0.7);
+		box-shadow:         0px 0px 10px 10px rgba(150, 50, 150, 0.7);
+		background: rgba(255,255,255,.2);
+	}
+	50%{
+		-webkit-box-shadow: 0px 0px 10px 12px rgba(150, 50, 150, 0.7);
+		-moz-box-shadow:    0px 0px 10px 12px rgba(150, 50, 150, 0.7);
+		box-shadow:         0px 0px 10px 12px rgba(150, 50, 150, 0.7);
+		background: rgba(255,255,255,.25);
+	}
+	100%{
+		-webkit-box-shadow: 0px 0px 10px 10px rgba(150, 50, 150, 0.7);
+		-moz-box-shadow:    0px 0px 10px 10px rgba(150, 50, 150, 0.7);
+		box-shadow:         0px 0px 10px 10px rgba(150, 50, 150, 0.7);
+		background: rgba(255,255,255,.2);
+	}
+}
+/* ---- END COUNTER ---- */
+
+        
+        
+    </style>
+
+    
+    <div class='container'>
+    	<div class="stars  responsive-image" style="background-attachment:fixed"></div>
+			<div class="twinkling " style="background-attachment:fixed" ></div>
+    <div class="clouds responsiv-image" style="background-attachment:fixed"></div>
+    
     <div id="wrapper">
           <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
             <div class="navbar-header">
@@ -40,42 +354,25 @@ body {
                 <a class="navbar-brand" href="index.html">Registration Panel</a>
             </div>
             <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul id="active" class="nav navbar-nav side-nav">
+                <ul id="active" class="nav navbar-nav side-nav" style="overflow-y: hidden">
                     <li class="selected"><a href="index.html"><i class="fa fa-bullseye"></i> Dashboard</a></li>
                     
                     
                     
-                    <li><a href="p1.php"><i class="fa fa-font"></i> P1</a></li>
-                    <li><a href="upload.php"><i class="fa fa-font"></i> Upload</a></li>
-                    <li><a href="edit.php"><i class="fa fa-pencil-square-o"></i> Edit</a></li>
-                    <li><a href="events.html"><i class="fa fa-newspaper-o"></i> Events</a></li>
+                    <li><a href="p1.php"><i class="fa fa-font"></i> Participants</a></li>
+                   
                     
-                    <li><a href="#"><i class="fa fa-list-ul"></i> Bootstrap Elements</a></li>
+                    <li><a href="events.php"><i class="fa fa-newspaper-o"></i> Events</a></li>
+                   
                     
-                    <li><a href="#"><i class="fa fa-table"></i> Bootstrap Grid</a></li>
+                    <div class="circle" style="z-index:10">
+						<p class="counter text-center" id="timer"></p>
+					</div>
+                    
+                    
                 </ul>
                 <ul class="nav navbar-nav navbar-right navbar-user">
-                    <li class="dropdown messages-dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> Messages <span class="badge">2</span> <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li class="dropdown-header">2 New Messages</li>
-                            <li class="message-preview">
-                                <a href="#">
-                                    <span class="avatar"><i class="fa fa-bell"></i></span>
-                                    <span class="message">Security alert</span>
-                                </a>
-                            </li>
-                            <li class="divider"></li>
-                            <li class="message-preview">
-                                <a href="#">
-                                    <span class="avatar"><i class="fa fa-bell"></i></span>
-                                    <span class="message">Security alert</span>
-                                </a>
-                            </li>
-                            <li class="divider"></li>
-                            <li><a href="#">Go to Inbox <span class="badge">2</span></a></li>
-                        </ul>
-                    </li>
+                   
                     <li>
                         <a href="#" ><i class="fa fa-user"></i> College Rep Name</a>
                         
@@ -95,72 +392,127 @@ body {
         </nav>
 
         <div id="page-wrapper">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Dashboard </h1>
-                    <div class="col-lg-12 well">
-                    <h2>Bongobasi College</h2>
-                        <br \>
-                        <p>College Representatives</p>
-                       <ol>
-                           <li>ABCD</li>
-                           <li>ABCD</li>
-                        </ol>
-                    </div>
+                      <br />     
+           
+                <h1 align="center">Dashboard </h1>
+                <br />
+            <div class="container-fluid">
+                 <div class="row">
+              <div class="col-lg-12">
+                    
+                    <div class="container" >
+                        
+                 <div class="grid_full ">
+							<div class="tile grey1" >
+								<div class="tile-content">
+									<div class="content one">
+										<h1>College Name</h1>
+									</div>
+									<div class="content two">
+										<h1>Representatives</h1>
+									</div>
+								</div>
+							</div>
+						</div>
+                        
+                 
+                       
+                  
                    
                 </div>
+               
+               
+                   </div>
             </div>
+            <br />
             <div class="row">
-<!--
-                <div class="col-md-8">
-                    <div class="panel panel-primary">
-                        <div class="panel-heading">
-                            <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> Visits Based on a 10 days data</h3>
-                        </div>
-                        <div class="panel-body">
-                            <div id="shieldui-chart1"></div>
-                        </div>
-                    </div>
-                </div>
--->
+
                  <div class="col-md-8">
-                     <div class="panel panel-primary">
+                     
+                      <div class="panel panel-primary">
                         <div class="panel-heading">
-                            <h3 class="panel-title"><i class="fa fa-magnet"></i> Participation Overview</h3>
+                            <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> Events Participation Detail </h3>
                         </div>
-                        <div class="panel-body">
-                            <ul class="server-stats">
-                                <li>
-                                    <div class="key pull-right">Genre 1</div>
-                                    <div class="stat">
-                                        <div class="info">Stat</div>
-                                        <div class="progress progress-small">
-                                            <div style="width: 70%;" class="progress-bar progress-bar-danger"></div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="key pull-right">Genre 2</div>
-                                    <div class="stat">
-                                        <div class="info">Stat</div>
-                                        <div class="progress progress-small">
-                                            <div style="width: 29%;" class="progress-bar"></div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="key pull-right">Genre 3</div>
-                                    <div class="stat">
-                                        <div class="info">stat</div>
-                                        <div class="progress progress-small">
-                                            <div style="width: 48%;" class="progress-bar progress-bar-inverse"></div>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
+                        <div class="panel-body feed" style="overflow: auto">
+                            <div id="shieldui-grid1" ></div>
+                             <div >  
+                          <table class="table table-bordered" class="table-responsive" class="container" >  
+                               <tr>  
+                                    <th width="30%">EVENT</th>  
+                                    <th width="30%">GENRE</th>  
+                                    <th width="40%">Groups / Participants</th>
+                                   
+                               </tr>  
+                             
+                              <tr>  
+                                    <td>Event 3</td>  
+                                    <td>Genre 2</td>  
+                                    <td>8</td>
+                                </tr>
+                              
+                              <tr>  
+                                    <td>Event 3</td>  
+                                    <td>Genre 2</td>  
+                                    <td>8</td>
+                                </tr>
+                              
+                              <tr>  
+                                    <td>Event 3</td>  
+                                    <td>Genre 2</td>  
+                                    <td>8</td>
+                                </tr>
+                              
+                              <tr>  
+                                    <td>Event 3</td>  
+                                    <td>Genre 2</td>  
+                                    <td>8</td>
+                                </tr>
+                              <tr>  
+                                    <td>Event 6</td>  
+                                    <td>Genre 4</td>  
+                                    <td>3</td>
+                                </tr>
+                              <tr>  
+                                    <td>Event 9</td>  
+                                    <td>Genre 3</td>  
+                                    <td>10</td>
+                                </tr>
+                              <tr>  
+                                    <td>Event 8</td>  
+                                    <td>Genre 4</td>  
+                                    <td>6</td>
+                                </tr>
+                              <tr>  
+                                    <td>Event 3</td>  
+                                    <td>Genre 3</td>  
+                                    <td>4</td>
+                                </tr>
+                               <tr>  
+                                    <td>Event 3</td>  
+                                    <td>Genre 3</td>  
+                                    <td>4</td>
+                                </tr>
+                              <tr>  
+                                    <td>Event 3</td>  
+                                    <td>Genre 3</td>  
+                                    <td>3</td>
+                                </tr>
+                              <tr>  
+                                    <td>Event 3</td>  
+                                    <td>Genre 3</td>  
+                                    <td>3</td>
+                                </tr>
+                              <tr>  
+                                    <td>Event 3</td>  
+                                    <td>Genre 3</td>  
+                                    <td>3</td>
+                                </tr>
+                                
+                                 
+                          </table>  
+                     </div>  
                         </div>
                     </div>
-                      
                      </div>
                 
                 <div class="col-md-4">
@@ -168,7 +520,7 @@ body {
                         <div class="panel-heading">
                             <h3 class="panel-title"><i class="fa fa-rss"></i> News Feed</h3>
                         </div>
-                        <div class="panel-body feed">
+                        <div class="panel-body feed style="overflow: auto"">
                             <section class="feed-item">
                                 <div class="icon pull-left">
                                     <i class="fa fa-comment"></i>
@@ -271,70 +623,110 @@ body {
                                 </div>
                             </section>
 -->
+
+                          
+                             
+
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="panel panel-primary">
+               <div class="panel panel-primary">
                         <div class="panel-heading">
-                            <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> Events not yet participated at all </h3>
+                            <h3 class="panel-title"><i class="fa fa-magnet"></i> Participation Overview</h3>
                         </div>
                         <div class="panel-body">
-                            <div id="shieldui-grid1"></div>
+                            <ul class="server-stats">
+                                <li>
+                                    <div class="key pull-right">Genre 1</div>
+                                    <div class="stat">
+                                        <div class="info">Stat</div>
+                                        <div class="progress progress-small">
+                                            <div style="width: 70%;" class="progress-bar progress-bar-danger"></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="key pull-right">Genre 2</div>
+                                    <div class="stat">
+                                        <div class="info">Stat</div>
+                                        <div class="progress progress-small">
+                                            <div style="width: 29%;" class="progress-bar"></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="key pull-right">Genre 3</div>
+                                    <div class="stat">
+                                        <div class="info">stat</div>
+                                        <div class="progress progress-small">
+                                            <div style="width: 48%;" class="progress-bar progress-bar-inverse"></div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                </div>
+            </div>
             </div>
             
         </div>
     </div>
+    </div>
+    </div>
     <!-- /#wrapper -->
 
+    
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script type="text/javascript">
-        jQuery(function ($) {
-            var performance = [12, 43, 34, 22, 12, 33, 4, 17, 22, 34, 54, 67],
-                visits = [123, 323, 443, 32],
-                traffic = [
-                {
-                    Event: "Direct", Genre: 323, Change: 53, Percent: 23, Target: 600
-                },
-                {
-                    Event: "Refer", Genre: 345, Change: 34, Percent: 45, Target: 567
-                },
-                {
-                    Event: "Social", Genre: 567, Change: 67, Percent: 23, Target: 456
-                },
-                {
-                    Event: "Search", Genre: 234, Change: 23, Percent: 56, Target: 890
-                },
-                {
-                    Event: "Internal", Genre: 111, Change: 78, Percent: 12, Target: 345
-                }];
+			$(document).ready(function () {
+				function TileAnimate() {
+					$(".tile-content").hover(function (event) {
+						event.stopPropagation();
+						if (!$(this).hasClass('.tile-content .content.one')) {
+							$(this).dequeue().stop().animate({ top: "-125px" });
+						}
+					}, function () {
+						$(this).addClass('animated').animate({ top: "0" }, "normal", "linear", function () {
+							$(this).removeClass('animated').dequeue();
+						});
+					});
+				}
+				TileAnimate();
+			});
+		</script>
+    
+    <!-- TIMER -->
+		<script>
+			// Set the date we're counting down to
+			var countDownDate = new Date("Jan 21, 2018 00:00:00").getTime();
 
+			// Update the count down every 1 second
+			var x = setInterval(function() {
 
-           
+				// Get todays date and time
+				var now = new Date().getTime();
 
-           
+				// Find the distance between now an the count down date
+				var distance = countDownDate - now;
 
-            $("#shieldui-grid1").shieldGrid({
-                dataSource: {
-                    data: traffic
-                },
-                sorting: {
-                    multiple: true
-                },
-                rowHover: false,
-                paging: false,
-                columns: [
-                { field: "Event", width: "170px", title: "Events" },
-                { field: "Genre", title: "Genre" },                
-                { field: "Percent", title: "Percent", format: "{0} %" },
-                { field: "Target", title: "Target" },
-                ]
-            });            
-        });        
-    </script>
+				// Time calculations for days, hours, minutes and seconds
+				var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+				var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+				var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+				var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+				// Display the result in an element with id="timer"
+				document.getElementById("timer").innerHTML = "<span style='color:rgba(250,50,50,.9);text-shadow: rgba(150,50,150,1) 0 0 10px;font-size:50px;font-weight:bold;margin-top:-10px;'>" + days + "</span><br/>days to go<br/><span style='color:rgba(150,150,150,.9);text-shadow: rgba(50,50,50,.5) 0 0 10px;font-size:24px;'>"+ ("0" + hours).slice(-2) + " : " + ("0" + minutes).slice(-2) + " : " + ("0" + seconds).slice(-2) +"</span>";
+
+				// If the count down is finished, write some text 
+				if (distance < 0) {
+					clearInterval(x);
+					document.getElementById("timer").innerHTML = "The Day is Here";
+				}
+			}, 1000);
+		</script>
 </body>
 </html>

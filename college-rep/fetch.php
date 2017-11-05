@@ -1,4 +1,4 @@
-  <?php  
+<?php  
  //fetch.php  
  $connect = mysqli_connect("localhost", "root", "", "testing");  
  if(isset($_POST["employee_id"]))  

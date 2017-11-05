@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="css/clock.css" media='all'>
+    <script type="text/javascript" src="https://unpkg.com/@reactivex/rxjs/dist/global/Rx.min.js" media='all'></script>
+    <script type="text/javascript" src="https://unpkg.com/rxcss@0.6.0/dist/rxcss.min.js" media='all'></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js" media='all'></script>
+    </head>
+    <body>
+       
+        
+        
+        
+        
+<div class="time" id="time" data-hours="" data-minutes="">
+  <div class="digit">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
+  <div class="digit">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
+  <div class="digit">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
+  <div class="digit">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
+  <div class="digit">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
+  <div class="digit">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
+</div>
+        <script type="text/javascript">
+   var timeElm = document.getElementById('time');
+var doc = document.documentElement;
+var clientWidth = doc.clientWidth,
+    clientHeight = doc.clientHeight;
+
+
+var pad = function pad(val) {
+  return val < 10 ? '0' + val : val;
+};
+
+var animationFrame$ = Rx.Observable.interval(0, Rx.Scheduler.animationFrame);
+
+var time$ = Rx.Observable.interval(1000).map(function () {
+  var time = new Date();
+
+  return {
+    hours: time.getHours(),
+    minutes: time.getMinutes(),
+    seconds: time.getSeconds()
+  };
+}).subscribe(function (_ref) {
+  var hours = _ref.hours,
+      minutes = _ref.minutes,
+      seconds = _ref.seconds;
+
+  timeElm.setAttribute('data-hours', pad(hours));
+  timeElm.setAttribute('data-minutes', pad(minutes));
+  timeElm.setAttribute('data-seconds', pad(seconds));
+});
+
+var mouse$ = Rx.Observable.fromEvent(document, 'mousemove').map(function (_ref2) {
+  var clientX = _ref2.clientX,
+      clientY = _ref2.clientY;
+  return {
+    x: (clientWidth / 2 - clientX) / clientWidth,
+    y: (clientHeight / 2 - clientY) / clientHeight
+  };
+});
+
+var smoothMouse$ = animationFrame$.withLatestFrom(mouse$, function (_, m) {
+  return m;
+}).scan(RxCSS.lerp(0.1));
+
+RxCSS({
+  mouse: smoothMouse$
+}, timeElm);
+        </script>
+    </body>
+</html>

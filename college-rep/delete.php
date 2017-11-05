@@ -1,35 +1,15 @@
- <?php  
- $connect = mysqli_connect("localhost", "root", "", "testing");  
- if(!empty($_POST))  
+<?php
+$connect = mysqli_connect("localhost", "root", "", "testing");
+$output='';
+    $message='';
+if(isset($_POST["employee_id"]))
+{
+    
+ $query = "DELETE FROM tbl_employee WHERE id = '".$_POST["employee_id"]."'";
+    $message='Data Deleted';
+ if(mysqli_query($connect, $query))
  {  
-      $output = '';  
-      $message = '';  
-      $name = mysqli_real_escape_string($connect, $_POST["name"]);  
-      
-      $gender = mysqli_real_escape_string($connect, $_POST["gender"]);  
-     
-      $age = mysqli_real_escape_string($connect, $_POST["age"]);  
-      if($_POST["employee_id"] != '')  
-      {  
-           $query = "  
-           UPDATE tbl_employee   
-           SET name='$name',   
-           gender='$gender',   
-           age = '$age'   
-           WHERE id='".$_POST["employee_id"]."'";  
-           $message = 'Data Updated';  
-      }  
-      else  
-      {  
-           $query = "  
-           INSERT INTO tbl_employee(name,  gender,  age)  
-           VALUES('$name', '$gender', '$age');  
-           ";  
-           $message = 'Data Inserted';  
-      }  
-      if(mysqli_query($connect, $query))  
-      {  
-           $output .= '<label class="text-success">' . $message . '</label>';  
+     $output .= '<label class="text-success">' . $message . '</label>';  
            $select_query = "SELECT * FROM tbl_employee ORDER BY id DESC";  
            $result = mysqli_query($connect, $select_query);  
            $output .= '  
@@ -53,7 +33,7 @@
                 ';  
            }  
            $output .= '</table>';  
-      }  
-      echo $output;  
- }  
- ?>
+ }
+     echo $output;  
+}
+?>

@@ -15,21 +15,15 @@
                      <td width="30%"><label>Name</label></td>  
                      <td width="70%">'.$row["name"].'</td>  
                 </tr>  
-                <tr>  
-                     <td width="30%"><label>Address</label></td>  
-                     <td width="70%">'.$row["address"].'</td>  
-                </tr>  
+                
                 <tr>  
                      <td width="30%"><label>Gender</label></td>  
                      <td width="70%">'.$row["gender"].'</td>  
                 </tr>  
+                  
                 <tr>  
-                     <td width="30%"><label>Designation</label></td>  
-                     <td width="70%">'.$row["designation"].'</td>  
-                </tr>  
-                <tr>  
-                     <td width="30%"><label>Age</label></td>  
-                     <td width="70%">'.$row["age"].' Year</td>  
+                     <td width="30%"><label>Phone Number</label></td>  
+                     <td width="70%">'.$row["age"].' </td>  
                 </tr>  
            ';  
       }  
@@ -40,4 +34,3 @@
       echo $output;  
  }  
  ?>
- 
