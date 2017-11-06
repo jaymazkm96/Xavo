@@ -96,9 +96,10 @@ header{
 .rule{
 	height:1px;
 	background:radial-gradient(ellipse at center, rgba(255,255,255,1) 0%,rgba(20,28,38,1) 40%, rgba(14,19,26,1) 70%);
+	width:100%;
 }
 
-section#team{
+section{
 	z-index:10;
 	background:radial-gradient(ellipse at top, #1b2735 0%, #090a0f 100%);
 }
