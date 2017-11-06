@@ -5,23 +5,23 @@
  function fill_brand($connect)  
  {  
       $output = '';  
-      $sql = "SELECT * FROM brand";  
+      $sql = "SELECT * FROM genre";  
       $result = mysqli_query($connect, $sql);  
       while($row = mysqli_fetch_array($result))  
       {  
-           $output .= '<option value="'.$row["brand_id"].'">'.$row["brand_name"].'</option>';  
+           $output .= '<option value="'.$row["genre_id"].'">'.$row["genre_name"].'</option>';  
       }  
       return $output;  
  }  
  function fill_product($connect)  
  {  
       $output = '';  
-      $sql = "SELECT * FROM product";  
+      $sql = "SELECT * FROM event";  
       $result = mysqli_query($connect, $sql);  
       while($row = mysqli_fetch_array($result))  
       {  
            $output .= '<div class="col-md-3">';  
-           $output .= '<a href="s1.php"><div style="border:1px solid #ccc; padding:20px; margin-bottom:20px;">'.$row["product_name"].'';  
+           $output .= '<a href="s1.php"><div style="border:1px solid #ccc; padding:20px; margin-bottom:20px;">'.$row["event_name"].'';  
            $output .=     '</div></a>';  
            $output .=     '</div>';  
       }  
@@ -128,11 +128,11 @@
  <script>  
  $(document).ready(function(){  
       $('#brand').change(function(){  
-           var brand_id = $(this).val();  
+           var genre_id = $(this).val();  
            $.ajax({  
                 url:"load_data.php",  
                 method:"POST",  
-                data:{brand_id:brand_id},  
+                data:{genre_id:genre_id},  
                 success:function(data){  
                      $('#show_product').html(data);  
                 }  
