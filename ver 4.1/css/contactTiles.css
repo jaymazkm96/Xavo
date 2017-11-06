@@ -113,6 +113,7 @@ section#team{
 	transition: all 0.5s;
 	-webkit-transition: all 0.5s;
 	-moz-transition: all 0.5s;
+	margin-top:10px;
 }
 
 .person:hover{
@@ -130,6 +131,8 @@ section#team{
 	background-size:contain;
 	background-repeat:no-repeat;
 	transition:all 0.3s;
+	border:2px solid #1b2735;
+	box-shadow:0 0 10px 3px rgba(10,10,10,0.5);
 }
 
 .person-img:hover{
@@ -164,10 +167,13 @@ section#team{
 	-webkit-transition:all .3s;
 	-moz-transition:all .3s;
 	transition:all .3s;
+	opacity:0.6;
+	box-shadow:0 0 5px 2px rgba(255,255,0,.5);
 }
 
 .person ul.contact-buttons li a:hover,.person ul.contact-buttons li a:focus,.person ul.contact-buttons li a:active{
-	background-color:#fed136;
+	background-color:#ffdd00;
+	color:rgba(14,19,26,1);
 }
 
 .person-name{
