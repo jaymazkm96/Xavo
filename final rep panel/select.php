@@ -3,7 +3,7 @@
  {  
       $output = '';  
       $connect = mysqli_connect("localhost", "root", "", "testing");  
-      $query = "SELECT * FROM tbl_employee WHERE id = '".$_POST["employee_id"]."'";  
+      $query = "SELECT * FROM tbl_participant WHERE id = '".$_POST["employee_id"]."'";  
       $result = mysqli_query($connect, $query);  
       $output .= '  
       <div class="table-responsive">  

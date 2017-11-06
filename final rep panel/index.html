@@ -11,26 +11,28 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
+    <link rel="stylesheet" href="css/flipclock.css" media='all'>
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"  media='all'></script>
 
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" media='all'/>
     <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" media='all'/>
     <link rel="stylesheet" type="text/css" href="css/local.css"  media='all'/>
-
-    <script type="text/javascript" src="js/jquery-1.10.2.min.js"  media='all'></script>
+    <script src="js/flipclock.js"></script>
+    
+     <link rel="stylesheet/less" href="css/flipclock.less" media='all'>
     <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"  media='all'></script>
-
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js" media='all'></script>
     <!-- you need to include the shieldui css and js assets in order for the charts to work -->
     <link rel="stylesheet" type="text/css" href="http://www.shieldui.com/shared/components/latest/css/light-bootstrap/all.min.css"  media='all'/>
     <link id="gridcss" rel="stylesheet" type="text/css" href="http://www.shieldui.com/shared/components/latest/css/dark-bootstrap/all.min.css"  media='all'/>
 
     <script type="text/javascript" src="http://www.shieldui.com/shared/components/latest/js/shieldui-all.min.js"  media='all'></script>
     <script type="text/javascript" src="http://www.prepbootstrap.com/Content/js/gridData.js"  media='all'></script>
-
+    
      <link rel="stylesheet" type="text/css" href="css/demo-styles.css" meadia='all'/>
     <link rel="stylesheet" type="text/css" href="css/fluid_grid.css" meadia='all'/>
 
-     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+     
    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 		<link href="https://fonts.googleapis.com/css?family=Jura:300,400" rel="stylesheet" type="text/css">
@@ -43,9 +45,9 @@ body {
 }
 </style>
 -->
-
+    
     <style>
-
+    
         h1 {
 	font-family: Jura;
 /*	font-size: 24px;*/
@@ -54,8 +56,14 @@ body {
 	font-weight: 500;
 /*	line-height: 26.4px;*/
 }
-
-
+        h3{
+            color:#BDBDBD;
+            font-family: Jura;
+            font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+        }
+       
 /* ---- ANIMATED BACKDROP ---- */
 @keyframes move-twink-back {
     from {background-position:0 0;}
@@ -91,8 +99,8 @@ body {
     to {background-position:10000px 0;}
 }
 
-
-
+        
+ 
 /* Retina display */
 @media screen and (min-width: 1024px){
     .stars, .twinkling, .clouds {
@@ -123,7 +131,7 @@ body {
 	-webkit-animation:move-twink-back 200s linear infinite;
 	animation:move-twink-back 200s linear infinite;
 	position:absolute;
-
+     
 }
 
 }
@@ -158,7 +166,7 @@ body {
 	-webkit-animation:move-twink-back 200s linear infinite;
 	animation:move-twink-back 200s linear infinite;
 	position:absolute;
-
+     
 }
 
 }
@@ -193,7 +201,7 @@ body {
 	-webkit-animation:move-twink-back 200s linear infinite;
 	animation:move-twink-back 200s linear infinite;
 	position:absolute;
-
+     
 }
 
 }
@@ -228,7 +236,7 @@ body {
 	-webkit-animation:move-twink-back 200s linear infinite;
 	animation:move-twink-back 200s linear infinite;
 	position:absolute;
-
+     
 }
 
 }
@@ -263,85 +271,23 @@ body {
 	-webkit-animation:move-twink-back 200s linear infinite;
 	animation:move-twink-back 200s linear infinite;
 	position:absolute;
-
+     
 }
 
-}
-
-
-/* ---- COUNTER ---- */
-.counter{
-	font-size:30px;
-	color:white;
-	vertical-align:middle;
-	display:block;
-	font-family:Jura,sans-serif;
-	text-transform:uppercase;
-}
-
-.circle {
-    background: rgba(255,255,255,.2);
+}     
   
-	height:200px;
-	width:200px;
-    color: white;
-    font-weight: bold;
-    display: table;
-    margin: 260px auto;
-	border:2px solid rgba(100,100,255,.7);
-	-webkit-box-shadow: 0px 0px 10px 10px rgba(150, 50, 150, 0.7);
-	-moz-box-shadow:    0px 0px 10px 10px rgba(150, 50, 150, 0.7);
-	box-shadow:         0px 0px 10px 10px rgba(150, 50, 150, 0.7);
-}
-.circle p {
-    vertical-align: middle;
-    display: table-cell;
-}
+        
+/* ---- COUNTER ---- */
 
-@media (max-width:1024px){
-	.counter{
-		display:none;
-	}
-	.circle{
-		display:none;
-	}
-	.circle p{
-		display:none;
-	}
-}
-
-/*@keyframes glow{
-	0%{
-		-webkit-box-shadow: 0px 0px 10px 10px rgba(150, 50, 150, 0.7);
-		-moz-box-shadow:    0px 0px 10px 10px rgba(150, 50, 150, 0.7);
-		box-shadow:         0px 0px 10px 10px rgba(150, 50, 150, 0.7);
-		background: rgba(255,255,255,.2);
-	}
-	50%{
-		-webkit-box-shadow: 0px 0px 10px 12px rgba(150, 50, 150, 0.7);
-		-moz-box-shadow:    0px 0px 10px 12px rgba(150, 50, 150, 0.7);
-		box-shadow:         0px 0px 10px 12px rgba(150, 50, 150, 0.7);
-		background: rgba(255,255,255,.25);
-	}
-	100%{
-		-webkit-box-shadow: 0px 0px 10px 10px rgba(150, 50, 150, 0.7);
-		-moz-box-shadow:    0px 0px 10px 10px rgba(150, 50, 150, 0.7);
-		box-shadow:         0px 0px 10px 10px rgba(150, 50, 150, 0.7);
-		background: rgba(255,255,255,.2);
-	}
-}
-/* ---- END COUNTER ---- */
-
-
-
+        
     </style>
 
-
+    
     <div class='container'>
     	<div class="stars  responsive-image" style="background-attachment:fixed"></div>
 			<div class="twinkling " style="background-attachment:fixed" ></div>
-    <div class="clouds responsiv-image" style="background-attachment:fixed"></div>
-
+   
+    
     <div id="wrapper">
           <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
             <div class="navbar-header">
@@ -356,52 +302,50 @@ body {
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul id="active" class="nav navbar-nav side-nav" style="overflow-y: hidden">
                     <li class="selected"><a href="index.html"><i class="fa fa-bullseye"></i> Dashboard</a></li>
-
-
-
+                    
+                    
+                    
                     <li><a href="p1.php"><i class="fa fa-font"></i> Participants</a></li>
-
-
+                   
+                    
                     <li><a href="events.php"><i class="fa fa-newspaper-o"></i> Events</a></li>
-
-
-                    <div class="circle" style="z-index:10">
-						<p class="counter text-center" id="timer"></p>
-					</div>
-
-
+                     
+                   <li id="ab">
+                    <br />
+                  
+                    <div class="message" style="color: #"><h3 align="center">Registration Countdown</h3></div>   
+                      <br />
+                    <div class="clock"></div>
+<!--                      -->
+                    </li> 
+                    
                 </ul>
                 <ul class="nav navbar-nav navbar-right navbar-user">
-
+                   
                     <li>
                         <a href="#" ><i class="fa fa-user"></i> College Rep Name</a>
-
+                        
                     </li>
                      <li>
                         <a href="#" ><i class="fa fa-sign-out"></i> Log Out</a>
-
+                        
                     </li>
-                    <li class="divider-vertical"></li>
-                    <li>
-                        <form class="navbar-search">
-                            <input type="text" placeholder="Search" class="form-control">
-                        </form>
-                    </li>
+                    
                 </ul>
             </div>
         </nav>
 
         <div id="page-wrapper">
-                      <br />
-
+                      <br />     
+           
                 <h1 align="center">Dashboard </h1>
                 <br />
             <div class="container-fluid">
                  <div class="row">
               <div class="col-lg-12">
-
+                    
                     <div class="container" >
-
+                        
                  <div class="grid_full ">
 							<div class="tile grey1" >
 								<div class="tile-content">
@@ -414,107 +358,107 @@ body {
 								</div>
 							</div>
 						</div>
-
-
-
-
-
+                        
+                 
+                       
+                  
+                   
                 </div>
-
-
+               
+               
                    </div>
             </div>
             <br />
             <div class="row">
 
                  <div class="col-md-8">
-
+                     
                       <div class="panel panel-primary">
                         <div class="panel-heading">
                             <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> Events Participation Detail </h3>
                         </div>
                         <div class="panel-body feed" style="overflow: auto">
                             <div id="shieldui-grid1" ></div>
-                             <div >
-                          <table class="table table-bordered" class="table-responsive" class="container" >
-                               <tr>
-                                    <th width="30%">EVENT</th>
-                                    <th width="30%">GENRE</th>
+                             <div >  
+                          <table class="table table-bordered" class="table-responsive" class="container" >  
+                               <tr>  
+                                    <th width="30%">EVENT</th>  
+                                    <th width="30%">GENRE</th>  
                                     <th width="40%">Groups / Participants</th>
-
-                               </tr>
-
-                              <tr>
-                                    <td>Event 3</td>
-                                    <td>Genre 2</td>
+                                   
+                               </tr>  
+                             
+                              <tr>  
+                                    <td>Event 3</td>  
+                                    <td>Genre 2</td>  
                                     <td>8</td>
                                 </tr>
-
-                              <tr>
-                                    <td>Event 3</td>
-                                    <td>Genre 2</td>
+                              
+                              <tr>  
+                                    <td>Event 3</td>  
+                                    <td>Genre 2</td>  
                                     <td>8</td>
                                 </tr>
-
-                              <tr>
-                                    <td>Event 3</td>
-                                    <td>Genre 2</td>
+                              
+                              <tr>  
+                                    <td>Event 3</td>  
+                                    <td>Genre 2</td>  
                                     <td>8</td>
                                 </tr>
-
-                              <tr>
-                                    <td>Event 3</td>
-                                    <td>Genre 2</td>
+                              
+                              <tr>  
+                                    <td>Event 3</td>  
+                                    <td>Genre 2</td>  
                                     <td>8</td>
                                 </tr>
-                              <tr>
-                                    <td>Event 6</td>
-                                    <td>Genre 4</td>
+                              <tr>  
+                                    <td>Event 6</td>  
+                                    <td>Genre 4</td>  
                                     <td>3</td>
                                 </tr>
-                              <tr>
-                                    <td>Event 9</td>
-                                    <td>Genre 3</td>
+                              <tr>  
+                                    <td>Event 9</td>  
+                                    <td>Genre 3</td>  
                                     <td>10</td>
                                 </tr>
-                              <tr>
-                                    <td>Event 8</td>
-                                    <td>Genre 4</td>
+                              <tr>  
+                                    <td>Event 8</td>  
+                                    <td>Genre 4</td>  
                                     <td>6</td>
                                 </tr>
-                              <tr>
-                                    <td>Event 3</td>
-                                    <td>Genre 3</td>
+                              <tr>  
+                                    <td>Event 3</td>  
+                                    <td>Genre 3</td>  
                                     <td>4</td>
                                 </tr>
-                               <tr>
-                                    <td>Event 3</td>
-                                    <td>Genre 3</td>
+                               <tr>  
+                                    <td>Event 3</td>  
+                                    <td>Genre 3</td>  
                                     <td>4</td>
                                 </tr>
-                              <tr>
-                                    <td>Event 3</td>
-                                    <td>Genre 3</td>
+                              <tr>  
+                                    <td>Event 3</td>  
+                                    <td>Genre 3</td>  
                                     <td>3</td>
                                 </tr>
-                              <tr>
-                                    <td>Event 3</td>
-                                    <td>Genre 3</td>
+                              <tr>  
+                                    <td>Event 3</td>  
+                                    <td>Genre 3</td>  
                                     <td>3</td>
                                 </tr>
-                              <tr>
-                                    <td>Event 3</td>
-                                    <td>Genre 3</td>
+                              <tr>  
+                                    <td>Event 3</td>  
+                                    <td>Genre 3</td>  
                                     <td>3</td>
                                 </tr>
-
-
-                          </table>
-                     </div>
+                                
+                                 
+                          </table>  
+                     </div>  
                         </div>
                     </div>
                      </div>
-
+                
                 <div class="col-md-4">
                     <div class="panel panel-primary">
                         <div class="panel-heading">
@@ -624,8 +568,8 @@ body {
                             </section>
 -->
 
-
-
+                          
+                             
 
                         </div>
                     </div>
@@ -671,14 +615,14 @@ body {
                     </div>
             </div>
             </div>
-
+            
         </div>
     </div>
     </div>
     </div>
     <!-- /#wrapper -->
 
-
+    
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script type="text/javascript">
 			$(document).ready(function () {
@@ -697,36 +641,46 @@ body {
 				TileAnimate();
 			});
 		</script>
-
+    
     <!-- TIMER -->
-		<script>
-			// Set the date we're counting down to
-			var countDownDate = new Date("Jan 21, 2018 00:00:00").getTime();
+		<script type="text/javascript">
+            
+		var clock;
+		
+		$(document).ready(function() {
+			// Grab the current date 
+            var currentDate = new Date(); 
+            // Set some date in the future. ***change to desired date***
+            //var futureDate = new Date(2014, 11, 23, 6, 0, 0); 
+            var futureDate = new Date(2017, 12, 31, 24, 0, 0); //fixed as per comments
+            // Calculate the difference in seconds between the future and current date 
+            var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000; 
+            // Instantiate a coutdown FlipClock 
+            clock = $('.clock').FlipClock(diff, { 
+                clockFace: 'DailyCounter',
+                countdown: true,
+                autoStart: false,
+		        callbacks: {
+		        	stop: function() {
+		        		$('.message').html('Registrations are closed')
+		        	}
+		        }
+		    });
+//				    
+//		    clock.setTime(220880);
+		    clock.setCountdown(true);
+		    clock.start();
 
-			// Update the count down every 1 second
-			var x = setInterval(function() {
+		});
+	</script>
+    
+    <script type="text/javascript">
+        $('head style[type="text/css"]').attr('type','text/less');
+less.env = 'development';
+less.refreshStyles();
 
-				// Get todays date and time
-				var now = new Date().getTime();
-
-				// Find the distance between now an the count down date
-				var distance = countDownDate - now;
-
-				// Time calculations for days, hours, minutes and seconds
-				var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-				var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-				var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-				var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-				// Display the result in an element with id="timer"
-				document.getElementById("timer").innerHTML = "<span style='color:rgba(250,50,50,.9);text-shadow: rgba(150,50,150,1) 0 0 10px;font-size:50px;font-weight:bold;margin-top:-10px;'>" + days + "</span><br/>days to go<br/><span style='color:rgba(150,150,150,.9);text-shadow: rgba(50,50,50,.5) 0 0 10px;font-size:24px;'>"+ ("0" + hours).slice(-2) + " : " + ("0" + minutes).slice(-2) + " : " + ("0" + seconds).slice(-2) +"</span>";
-
-				// If the count down is finished, write some text
-				if (distance < 0) {
-					clearInterval(x);
-					document.getElementById("timer").innerHTML = "The Day is Here";
-				}
-			}, 1000);
-		</script>
+// init clock
+var clock = $('.clock').FlipClock();
+    </script>>
 </body>
 </html>
