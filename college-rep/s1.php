@@ -1,7 +1,7 @@
 <?php  
 //p1.php
 $connect = mysqli_connect("localhost", "root", "", "testing");
-$query = "SELECT * FROM tbl_employee ORDER BY id DESC";
+$query = "SELECT * FROM tbl_participant ORDER BY id DESC";
 $result = mysqli_query($connect, $query);
  ?>  
 <!DOCTYPE html>  

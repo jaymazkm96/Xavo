@@ -12,7 +12,7 @@
       if($_POST["employee_id"] != '')  
       {  
            $query = "  
-           UPDATE tbl_employee   
+           UPDATE tbl_participant   
            SET name='$name',   
            gender='$gender',   
            age = '$age'   
@@ -22,7 +22,7 @@
       else  
       {  
            $query = "  
-           INSERT INTO tbl_employee(name,  gender,  age)  
+           INSERT INTO tbl_participant(name,  gender,  age)  
            VALUES('$name', '$gender', '$age');  
            ";  
            $message = 'Data Inserted';  
@@ -30,7 +30,7 @@
       if(mysqli_query($connect, $query))  
       {  
            $output .= '<label class="text-success">' . $message . '</label>';  
-           $select_query = "SELECT * FROM tbl_employee ORDER BY id DESC";  
+           $select_query = "SELECT * FROM tbl_participant ORDER BY id DESC";  
            $result = mysqli_query($connect, $select_query);  
            $output .= '  
                 <table class="table table-bordered">  

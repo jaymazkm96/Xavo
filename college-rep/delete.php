@@ -5,12 +5,12 @@ $output='';
 if(isset($_POST["employee_id"]))
 {
     
- $query = "DELETE FROM tbl_employee WHERE id = '".$_POST["employee_id"]."'";
+ $query = "DELETE FROM tbl_participant WHERE id = '".$_POST["employee_id"]."'";
     $message='Data Deleted';
  if(mysqli_query($connect, $query))
  {  
      $output .= '<label class="text-success">' . $message . '</label>';  
-           $select_query = "SELECT * FROM tbl_employee ORDER BY id DESC";  
+           $select_query = "SELECT * FROM tbl_participant ORDER BY id DESC";  
            $result = mysqli_query($connect, $select_query);  
            $output .= '  
                 <table class="table table-bordered">  
