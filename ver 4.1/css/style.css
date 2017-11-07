@@ -608,18 +608,19 @@ section h3.section-subheading{
 /* ---- SECTION DETAILS ---- */
 
 section#details{
-	background-image:url(../img/bg/indexbg.jpg);
+	background-image:/*linear-gradient(#000 0%, transparent 15%, #000 98%),*/url(../img/bg/indexbg.jpg);
 	background-position:center center;
 	background-repeat:none;
 	background-size:cover;
-	box-shadow: 0 0 25px 20px rgba(0,0,0,1);
+	box-shadow: 0 0 25px 20px rgba(0,0,0,1);/*4,25,57*/
 	transition:all 1s;
+	mix-blend-mode:overlay;
 }
 
 @media (max-width:991px){
 	section#details{
 		background-size:fill;
-		background-image:url(../img/bg/bg1.jpg);
+		background-image:/*linear-gradient(#000 0%, transparent 15%, #000 98%),*/url(../img/bg/bg1.jpg);
 	}
 	.newsfeed{
 		margin-top:20px;
@@ -631,6 +632,7 @@ section#details{
 	box-shadow: 0px 1px 10px 2px #090a0f;
 	background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.8));
 	height:520px;
+	mix-blend-mode:hard-light;
 }
 
 
