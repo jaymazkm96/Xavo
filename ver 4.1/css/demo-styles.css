@@ -176,33 +176,6 @@ list-style: none;
    }
 
 
-.image1 {
-    background-image: url('../img/B.jpg');
-    opacity: 0.8;
-    transition: .2s ;
-    /*box-shadow: 5px 5px 5px rgba(233, 1, 102, 0.3);*/
-}
-.image1:hover{
-    opacity:1;
-}
-
-
-/*colors*/       
-.grey1 {
-    background-color: rgba(27, 39, 53, 0.4);/*rgba(197, 224, 241, 0.2);*/
-    transition: .6s;
-    background-image: linear-gradient(left to right,grey,grey);
-    border-right: 1px solid #004884;
-    border-left: 1px solid #004884;
-    border-top: 1px solid #014b8d;
-    border-bottom: 1px solid #014b8d;
-    /*box-shadow: 5px 5px 5px rgba(233, 1, 102, 0.3);*/
-}
-
-    .grey1:hover {
-        background-color: rgba(27, 39, 53, 0.7);/*rgba(197, 224, 241,0.3);*/
-    }
-	
 	/* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
