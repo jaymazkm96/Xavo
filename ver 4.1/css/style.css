@@ -690,6 +690,10 @@ section#details{
 .tile-inner:hover .overModal {
 	opacity:1;
 }
+.marquee {
+	overflow: hidden;
+	height:450px;
+}
 /* ---- END TILES ---- */
 
 

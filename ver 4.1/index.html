@@ -272,11 +272,37 @@
 								</div>
 
 								<div class="panel-body">
-									<p>
-										<!--Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.
-										"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus."
-										 "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentiiditate non provident, similique sunt in "
-									--></p>
+									<div class="marquee" data-direction='up' data-duration='20000' data-pauseOnHover="true">
+										<!--ul--><div style="width:100px;height:100px;display:block;background:linear-gradient(left, rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.4) 50%,rgba(0,0,0,0.8) 100%);">Test</div>
+										<!-- <php
+											$htbw = "";
+											$q = mysqli_query($con, "SELECT * FROM oba_news ORDER BY id DESC LIMIT 10");
+											$affRow = mysqli_affected_rows($con);
+											for($k=0; $k<$affRow; $k++) {
+												$r = mysqli_fetch_array($q);
+												//$htbw .= "<b><a href=\"topNews.php?id=".$r['id']."\">"."<li style='font-size:14px;'>
+													//														".$r['date']."
+														//													&nbsp;:&nbsp;".$r['sub']."
+															//											</li>"."</a></b>";
+												if($k%2==0)
+													$htbw .= "<div style='width:100%;background-color:rgba(255,250,138,100);margin-bottom:5px;'>";
+												else
+													$htbw .= "<div style='width:100%;background-color:#66FF66;margin-bottom:5px;'>";
+												$htbw .=	"<a href=\"topNews.php?id=".$r['id']."\">
+																<div style='font-weight:bold;align:justify;font-size:14px;padding:5px;padding-bottom:0px;' align='justify'>
+																	".$r['sub']."
+																</div>
+																<div style='align:right;font-size:12px;padding:5px;padding-top:0px;' align='right'>
+																	Posted on ".$r['date']."
+																</div>
+															</a>
+														  </div>";
+											}
+											if($htbw == "") $htbw = "List not available currently. Please come back later...";
+											echo $htbw;
+										?> -->
+										<!--/ul-->
+									</div>
 								</div>
 							</div>
 						</div>
@@ -392,6 +418,7 @@
 
 		<!-- Plugin JavaScript -->
 		<script src="js/jquery.easing.min.js"></script>
+		<script src="js/jquery.marquee.js"></script>
 		<script src="js/classie.js"></script>
 		<script src="js/cbpAnimatedHeader.js"></script>
 
@@ -491,5 +518,14 @@
 			}
 		</script>
 		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBK_nsGp6o6i0sYC73mB6BHzlGXVynPNxU&callback=myMap" type="text/javascript"></script>
+		
+		<!-- SCROLLER -->
+		<script type="text/javascript">
+			$(document).ready( function(){
+				$('.marquee').marquee({
+					direction:'up'
+				});
+			});
+		</script>
 	</body>
 </html>
