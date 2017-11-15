@@ -694,6 +694,17 @@ section#details{
 	overflow: hidden;
 	height:450px;
 }
+.modHead{
+	background:linear-gradient(#1b2735 0%,rgba(0,0,0,.9) 115%);
+	border-radius:5px 5px 0 0;
+	color:#DDD;
+}
+.modCont{
+	background:linear-gradient(#1b2735 0%, #2b3755 40%,#1b2735 115%);
+}
+.modFoot{
+	background:linear-gradient(#1b2735 0%,rgba(0,0,0,.9) 115%);
+}
 /* ---- END TILES ---- */
 
 
