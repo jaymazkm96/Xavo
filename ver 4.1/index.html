@@ -731,14 +731,18 @@
 		
 		<!-- Google Maps API -->
 		<script type="text/javascript">
-			function myMap() {
+			function myMap(){
+				setTimeout(myMap2, 4000);
+			}
+		
+			function myMap2() {
 				var location = new google.maps.LatLng(22.548844,88.355837);
 
 				var mapCanvas = document.getElementById('googleMap');
 				
 				var mapOptions = {
-					center:new google.maps.LatLng(22.557821,88.345999),
-					zoom:14,
+					center:new google.maps.LatLng(22.548844,88.355837),//22.557821,88.345999),
+					zoom:16,
 					panControl: false,
 					mapTypeId: google.maps.MapTypeId.ROADMAP
 				}
@@ -752,13 +756,13 @@
 					title: "St. Xavier's College (Autonomous), Kolkata"
 				});
 				
-				$('section#contact').on('load', function(){
+				setTimeout(function(){
 					google.maps.event.trigger(map, 'resize');
 
 					// Recenter the map now that it's been redrawn               
 					var reCenter = new google.maps.LatLng(22.548844,88.355837);
 					map.setCenter(reCenter);
-				});
+				}, 2000);
 			}
 		</script>
 		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBK_nsGp6o6i0sYC73mB6BHzlGXVynPNxU&callback=myMap" type="text/javascript"></script>
