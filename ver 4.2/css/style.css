@@ -235,6 +235,35 @@ h1,h2,h3,h4,h5,h6{
 
 /* ---- ARROW END ---- */
 
+/* ---- CONTACT BUTTON ---- */
+.contactButton{
+	display:block;
+	padding:6px 10px 6px 10px;
+	position:fixed;
+	bottom:10px;
+	right:10px;
+	background:rgba(50, 50, 50, .3);
+	border-radius:5px;
+	box-shadow:0px 0px 5px 1px #090a0f;
+	transition:all 1s;
+	font-family:Jura,sans-serif;
+	font-weight:bold;
+	text-transform:uppercase;
+	color:#777;
+	z-index:500;
+}
+
+.contactButton:hover{
+	background:rgba(50, 50, 50, .4);
+	transition:all 1s;
+}
+@media (max-width:768px){
+	.contactButton{
+		display:none;
+	}
+}
+/* ---- END CONTACT BUTTON ---- */
+
 
 /* ---- NAVIGATION NAV BAR ---- */
 .navbar-default{
@@ -396,7 +425,33 @@ header .intro-text .intro-heading{
 /* ---- END HEADER ---- */
 
 /* ---- COUNTER ---- */
-.counter{
+.countDown{
+	margin: 260px auto;
+	color:white;
+	vertical-align:top;
+	font-family:Jura,sans-serif;
+	font-weight:bold;
+	text-transform:uppercase;
+	float:center;
+}
+.days{
+	color:rgba(180,180,220,1);
+	/*text-shadow: rgba(150,150,150,1) 0 0 5px;*/
+	font-size:90px;
+	font-weight:15;
+	margin:0px 0px;
+	text-align:right;
+	line-height:70px;
+}
+.daysRest{
+	color:rgba(150,150,150,.9);
+	text-shadow: rgba(50,50,50,.5) 0 0 10px;
+	font-size:24px;
+	margin:0px -20px;
+	text-align:left;
+	min-width:170px;
+}
+/*.counter{
 	font-size:30px;
 	color:white;
 	vertical-align:middle;
@@ -405,9 +460,9 @@ header .intro-text .intro-heading{
 	text-transform:uppercase;
 }
 
-.circle {
+/*.circle {
     /* background: linear-gradient(90deg, transparent 0%, rgba(150, 50, 150,.1) 10%, rgba(150, 50, 150,.1) 90%, transparent 100%); */
-	background: transparent;
+	/*background: transparent;
     border-radius: 20px;
 	height:100px;
 	min-width:200px;
@@ -420,7 +475,7 @@ header .intro-text .intro-heading{
 	/*border:2px solid rgba(100,100,255,.7);
 	-webkit-box-shadow: 0px 0px 5px 2px rgba(150, 50, 150, 0.7);
 	-moz-box-shadow:    0px 0px 5px 2px rgba(150, 50, 150, 0.7);
-	box-shadow:         0px 0px 5px 2px rgba(150, 50, 150, 0.7);*/
+	box-shadow:         0px 0px 5px 2px rgba(150, 50, 150, 0.7);
 }
 .circle p {
     vertical-align: middle;
@@ -603,6 +658,23 @@ section#contact{
 	font-family:"Jura","sans-serif";
 	background-size:cover;
 	text-shadow:0 0 5px rgba(0,0,0,1);/*, 0 0 10px rgba(255,249,91,1) , 0 0 15px rgba(204,67,249,1) , 0 0 20px rgba(102,165,0,1);*/
+}
+
+.contactHead{
+	font-family:Jura,Montserrat,sans-serif;
+	font-weight:700;
+	text-align:center;
+	vertical-align:middle;
+	line-height:30px;
+	font-size:15px;
+}
+
+.contactBody{
+	font-family:Jura,Montserrat,sans-serif;
+	text-align:center;
+	vertical-align:middle;
+	line-height:30px;
+	font-size:15px;
 }
 
 #googleMap {
