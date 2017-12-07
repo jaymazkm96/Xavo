@@ -65,8 +65,8 @@ header{
 	right: 0;
 	color: #FFF;
 	text-align: center;
-	font-family: "lato", sans-serif;
-	font-weight: 300;
+	font-family: "Jura", "lato", sans-serif;
+	font-weight: 700;
 	font-size: 50px;
 	letter-spacing: 10px;
 	padding-left: 10px;
@@ -79,7 +79,7 @@ header{
 @media (max-width:600px){
 	#title{
 		font-size:28px;
-		font-weight:180;
+		font-weight:600;
 	}
 }
 

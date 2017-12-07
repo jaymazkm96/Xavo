@@ -286,8 +286,9 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .navbar-default .navbar-toggle{
-	background-color:#fed136;
-	border-color:#fed136;
+	background-color:rgba(50,50,50,0.8);/*#fed136;*/
+	border-color:rgba(80,80,80,.5);/*#fed136;*/
+	border-width:2px;
 }
 
 .navbar-default .navbar-toggle .icon-bar{
@@ -295,7 +296,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .navbar-default .navbar-toggle:hover,.navbar-default .navbar-toggle:focus{
-	background-color:#fed136;
+	background-color:rgba(60,60,60,.9);/*#fed136;*/
 }
 
 .navbar-default .nav li a{
@@ -582,6 +583,57 @@ section#details{
 	border-radius:5px 5px 0 0;
 }
 
+a.list-group-item {
+  color: #FFF;
+}
+
+a.list-group-item .list-group-item-heading {
+  color: #FFF;
+}
+
+a.list-group-item:hover,
+a.list-group-item:focus {
+  text-decoration: none;
+  background-color: rgba(50,50,80,.7);
+  color:#FFF;
+}
+
+a.list-group-item.active,
+a.list-group-item.active:hover,
+a.list-group-item.active:focus {
+  z-index: 2;
+  color: #ffffff;
+  background-color: #428bca;
+  border-color: #428bca;
+}
+
+a.list-group-item.active .list-group-item-heading,
+a.list-group-item.active:hover .list-group-item-heading,
+a.list-group-item.active:focus .list-group-item-heading {
+  color: inherit;
+}
+
+a.list-group-item.active .list-group-item-text,
+a.list-group-item.active:hover .list-group-item-text,
+a.list-group-item.active:focus .list-group-item-text {
+  color: #e1edf7;
+}
+
+.newslist{
+	border:1px rgba(60,60,90,0.5) solid;
+	background:rgba(50,50,80,.5);
+	color:#FFF;
+	font-family:Jura,Montserrat,sans-serif;
+	font-weight:500;
+}
+.newslist:hover{
+	border:1px rgba(60,60,90,0.6) solid;
+	background:rgba(50,50,80,.7);
+	color:#FFF;
+	font-family:Jura,Montserrat,sans-serif;
+	font-weight:500;
+}
+
 .tiles{
 	box-shadow: 0px 1px 10px 2px #090a0f;
 	padding:0px;
@@ -607,9 +659,9 @@ section#details{
 	display:block;
 	background-size:cover;
 	background-color:transparent;
-	background-position:center top;
+	background-position:center center;
 	background-repeat:no-repeat;
-	max-width:374px;
+	/*max-width:374px;*/
 }
 .overModal {
 	position: absolute;
@@ -665,7 +717,7 @@ section#contact{
 	font-weight:700;
 	text-align:center;
 	vertical-align:middle;
-	line-height:30px;
+	line-height:25px;
 	font-size:15px;
 }
 
@@ -673,13 +725,13 @@ section#contact{
 	font-family:Jura,Montserrat,sans-serif;
 	text-align:center;
 	vertical-align:middle;
-	line-height:30px;
+	line-height:25px;
 	font-size:15px;
 }
 
 #googleMap {
 	height:250px;
-    padding: 0;
+    padding:0;
 	z-order:10;
 }
 

@@ -54,10 +54,10 @@
 							<a href="#page-top"></a>
 						</li>
 						<li>
-							<a class="page-scroll" href="underConstruction.html">About Us</a>
+							<a class="page-scroll" href="about.html">About Us</a>
 						</li>
 						<li>
-							<a class="page-scroll" href="underConstruction.html">Event Details</a>
+							<a class="page-scroll" href="events.html">Event Details</a>
 						</li>
 						<li>
 							<a class="page-scroll" href="underConstruction.html">Colleges</a>
@@ -75,7 +75,7 @@
 							<a class="page-scroll" href="underConstruction.html">Past Line-up</a>
 						</li>
 						<li>
-							<a class="page-scroll" href="underConstruction.html"><span class="glyphicon glyphicon-log-in"></span>&nbsp;&nbsp;Log-in</a>
+							<a class="page-scroll" href="underConstruction.html"><span class="glyphicon glyphicon-log-in pull-left"></span>Dating</a>
 						</li>
 					</ul>
 				</div>
@@ -114,18 +114,19 @@
 		<section id="details">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-8 tiles">
+					<div class="col-md-8 tiles" style="object-fit:cover;padding:0px;">
 						<div class="col-md-12 col-xs-12 tile" style="height:260px;">
-							<div class="tile-content embed-responsive embed-responsive-4by3" style="width:100%;">
+							<div class="tile-content embed-responsive" style="object-fit:cover;height:260px;font-family:Jura">
 								<center>
-									<iframe class="embed-responsive-item" style="float:center;margin:auto;" src="https://www.youtube.com/embed/IZovSiIr_jU" frameborder="0" allowfullscreen></iframe>
+									<iframe class="embed-responsive-item" style="max-width:749px;float:center;margin:auto;" src="https://www.youtube.com/embed/IZovSiIr_jU" frameborder="0" allowfullscreen></iframe>
 								</center>
 							</div>
 						</div>
-						<div class="col-md-6 col-xs-6">
-							<div id="myCarousel" class="carousel slide" data-ride="carousel" style="object-fit:cover;left:-15px;right:0;width:120%;max-width:375px;">
+						<!-- TILE 1 -->
+						<div class="col-md-6 col-xs-6" style="min-height:125px;">
+							<div id="myCarousel1" class="carousel slide" data-ride="carousel"><!-- style="object-fit:cover;width:120%;max-width:360px;"-->
 								<div class="carousel-inner">
-									<div class="item active" data-toggle="modal" data-target="#modal1">
+									<div class="item active"data-toggle="modal" data-target="#modal1">
 										<div class="tile-inner" style="background-image:url('img/tiles/11.jpg');">
 											<div class="overModal">
 												<span class="fa fa-search"></span>
@@ -156,8 +157,9 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-6 col-xs-6">
-							<div id="myCarousel" class="carousel slide" data-ride="carousel" style="object-fit:cover;left:-15px;right:0;width:120%;max-width:375px;">
+						<!-- TILE 2 -->
+						<div class="col-md-6 col-xs-6" style="min-height:125px;">
+							<div id="myCarousel" class="carousel slide" data-ride="carousel"><!-- style="object-fit:cover;left:-15px;width:120%;max-width:360px;"-->
 								<div class="carousel-inner">
 									<div class="item active" data-toggle="modal" data-target="#modal5">
 										<div class="tile-inner" style="background-image:url('img/tiles/21.jpg');">
@@ -183,9 +185,9 @@
 								</div>
 							</div>
 						</div>
-
-						<div class="col-md-6 col-xs-6">
-							<div id="myCarousel" class="carousel slide" data-ride="carousel" style="object-fit:cover;left:-15px;right:0;width:120%;max-width:375px;">
+						<!-- TILE 3 -->
+						<div class="col-md-6 col-xs-6" style="min-height:125px;">
+							<div id="myCarousel" class="carousel slide" data-ride="carousel">
 								<div class="carousel-inner">
 									<div class="item active" data-toggle="modal" data-target="#modal8">
 										<div class="tile-inner" style="background-image:url('img/tiles/31.jpg');">
@@ -211,8 +213,9 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-6 col-xs-6">
-							<div id="myCarousel" class="carousel slide" data-ride="carousel" style="object-fit:cover;left:-15px;right:0;width:120%;max-width:375px;">
+						<!-- TILE 4 -->
+						<div class="col-md-6 col-xs-6" style="min-height:125px;">
+							<div id="myCarousel" class="carousel slide" data-ride="carousel">
 								<div class="carousel-inner">
 									<div class="item active" data-toggle="modal" data-target="#modal11">
 										<div class="tile-inner" style="background-image:url('img/tiles/41.jpg');">
@@ -243,41 +246,18 @@
 					<div class="col-xs-12 col-md-4">
 						<div class="newsfeed">
 							<div class="panel-primary">
-								<div class="panel-heading text-center" style="border-radius:5px 5px 0 0;background:linear-gradient(#1b2735 0%,rgba(0,0,0,0.4) 85%);">
+								<div class="panel-heading text-center" style="font-family:Jura;border-radius:5px 5px 0 0;background:linear-gradient(#1b2735 0%,rgba(0,0,0,0.4) 85%);">
 									Latest News
 								</div>
 
 								<div class="panel-body">
-									<div class="marquee" data-direction='up' data-duration='20000' data-pauseOnHover="true">
-										<!--ul--><div style="width:100px;height:100px;display:block;background:linear-gradient(left, rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.4) 50%,rgba(0,0,0,0.8) 100%);">Test</div>
-										<!-- <php
-											$htbw = "";
-											$q = mysqli_query($con, "SELECT * FROM oba_news ORDER BY id DESC LIMIT 10");
-											$affRow = mysqli_affected_rows($con);
-											for($k=0; $k<$affRow; $k++) {
-												$r = mysqli_fetch_array($q);
-												//$htbw .= "<b><a href=\"topNews.php?id=".$r['id']."\">"."<li style='font-size:14px;'>
-													//														".$r['date']."
-														//													&nbsp;:&nbsp;".$r['sub']."
-															//											</li>"."</a></b>";
-												if($k%2==0)
-													$htbw .= "<div style='width:100%;background-color:rgba(255,250,138,100);margin-bottom:5px;'>";
-												else
-													$htbw .= "<div style='width:100%;background-color:#66FF66;margin-bottom:5px;'>";
-												$htbw .=	"<a href=\"topNews.php?id=".$r['id']."\">
-																<div style='font-weight:bold;align:justify;font-size:14px;padding:5px;padding-bottom:0px;' align='justify'>
-																	".$r['sub']."
-																</div>
-																<div style='align:right;font-size:12px;padding:5px;padding-top:0px;' align='right'>
-																	Posted on ".$r['date']."
-																</div>
-															</a>
-														  </div>";
-											}
-											if($htbw == "") $htbw = "List not available currently. Please come back later...";
-											echo $htbw;
-										?> -->
-										<!--/ul-->
+									<div class="marquee list-group text-white" data-direction='up' data-duration='20000' data-pauseOnHover="true">
+										<div style="color:white">
+										<!--ul class="list-group" style="background:rgba(50,50,130,.3);color:white;"-->
+											<a href="#" class="list-group-item newslist">Test<span class="badge">NEW</span></a>
+											<a href="#" class="list-group-item newslist">Test2</a>
+										<!--ul-->
+										</div>
 									</div>
 								</div>
 							</div>
@@ -294,7 +274,7 @@
 					<div class="col-md-4 text-center" style="text-decoration:none;text-transform:uppercase;letter-spacing:1px;font-weight:400;font-family:'Jura',sans-serif;color:#CCC;">
 						<div class="row">
 							<div class="col-md-12">
-								<h5>CONTACT</h5>
+								<h5>CONTACT:</h5>
 							</div>
 						</div>
 						<div class="row">
@@ -321,17 +301,22 @@
 							<div class="col-md-12" style="vertical-align:middle;text-align:center;">
 								<span class="contactBody"><a href="mailto:pr.xavo18@gmail.com?subject=Ref-Xavotsav%20Website">pr.xavo18@gmail.com</a></span>
 							</div>
+							<div class="col-md-12" style="vertical-align:middle;text-align:center;">
+								<span class="contactBody"><a href="mailto:pr.xavotsav2018@gmail.com?subject=Ref-Xavotsav%20Website">pr.xavotsav2018@gmail.com</a></span>
+							</div>
 						</div>
 					</div>
 					
-					<div class="col-md-4" id="googleMap">
+					<div class="col-md-4" id="googleMap" style="text-shadow:none;font-family:Jura;">
 					</div>
 					
 					<div class="col-md-4 text-center" style="text-decoration:none;text-transform:uppercase;letter-spacing:1px;font-weight:400;font-family:'Jura',sans-serif;color:#CCC;">
 						<h5>Useful Links:</h5>
-						<p><a href="#events">Event Details</a></p>
-						<p><a href="#college">College Details</a></p>
-						<p><a href="#login"><span class="glyphicon glyphicon-log-in"></span>&nbsp;&nbsp;Log-in</a></p>
+						<p class="contactBody"><a href="events.html">Event Details</a></p>
+						<p class="contactBody"><a href="events.html">Event Schedule</a></p>
+						<p class="contactBody"><a href="college.html">College Details</a></p>
+						<p class="contactBody"><a href="index.html#details">Latest News</a></p>
+						<p class="contactBody"><a href="team.html">Contact our Team</a></p>
 					</div>
 				</div>
 			</div>
@@ -353,8 +338,8 @@
 					</div>
 					<div class="col-md-4">
 						<ul class="list-inline quicklinks">
-							<li style="pointer:hand;">
-								<span data-toggle="tooltip" data-placement="top" data-html="true" title="<div style='font-size:15px;font-family:Jura,sans-serif;'>Kalyan Majumdar<br>Bikash Pandey<br>Arion Mitra<br>Souptik ??????<br>Akash Manna<br>Jimut Bahan Pal</div>">
+							<li>
+								<span style="cursor:pointer;" data-toggle="tooltip" data-placement="top" data-html="true" title="<div style='cursor:pointer;font-size:15px;font-family:Jura,sans-serif;'>Kalyan Majumdar<br>Bikash Pandey<br>Arion Mitra<br>Souptik Majumdar<br>Akash Manna<br>Jimut Bahan Pal</div>">
 									Designed and Developed by Team SXCSC
 								</span>
 							</li>
