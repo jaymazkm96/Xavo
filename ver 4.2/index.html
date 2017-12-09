@@ -17,6 +17,7 @@
 
 		<!-- Custom CSS -->
 		<link href="css/style.css" rel="stylesheet">
+		<link href="css/loader.css" rel="stylesheet">
 		<link href="css/fluid_grid.css" rel="stylesheet">
 		<link href="css/demo-styles.css" rel="stylesheet">
 		
@@ -34,9 +35,14 @@
 	</head>
 
 	<body id="page-top" class="index" onload="myFunction();" style="overflow-x:hidden;">
-		<div id="loader"></div>
+		<div id="loader">
+			<div id='back'></div>
+			<div id='back2'></div>
+			<div id='back3'></div>
+			<img src="img/logo.png" class="loadImg"/>
+		</div>
 		<!-- Navigation -->
-		<div id="totality" class="animate-bottom" style="overflow-x:hidden;">
+		<div id="totality" class="animate-bottom" style="display:none;overflow-x:hidden;">
 		<nav class="navbar navbar-default navbar-fixed-top">
 			<div class="container">
 				<!-- Brand and toggle get grouped for better mobile display -->
@@ -60,25 +66,25 @@
 							<a class="page-scroll" href="about.html">About Us</a>
 						</li>
 						<li>
-							<a class="page-scroll" href="events.html">Event Details</a>
+							<a class="page-scroll" href="#">Event Details</a>
 						</li>
 						<li>
-							<a class="page-scroll" href="underConstruction.html">Colleges</a>
+							<a class="page-scroll" href="#">Colleges</a>
 						</li>
 						<li>
-							<a class="page-scroll" href="underConstruction.html">Sponsors</a>
+							<a class="page-scroll" href="#">Sponsors</a>
 						</li>
 						<li>
-							<a class="page-scroll" href="underConstruction.html">Star Nite</a>
+							<a class="page-scroll" href="#">Star Nite</a>
 						</li>
 						<li>
 							<a class="page-scroll" href="team.html#page-top">Team</a>
 						</li>
 						<li>
-							<a class="page-scroll" href="underConstruction.html">Past Line-up</a>
+							<a class="page-scroll" href="#">Past Line-up</a>
 						</li>
 						<li>
-							<a class="page-scroll" href="underConstruction.html"><span class="glyphicon glyphicon-log-in pull-left"></span>Dating</a>
+							<a class="page-scroll" href="#">Coming Soon</a>
 						</li>
 					</ul>
 				</div>
@@ -257,8 +263,7 @@
 									<div class="marquee list-group text-white" data-direction='up' data-duration='20000' data-pauseOnHover="true">
 										<div style="color:white">
 										<!--ul class="list-group" style="background:rgba(50,50,130,.3);color:white;"-->
-											<a href="#" class="list-group-item newslist">Test<span class="badge">NEW</span></a>
-											<a href="#" class="list-group-item newslist">Test2</a>
+											<a href="#" class="list-group-item newslist">No current news. Come back later<!--span class="badge">NEW</span--></a>
 										<!--ul-->
 										</div>
 									</div>
@@ -645,7 +650,7 @@
 			var myVar;
 
 			function myFunction() {
-				myVar = setTimeout(showPage, 200);
+				myVar = setTimeout(showPage, 3000);
 			}
 
 			function showPage() {
@@ -691,7 +696,9 @@
 		<!-- Google Maps API -->
 		<script type="text/javascript">
 			function myMap(){
-				setTimeout(myMap2, 4000);
+				$(document).ready(function(){
+					setTimeout(myMap2, 6000);
+				});
 				$('.contactButton').fadeIn();
 			}
 			function myMap2() {

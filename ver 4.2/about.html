@@ -16,7 +16,7 @@
 
 		<!-- Custom CSS -->
 		<link href="css/style.css" rel="stylesheet">
-		<link href="css/agency.css" rel="stylesheet">
+		<link href="css/loader.css" rel="stylesheet">
 		<link href="css/fluid_grid.css" rel="stylesheet">
 		<link href="css/demo-styles.css" rel="stylesheet">
 		<link href="css/contactTiles.css" rel="stylesheet">
@@ -36,7 +36,12 @@
 	</head>
 
 	<body id="page-top" class="about" onload="myFunction();" style="overflow-x:hidden;">
-		<div id="loader"></div>
+		<div id="loader">
+			<div id='back'></div>
+			<div id='back2'></div>
+			<div id='back3'></div>
+			<img src="img/logo.png" class="loadImg"/>
+		</div>
 		<!-- Navigation -->
 		<div id="totality" class="animate-bottom" style="overflow-x:hidden;">
 		<nav class="navbar navbar-default navbar-fixed-top">
@@ -62,7 +67,7 @@
 							<a class="page-scroll" href="about.html#page-top">About Us</a>
 						</li>
 						<li>
-							<a class="page-scroll" href="events.html">Event Details</a>
+							<a class="page-scroll" href="#">Event Details</a>
 						</li>
 						<li>
 							<a class="page-scroll" href="#college">Colleges</a>
@@ -80,7 +85,7 @@
 							<a class="page-scroll" href="#past">Past Line-up</a>
 						</li>
 						<li>
-							<a class="page-scroll" href="#login"><span class="glyphicon glyphicon-log-in pull-left"></span>Dating</a>
+							<a class="page-scroll" href="#login">Coming Soon</a>
 						</li>
 					</ul>
 				</div>
@@ -225,7 +230,7 @@
 			var myVar;
 
 			function myFunction() {
-				myVar = setTimeout(showPage, 200);
+				myVar = setTimeout(showPage, 3000);
 			}
 
 			function showPage() {
@@ -238,7 +243,9 @@
 		<!-- Google Maps API -->
 		<script type="text/javascript">
 			function myMap(){
-				setTimeout(myMap2, 4000);
+				$(document).ready(function(){
+					setTimeout(myMap2, 6000);
+				});
 				$('.contactButton').fadeIn();
 			}
 			function myMap2() {

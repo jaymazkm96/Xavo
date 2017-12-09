@@ -8,13 +8,14 @@
 		<meta name="author" content="Kalyan Majumdar">
 
 		<title>Xavotsav 2018</title>
+		<link rel="shortcut icon" href="img/logo.png"/>
 
 		<!-- Bootstrap Core CSS -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 
 		<!-- Custom CSS -->
 		<link href="css/style.css" rel="stylesheet">
-		<link href="css/agency.css" rel="stylesheet">
+		<link href="css/loader.css" rel="stylesheet">
 		<link href="css/fluid_grid.css" rel="stylesheet">
 		<link href="css/demo-styles.css" rel="stylesheet">
 		<link href="css/contactTiles.css" rel="stylesheet">
@@ -34,7 +35,12 @@
 	</head>
 
 	<body id="page-top" class="team" onload="myFunction();" style="overflow-x:hidden;">
-		<div id="loader"></div>
+		<div id="loader">
+			<div id='back'></div>
+			<div id='back2'></div>
+			<div id='back3'></div>
+			<img src="img/logo.png" class="loadImg"/>
+		</div>
 		<!-- Navigation -->
 		<div id="totality" class="animate-bottom" style="overflow-x:hidden;">
 		<nav class="navbar navbar-default navbar-fixed-top">
@@ -57,7 +63,7 @@
 							<a href="#page-top"></a>
 						</li>
 						<li>
-							<a class="page-scroll" href="#about">About Us</a>
+							<a class="page-scroll" href="about.html">About Us</a>
 						</li>
 						<li>
 							<a class="page-scroll" href="#events">Event Details</a>
@@ -78,7 +84,7 @@
 							<a class="page-scroll" href="#past">Past Line-up</a>
 						</li>
 						<li>
-							<a class="page-scroll" href="#login"><span class="glyphicon glyphicon-log-in"></span>&nbsp;&nbsp;Log-in</a>
+							<a class="page-scroll" href="#login">Coming Soon</a>
 						</li>
 					</ul>
 				</div>
@@ -197,13 +203,19 @@
 			
 		<!-- Google Maps API -->
 		<script type="text/javascript">
-			function myMap() {
+			function myMap(){
+				$(document).ready(function(){
+					setTimeout(myMap2, 6000);
+				});
+				$('.contactButton').fadeIn();
+			}
+			function myMap2() {
 				var location = new google.maps.LatLng(22.548844,88.355837);
 
 				var mapCanvas = document.getElementById('googleMap');
 				
 				var mapOptions = {
-					center:new google.maps.LatLng(22.557821,88.345999),
+					center:new google.maps.LatLng(22.548844,88.355837),//22.557821,88.345999),
 					zoom:14,
 					panControl: false,
 					mapTypeId: google.maps.MapTypeId.ROADMAP
