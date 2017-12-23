@@ -9,11 +9,15 @@
 
 		<title>Xavotsav 2018</title>
 
+		<link rel="shortcut icon" href="img/logo.png"/>
+		
 		<!-- Bootstrap Core CSS -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 
 		<!-- Custom CSS -->
 		<link href="css/style.css" rel="stylesheet">
+		<link href="css/events.css" rel="stylesheet">
+		<link href="css/loader.css" rel="stylesheet">
 		<link href="css/fluid_grid.css" rel="stylesheet">
 		<link href="css/demo-styles.css" rel="stylesheet">
 		<link href="css/contactTiles.css" rel="stylesheet">
@@ -33,7 +37,12 @@
 	</head>
 
 	<body id="page-top" class="events" onload="myFunction();" style="overflow-x:hidden;">
-		<div id="loader"></div>
+		<div id="loader">
+			<div id='back'></div>
+			<div id='back2'></div>
+			<div id='back3'></div>
+			<img src="img/logo.png" class="loadImg"/>
+		</div>
 		<!-- Navigation -->
 		<div id="totality" class="animate-bottom" style="overflow-x:hidden;">
 		<nav class="navbar navbar-default navbar-fixed-top">
@@ -56,28 +65,28 @@
 							<a href="#page-top"></a>
 						</li>
 						<li>
-							<a class="page-scroll" href="underConstruction.html">About Us</a>
+							<a class="page-scroll" href="about.html#page-top">About Us</a>
 						</li>
 						<li>
 							<a class="page-scroll" href="#page-top">Event Details</a>
 						</li>
 						<li>
-							<a class="page-scroll" href="underConstruction.html">Colleges</a>
+							<a class="page-scroll" href="#college">Colleges</a>
 						</li>
 						<li>
-							<a class="page-scroll" href="underConstruction.html">Sponsors</a>
+							<a class="page-scroll" href="#sponsors">Sponsors</a>
 						</li>
 						<li>
-							<a class="page-scroll" href="underConstruction.html">Star Nite</a>
+							<a class="page-scroll" href="#starnite">Star Nite</a>
 						</li>
 						<li>
 							<a class="page-scroll" href="team.html#page-top">Team</a>
 						</li>
 						<li>
-							<a class="page-scroll" href="underConstruction.html">Past Line-up</a>
+							<a class="page-scroll" href="#past">Past Line-up</a>
 						</li>
 						<li>
-							<a class="page-scroll" href="underConstruction.html"><span class="glyphicon glyphicon-log-in"></span>&nbsp;&nbsp;Log-in</a>
+							<a class="page-scroll" href="#login">Coming Soon</a>
 						</li>
 					</ul>
 				</div>
@@ -91,39 +100,1936 @@
 			<div id='stars2'></div>
 			<div id='stars3'></div>
 			<div id='title'>
-				<span>
-					Events Details
-				</span>
+			<span>
+				Event Details
+			</span>
 			</div>
 		</header>
-		
-		<center>
+<center>
 		<div class="rule"></div>
 		
+		<section id="events" style="font-family:Jura;text-align:justify;font-size:16px;">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 col-xs-12">
+						<ul class="nav nav-pills">
+							<li class="active" style="width:49%;"><a href="#event-pills" data-toggle="tab">Event Details</a>
+							</li>
+							<li style="width:49%;"><a href="#schedule-pills" data-toggle="tab">Event Schedule</a>
+							</li>
+						</ul>
+
+						<!-- Tab panes -->
+						<div class="tab-content">
+							<div class="tab-pane fade in active" id="event-pills">
+								<div class="row">
+									<div class="col-md-3">
+										<div class="genre" data-toggle="modal" data-target="#danceModal">
+											<img src="img/vectors/dance.png" class="genreImg"/>
+											<div class="genreNm">
+												DANCE
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="genre" data-toggle="modal" data-target="#digitalModal">
+											<img src="img/vectors/digitalArt.png" class="genreImg"/>
+											<div class="genreNm">
+												DESIGN &amp DIGITAL ARTS
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="genre" data-toggle="modal" data-target="#dramaticsModal">
+											<img src="img/vectors/dramatics.png" class="genreImg"/>
+											<div class="genreNm">
+												DRAMATICS
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="genre" data-toggle="modal" data-target="#fineArtModal">
+											<img src="img/vectors/fineArt.png" class="genreImg"/>
+											<div class="genreNm">
+												FINE ARTS
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-3">
+										<div class="genre" data-toggle="modal" data-target="#journalismModal">
+											<img src="img/vectors/journalism.png" class="genreImg"/>
+											<div class="genreNm">
+												JOURNALISM
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="genre" data-toggle="modal" data-target="#lifestyleModal">
+											<img src="img/vectors/lifestyle.png" class="genreImg"/>
+											<div class="genreNm">
+												LIFESTYLE
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="genre" data-toggle="modal" data-target="#literaryModal">
+											<img src="img/vectors/literaryArt.png" class="genreImg"/>
+											<div class="genreNm">
+												LITERARY ARTS
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="genre" data-toggle="modal" data-target="#musicModal">
+											<img src="img/vectors/music.png" class="genreImg"/>
+											<div class="genreNm">
+												MUSIC
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-3">
+										<div class="genre" data-toggle="modal" data-target="#quizModal">
+											<img src="img/vectors/quiz.png" class="genreImg"/>
+											<div class="genreNm">
+												QUIZ
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="genre" data-toggle="modal" data-target="#speakingArtModal">
+											<img src="img/vectors/speakingArt.png" class="genreImg"/>
+											<div class="genreNm">
+												SPEAKING ARTS
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="genre" data-toggle="modal" data-target="#sportsModal">
+											<img src="img/vectors/sports.png" class="genreImg"/>
+											<div class="genreNm">
+												SPORTS
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="genre" data-toggle="modal" data-target="#businessModal">
+											<img src="img/vectors/business.png" class="genreImg"/>
+											<div class="genreNm">
+												BUSINESS &amp MANAGEMENT
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-4 col-md-offset-4">
+										<div class="genre" data-toggle="modal" data-target="#informalsModal">
+											<img src="img/vectors/informals.png" class="genreImg"/>
+											<div class="genreNm">
+												INFORMALS
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="schedule-pills">
+								<span style="display:block;text-align:center;line-height:100px;font-size:25px;">PLEASE COME BACK LATER</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 		</center>
 	
-		<!-- Contact Section -->
+	
+	
+	
+	
+		<!-- MODALS -->
+		<!-- Dance -->
+		<div class="modal" tabindex="-1" id="danceModal" role="dialog" style="height:100%;width:100%;z-index:50000;">
+			<div class="modal-dialog">
+				<!-- Modal content-->
+				<div class="modal-content" style="height:100%;width:100%;">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Dance</h4>
+					</div>
+					<div class="modal-body">
+						<div id="carousel-dance" class="carousel slide" data-ride="carousel" data-interval="false" style="padding-left:7%;padding-right:7%;">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li data-target="#carousel-dance" data-slide-to="0" class="active"></li>
+								<li data-target="#carousel-dance" data-slide-to="1"></li>
+								<li data-target="#carousel-dance" data-slide-to="2"></li>
+								<li data-target="#carousel-dance" data-slide-to="3"></li>
+								<li data-target="#carousel-dance" data-slide-to="4"></li>
+							</ol>
+
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner" role="listbox" style="height:100%;overflow-y:auto;">
+								<div class="item active">
+									<h3>Dual Steps</h3>
+									<h5 style="font-weight:300;">(Duet Dance)</h5>
+									<h4 style="text-align:left;text-decoration:underline;">About</h4>
+									<p>
+										Put your hand on your heart and listen to your soul. Express all your feelings and emotions through your dance. Dance from your heart and love your music, and come show us what you’ve got. The perfect chemistry, electrifying dance moves and magical synchronization are what will lead you to victory.
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Details</h4>
+									<p>
+										<ul>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">Venue: </span>Fr. Depelchin Auditorium (Tentative)</li>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">Time Limit: </span><br/>
+													XTACY: 3+1 Minutes (Including Setup &amp Clearance Time)<br/>
+													XAVOTSAV: 4+1 Minutes (Including Setup &amp Clearance Time)</li>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">No. of participants: </span>2 (Maximum of 1 CA allowed)</li>
+										</ul>
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Structure</h4>
+									<p>
+										XTACY: Teams have to perform on a pre-recorded medley of songs from any genre for the given time limit (It should be a TRAILER of their Final Performance).
+									</p>
+									<p>
+										XAVOTSAV: Teams have to perform on a pre-recorded medley of songs from any genre for the given time limit (EXTENDED VERSION of the Trailer performed in Xtacy).
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Rules</h4>
+									<ul>
+										<li>&bull; Participants may perform on any dance style of their choice. Dancing on Hindi numbers in any of the above forms is allowed.</li>
+										<li>&bull; All kinds of songs are allowed. Participants may use more than one song in their performance. Even remixes are allowed.</li>
+										<li>&bull; Usage of props is allowed. These are to be brought by the teams themselves. The organizers hold the discretion to allow the prop on stage.</li>
+										<li>&bull; Teams are requested to submit the prop list prior to the competition. The organizers shall not bear any responsibility in case of loss or damage of prop materials.</li>
+										<li>&bull; Pre-recorded music shall be brought in a pen drive in .mp3 format only.</li>
+										<li>&bull; Participants must strictly adhere to the time limit.</li>
+										<li>&bull; Only one team per college is allowed.</li>
+										<li>&bull; Performers have to clear the stage after their performance otherwise they will be penalized heavily by the organizers.</li>
+										<li>&bull; Any kind of fluid, powder, flame or heavy object is not allowed on stage.</li>
+										<li>&bull; Obscenity of any kind is not allowed and will lead to immediate disqualification.</li>
+										<li>&bull; The decision of the judges shall be final and binding.</li>
+									</ul>
+									<h4 style="text-align:left;text-decoration:underline;">Judgment Criteria</h4>
+									<ul>
+										<li>&bull; Choreography</li>
+										<li>&bull; Usage of costume and props</li>
+										<li>&bull; Choice of proper music</li>
+										<li>&bull; Audience Response</li>
+										<li>&bull; Expression</li>
+										<li>&bull; Synchronization</li>
+										<li>&bull; Chemistry between the partners (Coordination)</li>
+									</ul>
+								</div>
+								<div class="item">
+									<h3>Groove Indiana</h3>
+									<h5>(Bollywood Group Dance)</h5>
+									<h4 style="text-align:left;text-decoration:underline;">About</h4>
+									<p>
+										From the old black and white era to the colorful retro’s, from those umbrellas and monochrome costumes to the flared pants, flower-prints or side-burns, BOLLYWOOD has always stuck to that “SOMETHING DIFFERENT” quotient. Willing to show your sparkle on stage? Light up the stage with the colors and mesmerize us with your thumkas & BOLLYWOOD ISHTYLE!! So, get all geared up for entertainment…entertainment and you know what!
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Details</h4>
+									<p>
+										<ul>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">Venue: </span>Main Stage (Tentative)</li>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">Time Limit: </span><br/>
+													XTACY: 4-5 Minutes (Including Setup &amp Clearance Time)<br/>
+													XAVOTSAV: 6-8 Minutes (Including Setup &amp Clearance Time)</li>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">No. of participants: </span>12-20 (Maximum of 2 CAs allowed)</li>
+										</ul>
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Structure</h4>
+									<p>
+										Xtacy: Teams have to perform on a pre-recorded medley of Bollywood songs for the given time limit (It should be a TRAILER of their Final Performance).
+									</p>
+									<p>
+										Xavotsav: Teams have to perform on a pre-recorded medley of Bollywood songs for the given time limit (EXTENDED VERSION of the Trailer performed in Xtacy).
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Theme</h4>
+									<p>
+										To be informed to the Contingent Leader
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Rules</h4>
+									<ul>
+										<li>&bull; Only Bollywood tracks are allowed. Classical/Western of any form will not be entertained. Participants may use more than one song on their performance. Even remixes are allowed.</li>
+										<li>&bull; Usage of props is allowed. These are to be brought by the teams themselves. The organizers hold the discretion to allow the prop on stage.</li>
+										<li>&bull; Teams are requested to submit the prop list prior to the competition. The organizers shall not bear any responsibility in case of loss or damage of prop materials.</li>
+										<li>&bull; Pre-recorded music shall be brought in a pen drive in .mp3 format only.</li>
+										<li>&bull; Participants must strictly adhere to the time limit.</li>
+										<li>&bull; Only one team per college is allowed.</li>
+										<li>&bull; Performers have to clear the stage after their performance otherwise they will be penalized heavily by the organizers.</li>
+										<li>&bull; Any kind of fluid, powder, flame or heavy object is not allowed on stage.</li>
+										<li>&bull; Obscenity of any kind is not allowed and will lead to immediate disqualification.</li>
+										<li>&bull; The decision of the judges shall be final and binding.</li>
+										<li>&bull; A minimum of 6 members of the team should be present of stage all the time during the performance.</li>
+									</ul>
+									<h4 style="text-align:left;text-decoration:underline;">Judgment Criteria</h4>
+									<ul>
+										<li>&bull; Choreography</li>
+										<li>&bull; Usage of costume and props</li>
+										<li>&bull; Choice of proper music</li>
+										<li>&bull; Audience Response</li>
+										<li>&bull; Expression</li>
+										<li>&bull; Synchronization</li>
+										<li>&bull; Implementation of Theme</li>
+										<li>&bull; Innovation</li>
+										<li>&bull; Coordination</li>
+									</ul>
+								</div>
+								<div class="item">
+									<h3>Occidental Synergy</h3>
+									<h5>(Western Group Dance)</h5>
+									<h4 style="text-align:left;text-decoration:underline;">About</h4>
+									<p>
+										From spectacular moves to mind boggling stunts this western group dance competition brings to you not only styles like hip-hop, crumping and popping-locking but also stunning formations and amazing coordination. With each year passing the participant teams not only come with bigger and better performances but also leave the judge’s baffled while choosing a winner. Let’s see what’s in store this year!
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Details</h4>
+									<p>
+										<ul>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">Venue: </span>Main Stage (Tentative)</li>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">Time Limit: </span><br/>
+													XTACY: 4-5 Minutes (Including Setup &amp Clearance Time)<br/>
+													XAVOTSAV: 6-8 Minutes (Including Setup &amp Clearance Time)</li>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">No. of participants: </span>12-18 (Maximum of 2 CAs allowed)</li>
+										</ul>
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Structure</h4>
+									<p>
+										Xtacy: Teams have to perform on a pre-recorded medley of songs in English language only for the given time limit (It should be a TRAILER of their Final Performance).
+									</p>
+									<p>
+										Xavotsav: Teams have to perform on a pre-recorded medley of songs in English language only for the given time limit (EXTENDED VERSION of the Trailer performed in Xtacy).
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Theme</h4>
+									<p>
+										To be informed to the Contingent Leader
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Rules</h4>
+									<ul>
+										<li>&bull; All tracks or songs must be in English language only. Participants may use more than one song on their performance. Even remixes are allowed.</li>
+										<li>&bull; Only western dance forms are allowed.</li>
+										<li>&bull; Usage of props is allowed. These are to be brought by the teams themselves. The organizers hold the discretion to allow the prop on stage.</li>
+										<li>&bull; Teams are requested to submit the prop list prior to the competition. The organizers shall not bear any responsibility in case of loss or damage of prop materials.</li>
+										<li>&bull; Pre-recorded music shall be brought in a pen drive in .mp3 format only.</li>
+										<li>&bull; Participants must strictly adhere to the time limit.</li>
+										<li>&bull; Only one team per college is allowed.</li>
+										<li>&bull; Performers have to clear the stage after their performance otherwise they will be penalized heavily by the organizers.</li>
+										<li>&bull; Any kind of fluid, powder, flame or heavy object is not allowed on stage.</li>
+										<li>&bull; Obscenity of any kind is not allowed and will lead to immediate disqualification.</li>
+										<li>&bull; The decision of the judges shall be final and binding.</li>
+										<li>&bull; A minimum of 6 members of the team should be present of stage all the time during the performance.</li>
+									</ul>
+									<h4 style="text-align:left;text-decoration:underline;">Judgment Criteria</h4>
+									<ul>
+										<li>&bull; Choreography</li>
+										<li>&bull; Usage of costume and props</li>
+										<li>&bull; Choice of proper music</li>
+										<li>&bull; Audience Response</li>
+										<li>&bull; Expression</li>
+										<li>&bull; Synchronization</li>
+										<li>&bull; Implementation of Theme</li>
+										<li>&bull; Innovation</li>
+										<li>&bull; Coordination</li>
+									</ul>
+								</div>
+								<div class="item">
+									<h3>Battleground X</h3>
+									<h5>(Street Dance)</h5>
+									<h4 style="text-align:left;text-decoration:underline;">About</h4>
+									<p>
+										There’s a saying which goes as “Every individual is different”. This solo dance event brings exactly this to you accompanied by all the various dance forms through which a dancer expresses himself/herself. They perform to our beats but they dance to express not to impress!
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Details</h4>
+									<p>
+										<ul>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">Venue: </span>Street Stage (Tentative)</li>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">Time Limit: </span>NA</li>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">No. of participant(s): </span>1</li>
+										</ul>
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Structure (Both Xtacy and Xavotsav)</h4>
+									<p>
+										<span style="font-weight:bold;color:#ddd;text-transform:uppercase;">Knockout Round: </span>
+										At random two participants will be called on stage and asked to battle each other one on one on a continuing music track. This keeps on going in a knockout format till half of the total number of participants have been eliminated.
+									</p>
+									<p>
+										<span style="font-weight:bold;color:#ddd;text-transform:uppercase;">Duel Battle Round: </span>
+										From the remaining half of the participants, 2 participants will be randomly formed as a team will have to battle against another two participants selected randomly. A total of two participants will be selected from each battle of four participants.
+									</p>
+									<p>
+										<span style="font-weight:bold;color:#ddd;text-transform:uppercase;">Final Round: </span>
+										The remaining participants will have to perform in a group format on a selected track, and the best one wins.
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Theme</h4>
+									<p>
+										To be informed to the Contingent Leader
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Rules</h4>
+									<ul>
+										<li>&bull; Usage of props is allowed. These are to be brought by the teams themselves. The organizers hold the discretion to allow the prop on stage.</li>
+										<li>&bull; Teams are requested to submit the prop list prior to the competition. The organizers shall not bear any responsibility in case of loss or damage of prop materials.</li>
+										<li>&bull; Participants are not allowed to bring in any form of pre-recorded music or their own tracks. Only one team per college is allowed.</li>
+										<li>&bull; Performers have to clear the stage after their performance otherwise they will be penalized heavily by the organizers.</li>
+										<li>&bull; Any kind of fluid, powder, flame or heavy object is not allowed on stage.</li>
+										<li>&bull; Obscenity of any kind is not allowed and will lead to immediate disqualification.</li>
+										<li>&bull; The decision of the judges shall be final and binding.</li>
+										<li>&bull; Teams must perform a part of the sequence that they intend to perform in the finals in the elimination round.</li>
+										<li>&bull; Teams must perform an extended version of the sequence performed during the elims in the final round.</li>
+									</ul>
+									<h4 style="text-align:left;text-decoration:underline;">Judgment Criteria</h4>
+									<ul>
+										<li>&bull; Spontaneity</li>
+										<li>&bull; Usage of costume and props</li>
+										<li>&bull; Audience Response</li>
+										<li>&bull; Expression</li>
+										<li>&bull; Innovation</li>
+										<li>&bull; Creativity</li>
+										<li>&bull; Reflex</li>
+									</ul>
+								</div>
+								<div class="item">
+									<h3>The Eastern Steps</h3>
+									<h5>(Eastern Solo Dance)</h5>
+									<h4 style="text-align:left;text-decoration:underline;">About</h4>
+									<p>
+										The Indian Culture, at least in this universe of ours, gives the world several dance formats that keep them enthralled and mesmerized. Picking up from nature’s way, we express the universe through our dance. Xavotsav gives you this platform to leave the audience speechless and awestruck by those smooth turns and glides.
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Details</h4>
+									<p>
+										<ul>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">Venue: </span>Fr. Depelchin Auditorium (Tentative)</li>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">Time Limit: </span><br/>
+													XTACY: 5 Minutes (Including Setup &amp Clearance Time)<br/>
+													XAVOTSAV: 10 Minutes (Including Setup &amp Clearance Time)</li>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">No. of participant(s): </span>1</li>
+										</ul>
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Structure</h4>
+									<p>
+										Xtacy: The participants have to perform on a pre-recorded music for the given time limit (It should be a TRAILER of their Final Performance).
+									</p>
+									<p>
+										Xavotsav: The participants have to perform on a pre-recorded music for the given time limit (EXTENDED VERSION of the TRAILER Performance of Xtacy).
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Rules</h4>
+									<ul>
+										<li>&bull; The participants will have to present their prepared dance form.</li>
+										<li>&bull; The participants will have to present their performance in Classical or Eastern Format only. No type of other format will be allowed.</li>
+										<li>&bull; Usage of props is allowed. These are to be brought by the participants themselves. The organizers hold the discretion to allow the prop on stage.</li>
+										<li>&bull; Participants are requested to submit the prop list prior to the competition. The organizers shall not bear any responsibility in case of loss or damage of prop materials.</li>
+										<li>&bull; Pre-recorded tracks shall be brought in a pen drive in .mp3 format only.</li>
+										<li>&bull; Performers have to clear the stage after their performance otherwise they will be penalized heavily by the organizers.</li>
+										<li>&bull; Any kind of fluid, powder, flame or heavy object is not allowed on stage.</li>
+										<li>&bull; Obscenity of any kind is not allowed and will lead to immediate disqualification.</li>
+										<li>&bull; The decision of the judges shall be final and binding.</li>
+										<li>&bull; Participants must perform a part of the sequence that they intend to perform in the finals in the elimination round.</li>
+										<li>&bull; Participants must perform an extended version of the sequence performed during the elims in the final round.</li>
+									</ul>
+									<h4 style="text-align:left;text-decoration:underline;">Judgment Criteria</h4>
+									<ul>
+										<li>&bull; Choreography</li>
+										<li>&bull; Expression</li>
+										<li>&bull; Energy Level</li>
+										<li>&bull; Usage of costumes and props</li>
+										<li>&bull; Innovation</li>
+									</ul>
+								</div>
+							</div>
+
+							<!-- Controls -->
+							<a class="left carousel-control" href="#carousel-dance" role="button" data-slide="prev" style="width:7%;">
+								<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="right carousel-control" href="#carousel-dance" role="button" data-slide="next" style="width:7%;">
+								<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
+						  </div>
+
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary" style="width:20%;background:#1b2735;" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		<!-- Design & Digital Arts -->
+		<div class="modal" tabindex="-1" id="digitalModal" role="dialog" style="height:100%;width:100%;z-index:50000;">
+			<div class="modal-dialog">
+				<!-- Modal content-->
+				<div class="modal-content" style="height:100%;width:100%;">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Design &amp Digital Arts</h4>
+					</div>
+					<div class="modal-body">
+						
+						<div id="carousel-digital" class="carousel slide" data-ride="carousel" data-interval="false" style="padding-left:7%;padding-right:7%;">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li data-target="#carousel-digital" data-slide-to="0" class="active"></li>
+								<li data-target="#carousel-digital" data-slide-to="1"></li>
+								<li data-target="#carousel-digital" data-slide-to="2"></li>
+								<li data-target="#carousel-digital" data-slide-to="3"></li>
+								<li data-target="#carousel-digital" data-slide-to="4"></li>
+								<li data-target="#carousel-digital" data-slide-to="5"></li>
+							</ol>
+
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner" role="listbox" style="height:100%;overflow-y:auto;">
+								<div class="item active">
+									<h3>DigispreAD</h3>
+									<h5 style="font-weight:300;">(Digital Ad Making)</h5>
+									<h4 style="text-align:left;text-decoration:underline;">About</h4>
+									<p>
+										This is an event for all those who have the ability to transpose the viewers to a different dimension. If you have the power of presentation, then welcome to DigispreAD, which challenges your imagination to think smart and think new and impress the judges with your unique and innovative ideas to sell a product/a brand. As Don Draper, famously said “Advertising is based on one thing – Happiness”
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Details</h4>
+									<p>
+										<ul>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">Venue: </span>LIVE</li>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">Time Limit: </span>NA</li>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">No. of participants: </span>1-5 per college</li>
+										</ul>
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Structure</h4>
+									<p>
+										Final round: Participants are requested to make an advertisement (video) and submit the same in .mpeg or .avi format only in a CD (along with the details of the participants and their roles) by 2pm on the day of the event at the registration desk.
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Theme</h4>
+									<p>
+										To be informed to the Contingent Leader
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Rules</h4>
+									<ul>
+										<li>&bull; In case there is use of dialogues or narration, they should be in Hindi or English or bilingual only. No other languages will be allowed.</li>
+										<li>&bull; Please note that the organizers shall not be responsible for any postal delays, damages or losses. So, it is advised that the entries should be sent sufficiently before the deadline.</li>
+										<li>&bull; Usage of low resolution cameras such as webcams and mobile phone cameras is discouraged.</li>
+										<li>&bull; The decision of the judges shall be final and binding.</li>
+										<li>&bull; Time limit should be strictly adhered to.</li>
+										<li>&bull; The same ad will be uploaded on our official YouTube channel.</li>
+										<li>&bull; Only one team per college is allowed.</li>
+										<li>&bull; Obscenity of any kind is not allowed and will lead to immediate disqualification.</li>
+									</ul>
+									<h4 style="text-align:left;text-decoration:underline;">Judgment Criteria</h4>
+									<ul>
+										<li>&bull; Creativity</li>
+										<li>&bull; Portrayal of brand image</li>
+										<li>&bull; Message conveyed to the society and overall impact</li>
+										<li>&bull; Number of YouTube likes and views.</li>
+									</ul>
+								</div>
+								<div class="item">
+									<h3>Glimpses of Perception</h3>
+									<h5 style="font-weight:300;">(Photography)</h5>
+									<h4 style="text-align:left;text-decoration:underline;">About</h4>
+									<p>
+										Do you think you have the imagination to make ordinary things look different like no one else can do? Can you provide a unique perspective to even the most uninspiring subjects? Come and show it to the world at the perfect platform to showcase your creativity giving you an identity of your own.
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Details</h4>
+									<p>
+										<ul>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">Venue: </span>XAVOTSAV 2018</li>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">Time Limit: </span>NA</li>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">No. of participants: </span>1 per college</li>
+										</ul>
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Structure</h4>
+									<p>
+										Final round: Participants are requested to take pictures only during the first and second day of Xavotsav 2018 and submit the best 5 pictures (along with the details of the participant) of each day in the official EVENTS MAIL ID at the end of each day. (21st JANUSARY, 2018 and 22nd JANUARY, 2018) .The same will be uploaded on our Official Facebook page.  (facebook.com/xavotsav)
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Theme</h4>
+									<p>
+										To be informed to the Contingent Leader
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Rules</h4>
+									<ul>
+										<li>&bull; Camera resolution should be at least 5 Mega Pixels.</li>
+										<li>&bull; In photo editing only cropping and adjustment of hue/saturation; brightness/contrast levels are allowed. Photo morphing, manipulation or local editing is not allowed.</li>
+										<li>&bull; Participants have to submit both the original and edited entries for judging.</li>
+										<li>&bull; The credentials of the participants such as name or college should not be included in the picture or the frame. Such entries will not be considered valid for the contest.</li>
+										<li>&bull; The decision of the judges shall be final and binding.</li>
+										<li>&bull; Only one team per college is allowed.</li>
+										<li>&bull; Obscenity of any kind is not allowed and will lead to immediate disqualification.</li>
+									</ul>
+									<h4 style="text-align:left;text-decoration:underline;">Judgment Criteria</h4>
+									<ul>
+										<li>&bull; Composition and arrangement</li>
+										<li>&bull; Focus and sharpness</li>
+										<li>&bull; Lighting</li>
+										<li>&bull; Creativity</li>
+										<li>&bull; Facebook shares</li>
+										<li>&bull; Facebook popularity</li>
+										<li>&bull; Relevance to the theme</li>
+									</ul>
+								</div>
+								<div class="item">
+									<h3>Videogene</h3>
+									<h5 style="font-weight:300;">(Videography)</h5>
+									<h4 style="text-align:left;text-decoration:underline;">About</h4>
+									<p>
+										This competition is a short film-making competition, the ultimate platform that each artist deserves. Amaze your viewers with your perspective, aesthetic sense, emotion or simple ingenuity of idea. So, ignite the director, cinematographer, the sound specialist, the editor or simply an art connoisseur inside you waiting to leap out.
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Details</h4>
+									<p>
+										<ul>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">Venue: </span>XAVOTSAV 2018</li>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">Time Limit: </span>4 MINUTES AND 30 SECONDS</li>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">No. of participants: </span>2 per college</li>
+										</ul>
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Structure</h4>
+									<p>
+										Final round: The short film must be submitted to the PR DESK in a CD in .mp4 or .avi format only, by 12:30 P.M. on 23rd January, 2018. The participant details (name and college) must be submitted along with the short film. The participants are requested to submit a write up along with their short film. The same will be uploaded on our Official YouTube channel.
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Theme</h4>
+									<p>
+										To be informed to the Contingent Leader
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Rules</h4>
+									<ul>
+										<li>&bull; The short film must be in Hindi or English or both. If the short film is in Hindi it must be accompanied with English subtitles. No other languages will be allowed.</li>
+										<li>&bull; Please note that the organizers shall not be responsible for any postal delays, damages or losses. So, it is advised that the entries should be sent sufficiently before the deadline.</li>
+										<li>&bull; You may use any video camera you deem suitable to shoot the montage.  However, usage of low resolution cameras such as webcams and mobile phone cameras is discouraged.</li>
+										<li>&bull; Entries must be the original work of the entrant and must not infringe third party rights.</li>
+										<li>&bull; Please avoid photo slideshows, spoofs, advertisements, or remixes.</li>
+										<li>&bull; Obscenity of any kind is not allowed and will lead to immediate disqualification.</li>
+										<li>&bull; Plagiarism is strictly prohibited. Sound track used may be borrowed but with due credit.</li>
+										<li>&bull; No entries will be accepted after the above-mentioned deadline and any request to extend the deadline shall not be entertained.</li>
+										<li>&bull; The decision of the judges shall be final and binding.</li>
+										<li>&bull; Time limit should be strictly adhered to.</li>
+									</ul>
+									<h4 style="text-align:left;text-decoration:underline;">Judgment Criteria</h4>
+									<ul>
+										<li>&bull; Editing</li>
+										<li>&bull; Cinematography</li>
+										<li>&bull; Script</li>
+										<li>&bull; Acting</li>
+										<li>&bull; Sound Design</li>
+										<li>&bull; Presentation</li>
+										<li>&bull; Implementation and interpretation of the theme</li>
+										<li>&bull; Number of YouTube likes and views</li>
+									</ul>
+								</div>
+								<div class="item">
+									<h3>Cyber Canvas</h3>
+									<h5 style="font-weight:300;">(Digital Poster Making)</h5>
+									<h4 style="text-align:left;text-decoration:underline;">About</h4>
+									<p>
+										With technology invading every facet of our lives, it's time that talent in bringing out art using technology is recognized and rewarded. No studios, paint stained aprons and palettes, just your computer and your wild imagination. Make those cursor strokes speak the language of color and emotion!
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Details</h4>
+									<p>
+										<ul>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">Venue: </span>XAVOTSAV 2018</li>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">Time Limit: </span>NA</li>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">No. of participants: </span>1 per college</li>
+										</ul>
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Structure</h4>
+									<p>
+										Final round: Participants have to design a poster on the given theme and submit it to the registration desk on 22nd January 2018 by 12:30pm in a CD.
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Theme</h4>
+									<p>
+										To be informed to the Contingent Leader
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Rules</h4>
+									<ul>
+										<li>&bull; This is a digital design competition wherein participants have to design a poster on software on the given theme.</li>
+										<li>&bull; Participants need to send their work in the format that they have used along with the .jpeg file of the same, with at least three stages of work.</li>
+										<li>&bull; Only one entry is allowed per participant.</li>
+										<li>&bull; Participants should be ready with their main work-file to submit when asked.</li>
+										<li>&bull; No vector/stock images to be used.</li>
+										<li>&bull; All the entries by a single participant must be sent in one folder. DO NOT send files individually.</li>
+										<li>&bull; In case of multiple individual entries from the same person, only the first entry will be considered.</li>
+										<li>&bull; Any sign of plagiarism may lead to disqualification</li>
+										<li>&bull; The decision of the judges shall be final and binding.</li>
+										<li>&bull; Only one team per college is allowed</li>
+										<li>&bull; Obscenity of any kind is not allowed and will lead to immediate disqualification. </li>
+									</ul>
+									<h4 style="text-align:left;text-decoration:underline;">Judgment Criteria</h4>
+									<ul>
+										<li>&bull; Creativity</li>
+										<li>&bull; Quality</li>
+										<li>&bull; Originality</li>
+										<li>&bull; Composition and Layout</li>
+										<li>&bull; Relevance to the theme</li>
+										<li>&bull; Visual Impact</li>
+									</ul>
+								</div>
+								<div class="item">
+									<h3>Brand It</h3>
+									<h5 style="font-weight:300;">(Logo Making)</h5>
+									<h4 style="text-align:left;text-decoration:underline;">About</h4>
+									<p>
+										What is a logo?!...It is that very small a symbol which represents various things, right from big, glamorous brands to TV channels to Inter College fests. This competition demands a bright mind with fantastically unique ideas to deliver the most exquisite logos. Come one come all to see what comes out of these brilliant minds!
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Details</h4>
+									<p>
+										<ul>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">Venue: </span>XAVOTSAV 2018</li>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">Time Limit: </span>NA</li>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">No. of participants: </span>1 per college</li>
+										</ul>
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Structure</h4>
+									<p>
+										Final round: Participants have to design a logo based on a given theme and will to submit it in a CD at the PR Desk, on 22nd January 2018, by 12:30pm (With Name and college name mentioned).
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Theme</h4>
+									<p>
+										To be informed to the Contingent Leader
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Rules</h4>
+									<ul>
+										<li>&bull; Software that can be used is: Adobe Photoshop, Adobe Illustrator, Corel Draw, and GIMP. However, if any participant wishes to use any other software, he/she must inform the event coordinators latest by 20th January, 2018 and obtain their approval. No software, other than those mentioned above, can be used without the approval of the Event Coordinators.</li>
+										<li>&bull; Depiction of vulgarity, political innuendos is strictly prohibited.</li>
+										<li>&bull; Any participant violating the above rules will be disqualified.</li>
+										<li>&bull; Participants may use custom/ pre-downloaded brushes/ fonts/ shapes/ strokes for creating their design.</li>
+										<li>&bull; The decision of the judges shall be final and binding.</li>
+										<li>&bull; Only one team per college is allowed</li>
+										<li>&bull; Obscenity of any kind is not allowed and will lead to immediate disqualification. </li>
+									</ul>
+									<h4 style="text-align:left;text-decoration:underline;">Judgment Criteria</h4>
+									<ul>
+										<li>&bull; Creativity and Innovation</li>
+										<li>&bull; Conceptualisation</li>
+										<li>&bull; Aesthetic Aspects and Artistic Skills</li>
+									</ul>
+								</div>
+								<div class="item">
+									<h3>Make it Move</h3>
+									<h5 style="font-weight:300;">(GIF Making)</h5>
+									<h4 style="text-align:left;text-decoration:underline;">About</h4>
+									<p>
+										Come and boast your skills of literally bringing images to life. Show us your graphic talent and give life to those forms of digital media, where life is fathomless. Make them dance, make them breathe.
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Details</h4>
+									<p>
+										<ul>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">Venue: </span>XAVOTSAV 2018</li>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">Time Limit: </span>NA</li>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">No. of participants: </span>1 per college</li>
+										</ul>
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Structure</h4>
+									<p>
+										Final round: Participants are requested to make a gif and submit the .gif format only (along with the details of the participants) in the PR DESK on 21st January by 12:30pm in a CD.
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Theme</h4>
+									<p>
+										To be informed to the Contingent Leader
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Rules</h4>
+									<ul>
+										<li>&bull; Please note that the organizers shall not be responsible for any postal delays, damages or losses. So, it is advised that the entries should be sent sufficiently before the deadline.</li>
+										<li>&bull; The decision of the judges shall be final and binding.</li>
+										<li>&bull; Only one team per college is allowed</li>
+										<li>&bull; Obscenity of any kind is not allowed and will lead to immediate disqualification.</li>
+										<li>&bull; FILE SHOULD BE ABSOLUTELY ORIGINAL OR ELSE ENTRY SHALL BE DISQUALIFIED</li>
+									</ul>
+									<h4 style="text-align:left;text-decoration:underline;">Judgment Criteria</h4>
+									<ul>
+										<li>&bull; Creativity and Innovation</li>
+										<li>&bull; Conceptualisation</li>
+										<li>&bull; Artistic Skills</li>
+										<li>&bull; Implementation of Theme</li>
+									</ul>
+								</div>
+							</div>
+
+							<!-- Controls -->
+							<a class="left carousel-control" href="#carousel-digital" role="button" data-slide="prev" style="width:7%;">
+								<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="right carousel-control" href="#carousel-digital" role="button" data-slide="next" style="width:7%;">
+								<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary" style="width:20%;background:#1b2735;" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<!-- Dramatics -->
+		<div class="modal" tabindex="-1" id="dramaticsModal" role="dialog" style="height:100%;width:100%;z-index:50000;">
+			<div class="modal-dialog">
+				<!-- Modal content-->
+				<div class="modal-content" style="height:100%;width:100%;">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Dramatics</h4>
+					</div>
+					<div class="modal-body">
+						<div id="carousel-dramatics" class="carousel slide" data-ride="carousel" data-interval="false" style="padding-left:7%;padding-right:7%;">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li data-target="#carousel-dramatics" data-slide-to="0" class="active"></li>
+								<li data-target="#carousel-dramatics" data-slide-to="1"></li>
+								<li data-target="#carousel-dramatics" data-slide-to="2"></li>
+								<li data-target="#carousel-dramatics" data-slide-to="3"></li>
+								<li data-target="#carousel-dramatics" data-slide-to="4"></li>
+								<li data-target="#carousel-dramatics" data-slide-to="5"></li>
+							</ol>
+
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner" role="listbox" style="height:100%;overflow-y:auto;">
+								<div class="item active">
+									<h3>Theatre of Dreams</h3>
+									<h5 style="font-weight:300;">(Stage Play)</h5>
+									<h4 style="text-align:left;text-decoration:underline;">About</h4>
+									<p>
+										“Drama lies in extreme exaggeration of the feelings, an exaggeration that dislocates flat everyday reality.” This competition will unveil a commitment to the art of theatre, to the cultural fabric of the audience, bringing to them a wholesome feast of drama to awaken and thrill the Senses. So, gather the troupe, watch ingeniously written scripts, transforming into mesmerizing plays, sparred up with the forte of actors guided by adept direction.
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Details</h4>
+									<p>
+										<ul>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">Venue: </span>Fr. Depelchin Auditorium (Tentative)</li>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">Time Limit: </span><br/>
+													XTACY: 5 Minutes (Including Setup &amp Clearance Time)<br/>
+													XAVOTSAV: 7-10 Minutes (Including Setup &amp Clearance Time)</li>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">No. of participants: </span>4-10 (Inclusive of CAs)</li>
+										</ul>
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Structure</h4>
+									<p>
+										XTACY: Participants have to perform a TRAILER or a part of their stage play (to be performed in the XAVOTSAV) within the prescribed time limit.
+									</p>
+									<p>
+										XAVOTSAV: Participants have to perform an EXTENDED VERSION of their trailer performance of XTACY within the prescribed time limit.
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Theme</h4>
+									<p>
+										To be informed to the Contingent Leader
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Production Materials Provided by Xavotsav 2018</h4>
+									<p>
+										4 chairs, 2 tables, 4 standing microphones. Any other prop required is to be brough by the participating team, but organizers hold the discretion of allowing it on stage.
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Rules</h4>
+									<ul>
+										<li>&bull; Performance should be in English. No other languages will be allowed.</li>
+										<li>&bull; Stage play comprises of multiple scenes and may have blackouts.</li>
+										<li>&bull; Backstage voiceovers and narrations are allowed during the performance.</li>
+										<li>&bull; Pre-recorded music is allowed and should be brought in a CD in .mp3 format only (As other formats may not be supported by the computer-use them at your own risk).</li>
+										<li>&bull; The CAs should handle all the lighting and sound requirements of their respective teams and also inform the organizers regarding any specific requirements or any other details.</li>
+										<li>&bull; Usage of props is allowed. These are to be brought by the teams themselves. The organizers hold the discretion to allow the prop on stage.</li>
+										<li>&bull; Teams are requested to submit the prop list prior to the competition. The organizers shall not bear any responsibility in case of loss or damage of prop materials.</li>
+										<li>&bull; Inappropriate content, blasphemy or content defaming any political or religious group is strictly prohibited.</li>
+										<li>&bull; The time limit should be strictly adhered to.</li>
+										<li>&bull; The decision of the judges shall be final and binding.</li>
+										<li>&bull; Only one team per college is allowed</li>
+										<li>&bull; Performers have to clear the stage after their performance otherwise they will be   penalized heavily by the organizers.</li>
+										<li>&bull; Any kind of fluid, powder, flame or heavy object is not allowed on stage.</li>
+										<li>&bull; An obscenity of any kind is not allowed and will lead to immediate disqualification.</li>
+										<li>&bull; Teams must perform a part of the sequence that they intend to perform in the finals in the round of elimination.</li>
+										<li>&bull; Teams must perform an extended version of the sequence performed during the XTACY in XAVOTSAV.</li>
+									</ul>
+									<h4 style="text-align:left;text-decoration:underline;">Judgment Criteria</h4>
+									<ul>
+										<li>&bull; Screenplay</li>
+										<li>&bull; Direction</li>
+										<li>&bull; Acting</li>
+										<li>&bull; Technicalities (Majorly include light and recorded sounds)</li>
+										<li>&bull; Overall impact</li>
+										<li>&bull; Audience interaction</li>
+										<li>&bull; Script</li>
+										<li>&bull; Voice Modulation</li>
+									</ul>
+								</div>
+								<div class="item">
+									<h3>ADramatic</h3>
+									<h5 style="font-weight:300;">(Ad Spoof)</h5>
+									<h4 style="text-align:left;text-decoration:underline;">About</h4>
+									<p>
+										Do you have the ability to transcend and stun the viewers? Come one come all to see how our fantabulous participants convince you to get into the world of products and brands and mesmerize you with their performances.
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Details</h4>
+									<p>
+										<ul>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">Venue: </span>Fr. Depelchin Auditorium (Tentative)</li>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">Time Limit: </span><br/>
+													XTACY: 2+1 Minutes (Including Setup &amp Clearance Time)<br/>
+													XAVOTSAV: 4+1 Minutes (Including Setup &amp Clearance Time)</li>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">No. of participants: </span>4-6 (Only 1 CA shall be allowed)</li>
+										</ul>
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Structure</h4>
+									<p>
+										XTACY: The participating team has to prepare and present an advertisement for the product /brand within the prescribed time limit. (It should be a TRAILER for their Final Performance)
+									</p>
+									<p>
+										XAVOTSAV: The participating team has to prepare and present an advertisement on any product/brand within the prescribed time limit. (EXTENDED VERSION of the TRAILER Performance of Xtacy.)
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Theme</h4>
+									<p>
+										To be informed to the Contingent Leader
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Production Materials Provided by Xavotsav 2018</h4>
+									<p>
+										4 chairs, 2 tables and 4 microphones (Any other prop required is to be brought by the participating team, but organizers hold the discretion of allowing it on stage).
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Rules</h4>
+									<ul>
+										<li>&bull; No tobacco/alcohol based brands can be advertised.</li>
+										<li>&bull; The Language should be English or Hindi or Bilingual.</li>
+										<li>&bull; Obscenity or inappropriate content of any sort will not be tolerated and will be subject to immediate disqualification.</li>
+										<li>&bull; No pre-recorded music shall be allowed.</li>
+										<li>&bull; A penalty shall be imposed for violating the prescribed time limit.</li>
+										<li>&bull; Usage of props is allowed. These are to be brought by the teams themselves. The organizers hold the discretion to allow the prop on stage.</li>
+										<li>&bull; Teams are requested to submit the prop list prior to the competition. The organizers shall not bear any responsibility in case of loss or damage of prop materials.</li>
+										<li>&bull; The advertisement should be related to a generic product/brand only. Advertisements related to any person/political party will lead to immediate disqualification.</li>
+										<li>&bull; The time limit should be strictly adhered to.</li>
+										<li>&bull; The decision of the judges shall be final and binding.</li>
+										<li>&bull; Only one team per college is allowed</li>
+										<li>&bull; Performers have to clear the stage after their performance otherwise they will be penalized heavily by the organizers.</li>
+										<li>&bull; Any kind of fluid, powder, flame or heavy object is not allowed on stage.</li>
+										<li>&bull; Teams must perform a part of the sequence that they intend to perform in the finals in the round of elimination.</li>
+										<li>&bull; Teams must perform an extended version of the sequence performed during the XTACY in XAVOTSAV.</li>
+									</ul>
+									<h4 style="text-align:left;text-decoration:underline;">Judgment Criteria</h4>
+									<ul>
+										<li>&bull; Proper understanding of the product.</li>
+										<li>&bull; Coordination</li>
+										<li>&bull; Presentation /delivery of the idea in question.</li>
+										<li>&bull; Use of good humor and wit, rebuttals, etc.</li>
+									</ul>
+								</div>
+								<div class="item">
+									<h3>Hear it out Loud</h3>
+									<h5 style="font-weight:300;">(Street Play)</h5>
+									<h4 style="text-align:left;text-decoration:underline;">About</h4>
+									<p>
+										Right from the streets, a loud and larger than life exchange of ideologies with drama full of drums, catchy songs, humor, energy, emotions and the roar of the audience. Nukkad Natak is a form of communication that is deeply rooted in the Indian tradition. It breaches all barriers and approaches the people directly in order to bring upon change for the good. So just wait for the mesmerizing acts to move the crowds and leave them all baffled and impressed.
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Details</h4>
+									<p>
+										<ul>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">Venue: </span>Grounds (Tentative)</li>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">Time Limit: </span><br/>
+													XTACY: 5+1 Minutes (Including Setup &amp Clearance Time)<br/>
+													XAVOTSAV: 9+1 Minutes (Including Setup &amp Clearance Time)</li>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">No. of participants: </span>8-14 (including musicians) (2 CAs shall be allowed)</li>
+										</ul>
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Structure</h4>
+									<p>
+										XTACY: The participants have to perform a street play within the prescribed time limit based on any relevant social cause. (It should be a TRAILER for their Final Performance)
+									</p>
+									<p>
+										XAVOTSAV: The participants have to perform a street play within the prescribed time limit based on any relevant social cause. (EXTENDED VERSION of the TRAILER Performance of Xtacy.)
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Theme</h4>
+									<p>
+										Any relevant social cause
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Rules</h4>
+									<ul>
+										<li>&bull; The team size represents the number of people registered as a team. Only these shall be allowed to perform the street play.</li>
+										<li>&bull; The language should be English, Bengali or Hindi.</li>
+										<li>&bull; A minimum of 8 actors to be included in the team.</li>
+										<li>&bull; The Script should be original and should not be copied. If found guilty, would result in disqualification of the team.</li>
+										<li>&bull; Teams will be penalized if they cross the prescribed time limit.</li>
+										<li>&bull; No mics or plug-ins (for instruments) shall be provided. No pre-recorded music will be allowed, only live music is allowed.</li>
+										<li>&bull; The decision of the judges shall be final and binding.</li>
+										<li>&bull; Only one team per college is allowed</li>
+										<li>&bull; Performers have to clear the ground after their performance otherwise they will be penalized heavily by the organizers. </li>
+										<li>&bull; Any kind of fluid, powder, flame or heavy object is not allowed on stage.</li>
+										<li>&bull; Teams must perform a part of the sequence that they intend to perform in the finals in the round of elimination.</li>
+										<li>&bull; Teams must perform an extended version of the sequence performed during the XTACY in XAVOTSAV.</li>
+										<li>&bull; Only household objects can be used as props (Dholak, Stick, Drums, Gulaal are allowed). Other props can be used with the permission of organizers. A list of props is to be submitted prior to the competition to the organizers. (The organizers hold discretion as to allow the props or not.)</li>
+									</ul>
+									<h4 style="text-align:left;text-decoration:underline;">Judgment Criteria</h4>
+									<ul>
+										<li>&bull; Acting</li>
+										<li>&bull; Voice (Sync, modulation, diction)</li>
+										<li>&bull; Script</li>
+										<li>&bull; Screenplay</li>
+										<li>&bull; Crowd interaction</li>
+										<li>&bull; Overall impact</li>
+									</ul>
+								</div>
+								<div class="item">
+									<h3>Mock an Artist</h3>
+									<h5 style="font-weight:300;">(Mimicry Artist)</h5>
+									<h4 style="text-align:left;text-decoration:underline;">About</h4>
+									<p>
+										Are you the one who sent their friends into a tizzy by mimicking the maths teacher? Or did your splendid imitations of eminent stars usually take others by surprise? We give you the platform to showcase the other ‘YOU’. Imitate the stance, the looks, and the tones and be the ultimate mimic. Get cheered for what you are a natural at. We’ll see to what extent you can be someone you are not.
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Details</h4>
+									<p>
+										<ul>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">Venue: </span>STREET STAGE (Tentative)</li>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">Time Limit: </span><br/>
+													XTACY: 2+1 Minutes (Including Setup &amp Clearance Time)<br/>
+													XAVOTSAV: 5+2 Minutes (Including Setup &amp Clearance Time)</li>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">No. of participants: </span>1-3 (1 CA shall be allowed)</li>
+										</ul>
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Structure</h4>
+									<p>
+										XTACY: The participant(s) have to perform a mimicry act of any popular personality within the prescribed time (It should be a TRAILER for their Final Performance).
+									</p>
+									<p>
+										XAVOTSAV: The participant(s) have to perform a mimicry act of any popular personality within the prescribed time limit (EXTENDED VERSION of the TRAILER Performance of Xtacy).
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Theme</h4>
+									<p>
+										Will be informed to the contingent leader.
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Rules</h4>
+									<ul>
+										<li>&bull; The language should be English, Bengali or Hindi.</li>
+										<li>&bull; For single participant act, he/his can mimic any particular person, of well-known popularity and present his/her act.</li>
+										<li>&bull; For group performances, each participant of the team will have to mimic a popular figure and will have to present their act within the prescribed time limit.</li>
+										<li>&bull; For group performances, NO participant without any mimicry act shall be allowed on the stage.</li>
+										<li>&bull; Teams will be penalized if they cross the prescribed time limit.</li>
+										<li>&bull; Two microphones shall be provided.</li>
+										<li>&bull; The decision of the judges shall be final and binding.	</li>
+										<li>&bull; Only one team per college is allowed </li>
+										<li>&bull; Performers have to clear the ground after their performance otherwise they will be   penalized heavily by the organizers. </li>
+										<li>&bull; Any kind of fluid, powder, flame or heavy object is not allowed on stage.</li>
+										<li>&bull; Teams must perform a part of the sequence that they intend to perform in the finals in the round of elimination.</li>
+										<li>&bull; Teams must perform an extended version of the sequence performed during the XTACY in XAVOTSAV.</li>
+									</ul>
+									<h4 style="text-align:left;text-decoration:underline;">Judgment Criteria</h4>
+									<ul>
+										<li>&bull; Acting</li>
+										<li>&bull; Voice (Sync, modulation, diction)</li>
+										<li>&bull; Script</li>
+										<li>&bull; Screenplay</li>
+										<li>&bull; Crowd interaction</li>
+										<li>&bull; Overall impact</li>
+										<li>&bull; Humour</li>
+									</ul>
+								</div>
+								<div class="item">
+									<h3>Dubsmash 2.0</h3>
+									<h5 style="font-weight:300;">(Dubsmash)</h5>
+									<h4 style="text-align:left;text-decoration:underline;">About</h4>
+									<p>
+										Why just keep your Dubsmash videos restricted to your facebook profile or snapchat stories. It time you show the Multiverse your skills in dubbing and hence Xavotsav 2018, brings to you DUBSMASH 2.0.
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Details</h4>
+									<p>
+										<ul>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">Time Limit: </span><br/>
+													XAVOTSAV: 1 Minute</li>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">No. of participants: </span>1-3</li>
+										</ul>
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Structure</h4>
+									<p>
+										Final Round: The Participant(s) will have to submit their Dubsmash Act, to the PR DESK, in a CD in .mp4 or .avi format only, by 02:00 P.M. on 23rd January, 2018.
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Rules</h4>
+									<ul>
+										<li>&bull; The participants can choose any dialogue from any Movie.</li>
+										<li>&bull; The DUBSMASH can be in Hindi, Bengali or English.</li>
+										<li>&bull; Participants may use any video camera they deem suitable to shoot the act. However, usage of low resolution cameras such as webcams and mobile phone cameras is discouraged.</li>
+										<li>&bull; The sound quality of the DUBSMASH should be clear and audible.</li>
+										<li>&bull; The decision of the judges shall be final and binding.	</li>
+										<li>&bull; Only one team per college is allowed </li>
+										<li>&bull; Teams will be penalized if they cross the prescribed time limit.</li>
+										<li>&bull; Any type of vulgarity in the act, shall not be entertained.</li>
+									</ul>
+									<h4 style="text-align:left;text-decoration:underline;">Judgment Criteria</h4>
+									<ul>
+										<li>&bull; Acting</li>
+										<li>&bull; Coordination with the sound</li>
+										<li>&bull; Humour</li>
+										<li>&bull; Sequel Chosen</li>
+									</ul>
+								</div>
+							</div>
+
+							<!-- Controls -->
+							<a class="left carousel-control" href="#carousel-dramatics" role="button" data-slide="prev" style="width:7%;">
+								<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="right carousel-control" href="#carousel-dramatics" role="button" data-slide="next" style="width:7%;">
+								<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary" style="width:20%;background:#1b2735;" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<!-- Fine Arts -->
+		<div class="modal" tabindex="-1" id="fineArtModal" role="dialog" style="height:100%;width:100%;z-index:50000;">
+			<div class="modal-dialog">
+				<!-- Modal content-->
+				<div class="modal-content" style="height:100%;width:100%;">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Fine Arts</h4>
+					</div>
+					<div class="modal-body">
+						<ul class="list-group" style="background:#1b2735;color:white;">
+								<a href="#" class="eventList list-group-item">Fifty Shades of Black<span class="eventmain">(Charcoal Sketching)</span></a>
+								<a href="#" class="eventList list-group-item">Parallel Faces<span class="eventmain">(Face Painting)</span></a>
+								<a href="#" class="eventList list-group-item">Shirt up the Multiverse<span class="eventmain">(T-Shirt Painting)</span></a>
+								<a href="#" class="eventList list-group-item">Sky Scraps<span class="eventmain">(Junk Architecture)</span></a>
+								<a href="#" class="eventList list-group-item">Quill Star<span class="eventmain">(Paper Quilling)</span></a>
+								<a href="#" class="eventList list-group-item">Tattooine<span class="eventmain">(Tattoo Art)</span></a>
+								<a href="#" class="eventList list-group-item">Nail Nova<span class="eventmain">(Nail Art)</span></a>
+								<a href="#" class="eventList list-group-item">Hair-o-Space<span class="eventmain">(Hair Styling)</span></a>
+								<a href="#" class="eventList list-group-item">Rasm-e-Mehendi<span class="eventmain">(Mehendi Art)</span></a>
+								<a href="#" class="eventList list-group-item">Comical Cosmos<span class="eventmain">(Comic Strip Making)</span></a>
+								<a href="#" class="eventList list-group-item">Splashy Way<span class="eventmain">(Water Colour Painting)</span></a>
+								<a href="#" class="eventList list-group-item">Colours of the Multiverse<span class="eventmain">(Dry Rangoli)</span></a>
+								<a href="#" class="eventList list-group-item">Clusteroodle<span class="eventmain">(Doodle Art)</span></a>
+								<a href="#" class="eventList list-group-item">Crave through the Planets<span class="eventmain">(Soap Carving)</span></a>
+						</ul>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary" style="width:20%;background:#1b2735;" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<!-- Journalism -->
+		<div class="modal" tabindex="-1" id="journalismModal" role="dialog" style="height:100%;width:100%;z-index:50000;">
+			<div class="modal-dialog">
+				<!-- Modal content-->
+				<div class="modal-content" style="height:100%;width:100%;">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Journalism</h4>
+					</div>
+					<div class="modal-body">
+						<div id="carousel-journalism" class="carousel slide" data-ride="carousel" data-interval="false" style="padding-left:7%;padding-right:7%;">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li data-target="#carousel-journalism" data-slide-to="0" class="active"></li>
+								<li data-target="#carousel-journalism" data-slide-to="1"></li>
+								<li data-target="#carousel-journalism" data-slide-to="2"></li>
+							</ol>
+
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner" role="listbox" style="height:100%;overflow-y:auto;">
+								<div class="item active">
+									<h3>Printstorm</h3>
+									<h5 style="font-weight:300;">(Print Media Report)</h5>
+									<h4 style="text-align:left;text-decoration:underline;">About</h4>
+									<p>
+										For you, the pen will truly be mightier than the sword, so wield it carefully. Delve deep into the matter and stop not till the truth is unearthed. Choose your words carefully, for they will make or break opinions. Report what you witness and come out tops. Xavotsav awaits you.
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Details</h4>
+									<p>
+										<ul>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">Time Limit: </span>NA</li>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">No. of participants: </span>1</li>
+										</ul>
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Structure</h4>
+									<p>
+										XTACY: The participants will be given an unedited report which in terms of Journalism means ‘Badly written’. It may contain wrong grammar, incorrect spellings, and many other mistakes. The participants will have to edit the report and write it correctly within the prescribed time limit.
+									</p>
+									<p>
+										XAVOTSAV: The participants will have to write a report on 2 Main Stage events, 2 Auditorium Events and any other 3 events of DAY 1 and DAY 2 of Xavotsav 2018 in A4 paper and submit it in sealed envelope with NAME and COLLEGE NAME WRITTEN CLEARLY.<br/>
+										They will have to submit the same at the PR DESK on 23rd January at 12:30pm.
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Rules</h4>
+									<ul>
+										<li>&bull; The participants qualifying in Xtacy will take part in Xavotsav.</li>
+										<li>&bull; Each team will have to prepare a report on 2 Main Stage, 2 Auditorium events and other 3 events of DAY 1 and DAY 2 of Xavotsav 2018.</li>
+										<li>&bull; Each event has a word limit of 50- 100. </li>
+										<li>&bull; Normal newspaper report format can be used.</li>
+										<li>&bull; The report should be written on an A4 paper only.</li>
+										<li>&bull; The Participant’s name and college name should be written clearly on the envelope .</li>
+										<li>&bull; Only one participant per college will be allowed.</li>
+									</ul>
+									<h4 style="text-align:left;text-decoration:underline;">Judgment Criteria</h4>
+									<ul>
+										<li>&bull; Writing skills</li>
+										<li>&bull; Vocabulary</li>
+										<li>&bull; Event coverage</li>
+									</ul>
+								</div>
+								<div class="item">
+									<h3>Viral Inc.</h3>
+									<h5 style="font-weight:300;">(Digital Media Report)</h5>
+									<h4 style="text-align:left;text-decoration:underline;">About</h4>
+									<p>
+										The camcorder will be your best friend here and your only partner in crime. Back up your stories with video footage and make your news report all the more lively. A picture speaks louder than words but a video, only much louder. The early bird catches the worm too. Be there first, and the story is yours!!									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Details</h4>
+									<p>
+										<ul>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">Time Limit: </span>NA</li>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">No. of participants: </span>2 Per Team</li>
+										</ul>
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Structure</h4>
+									<p>
+										XTACY: The participants will have to make a documentary on any topic of their choice. It can be reporters covering different news around the city or a documentary monologue.  Participants will have to send their raw footage as the proof of authenticity. The participants will have to submit the entire documentary along with their raw footage at the PR Desk with their name and name of the college clearly mentioned.
+									</p>
+									<p>
+										XAVOTSAV: The participants will have to cover 2 Main Stage, 2 Auditorium and any other 3 events for DAY 1 and DAY 2 of XAVOTSAV 2018 and make a digital media report on those events.<br/>
+										The participants will have to submit their video in a CD at the PR DESK on 23rd JANUARY at 12:30pm.
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Rules</h4>
+									<ul>
+										<li>&bull; The participants qualifying in Xtacy will take part in Xavotsav.</li>
+										<li>&bull; Two participants will have to take part, one participant being the cameraman and the other one being the news reporter.</li>
+										<li>&bull; Each event coverage should be a minimum of 5 minutes.</li>
+										<li>&bull; Coverage should be done directly from the event venues.</li>
+										<li>&bull; The voice of the news reporter must be clear and audible.</li>
+										<li>&bull; The participants can cover any 2 MAIN STAGE events, any 2 Auditorium events and any other 3 events of DAY 1 and DAY 2 of XAVOTSAV 2018.</li>
+										<li>&bull; No kind of obscenity or vulgarity is to be showed in the video.</li>
+										<li>&bull; The recordings are to be submitted in a CD only.</li>
+									</ul>
+									<h4 style="text-align:left;text-decoration:underline;">Judgment Criteria</h4>
+									<ul>
+										<li>&bull; Anchoring ability</li>
+										<li>&bull; Speaking skills</li>
+										<li>&bull; Videography</li>
+										<li>&bull; Event coverage</li>
+										<li>&bull; Description</li>
+									</ul>
+								</div>
+								<div class="item">
+									<h3>The Nation wants to know</h3>
+									<h5 style="font-weight:300;">(News Room Anchoring)</h5>
+									<h4 style="text-align:left;text-decoration:underline;">About</h4>
+									<p>
+										Be the next Arnab Goswami or Suman Dey or maybe Barkha Dutt as you successfully handle a myriad variety of panellists, bring out their views and the facts for your viewers to decide for themselves. Amid the ensuing din and hullabaloo, make yourself heard and have the final say. Do you have what it takes to be the greatest newsroom anchor of them all? We want to know. Make no mistake, for you will be put to the test.</p>
+									<h4 style="text-align:left;text-decoration:underline;">Details</h4>
+									<p>
+										<ul>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">Time Limit: </span>10 Minutes</li>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">No. of participants: </span>1 Per Team</li>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">Venue: </span>Room 15 (Tentative)</li>
+										</ul>
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Structure (BOTH FOR XTACY AND XAVOTSAV)</h4>
+									<p>
+										The participants will have to anchor an open debate presided over by 6 panellists (3 speaking for the motion, 3 speaking against the motion). The topic shall be informed to the participants 3 days prior to the event.
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Rules</h4>
+									<ul>
+										<li>&bull; The panelists shall be decided by the organizers with three speaking for the motion and three speaking against the motion.</li>
+										<li>&bull; The participant will have to anchor the open debate.</li>
+										<li>&bull; Any kind of abusive language must not be used by the participants.</li>
+										<li>&bull; The participant must do a proper ground level work and must place his/her views on the topic before starting of the debate.</li>
+									</ul>
+									<h4 style="text-align:left;text-decoration:underline;">Judgment Criteria</h4>
+									<ul>
+										<li>&bull; Anchoring skills</li>
+										<li>&bull; Controlling the panelists</li>
+										<li>&bull; Cross questioning skills</li>
+										<li>&bull; Communication skills</li>
+									</ul>
+								</div>
+							</div>
+
+							<!-- Controls -->
+							<a class="left carousel-control" href="#carousel-journalism" role="button" data-slide="prev" style="width:7%;">
+								<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="right carousel-control" href="#carousel-journalism" role="button" data-slide="next" style="width:7%;">
+								<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary" style="width:20%;background:#1b2735;" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		<!-- Lifestyle -->
+		<div class="modal" tabindex="-1" id="lifestyleModal" role="dialog" style="height:100%;width:100%;z-index:50000;">
+			<div class="modal-dialog">
+				<!-- Modal content-->
+				<div class="modal-content" style="height:100%;width:100%;">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Lifestyle</h4>
+					</div>
+					<div class="modal-body">
+						<div id="carousel-lifestyle" class="carousel slide" data-ride="carousel" data-interval="false" style="padding-left:7%;padding-right:7%;">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li data-target="#carousel-lifestyle" data-slide-to="0" class="active"></li>
+								<li data-target="#carousel-lifestyle" data-slide-to="1"></li>
+								<li data-target="#carousel-lifestyle" data-slide-to="2"></li>
+								<li data-target="#carousel-lifestyle" data-slide-to="3"></li>
+							</ol>
+
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner" role="listbox" style="height:100%;overflow-y:auto;">
+								<div class="item active">
+									<h3>Cosmopolitan</h3>
+									<h5 style="font-weight:300;">(Fashion Show)</h5>
+									<h4 style="text-align:left;text-decoration:underline;">About</h4>
+									<p>
+										Fashion is an art, a religion, a peek into a personality! Ultimately, fashion is a statement of expression for each of us and VOGUE is the avenue to express oneself. This competition being the epitome of beauty where glamour and grace reach the zenith brings to you the most innovative and unique designs and formations. So, come and expose yourself to this visual delight that Xavotsav 2018 brings to you.
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Details</h4>
+									<p>
+										<ul>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">Venue: </span>Main Stage</li>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">Time Limit: </span><br/>
+												XTACY: 3+2 MINUTES (INCLUDING SET UP AND CLEARANCE TIME)<br/>
+												XAVOTSAV: 5+2 MINUTES (INCLUDING SET UP AND CLEARANCE TIME) </li>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">No. of participants: </span>16-20 Participants (A maximum of 2 CAs are allowed)</li>
+										</ul>
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Structure</h4>
+									<p>
+										XTACY: Teams have to perform (walk) on any theme in particular on a well-versed choreography accompanied by a pre-recorded track within the given time limit.
+									</p>
+									<p>
+										XAVOTSAV: Teams have to perform (walk) on the theme provided by the organizers on a well-versed choreography accompanied by a pre-recorded track within the given time limit.
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Theme</h4>
+									<p>
+										To be informed to the Contingent Leader.
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Rules</h4>
+									<ul>
+										<li>&bull; Only one team is allowed to participate per college.</li>
+										<li>&bull; A penalty will be imposed for violating the prescribed time limit.</li>
+										<li>&bull; Usage of props is allowed. These are to be brought by the teams themselves. The organizers hold the discretion to allow the prop on stage.</li>
+										<li>&bull; Teams are requested to submit the prop list prior to the competition. The organizers shall not bear any responsibility in case of loss or damage of prop materials.</li>
+										<li>&bull; Pre-recorded music or track shall be brought in a pen drive in .mp3 format only (as other formats may not be supported on the computer – use them at your own risk).</li>
+										<li>&bull; Light and sound requirements must be informed to the organizers prior to the event.</li>
+										<li>&bull; Vulgarity of any kind is not allowed and will subject the participating team to disqualification. Hence, if the team feels that any stunt or costume design can be considered as vulgar, it is strongly advised to consult the organizers before performing it on stage. The decision of the organizers will be final in case of any disputes arising due to this.</li>
+										<li>&bull; Performers have to clear the stage after their performance otherwise they will be   penalized heavily by the organizers. </li>
+										<li>&bull; Any kind of fluid, powder, flame or heavy object is not allowed on stage. </li>
+										<li>&bull; The decision of the judges shall be final and binding. </li>
+										<li>&bull; Teams must perform on any theme that they intend to perform in the XAVOTSAV.</li>
+									</ul>
+									<h4 style="text-align:left;text-decoration:underline;">Judgment Criteria</h4>
+									<ul>
+										<li>&bull; Innovation</li>
+										<li>&bull; Makeup and styling</li>
+										<li>&bull; Props/costumes</li>
+										<li>&bull; Choreography</li>
+										<li>&bull; Ramp walk</li>
+										<li>&bull; Thematic incorporation</li>
+										<li>&bull; Overall impact</li>
+									</ul>
+								</div>
+								<div class="item">
+									<h3>Walk through the Realms</h3>
+									<h5 style="font-weight:300;">(Theme Walk)</h5>
+									<h4 style="text-align:left;text-decoration:underline;">About</h4>
+									<p>
+										It’s all about how you make or break the look. The look is all that matters. This competition demands not only creativity but also the spirit that lies within you only to be discovered in this Multiverse.
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Details</h4>
+									<p>
+										<ul>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">Venue: </span>FR. DEPELCHIN AUDITORIUM (TENTATIVE)</li>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">Time Limit: </span><br/>
+												XTACY: 2+1 MINUTES (INCLUDING SET UP AND CLEARANCE TIME)<br/>
+												XAVOTSAV: 4+1 MINUTES (INCLUDING SET UP AND CLEARANCE TIME) </li>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">No. of participants: </span>8-12 Participants (A maximum of 2 CAs are allowed)</li>
+										</ul>
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Structure</h4>
+									<p>
+										XTACY: Teams have to perform (walk) on any theme in particular on a well-versed choreography accompanied by a pre-recorded track within the given time limit. (It should be a TRAILER for their Final Performance)
+									</p>
+									<p>
+										XAVOTSAV: Teams have to display the whole story of the particular sitcom or a verse of it, they have chosen to depict, which shall be accompanied by a well-versed choreography and pre-recorded track within the prescribed time limit. (EXTENDED VERSION of the TRAILER Performance of Xtacy.)
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Theme</h4>
+									<p>
+										"FANTASY FILMS" (participants have to incorporate the theme mentioned above in any which way they want to, but the depiction of the theme should be original and unique. If found guilty of using an already designed theme, the participating team will be subjected to disqualification).
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Rules</h4>
+									<ul>
+										<li>&bull; Only one team is allowed to participate per college.</li>
+										<li>&bull; A penalty will be imposed for violating the prescribed time limit.</li>
+										<li>&bull; Usage of props is allowed. These are to be brought by the teams themselves. The organizers hold the discretion to allow the prop on stage.</li>
+										<li>&bull; Teams are requested to submit the prop list prior to the competition. The organizers shall not bear any responsibility in case of loss or damage of prop materials.</li>
+										<li>&bull; Pre-recorded music or track shall be brought in a pen drive in .mp3 format only (as other formats may not be supported on the computer – use them at your own risk).</li>
+										<li>&bull; Light and sound requirements must be informed to the organizers prior to the event.</li>
+										<li>&bull; Vulgarity of any kind is not allowed and will subject the participating team to disqualification. Hence, if the team feels that any stunt or costume design can be considered as vulgar, it is strongly advised to consult the organizers before performing it on stage. The decision of the organizers will be final in case of any disputes arising due to this.</li>
+										<li>&bull; Performers have to clear the stage after their performance otherwise they will be   penalized heavily by the organizers. </li>
+										<li>&bull; Any kind of fluid, powder, flame or heavy object is not allowed on stage. </li>
+										<li>&bull; The decision of the judges shall be final and binding. </li>
+									</ul>
+									<h4 style="text-align:left;text-decoration:underline;">Judgment Criteria</h4>
+									<ul>
+										<li>&bull; Innovation</li>
+										<li>&bull; Makeup and styling</li>
+										<li>&bull; Props/costumes</li>
+										<li>&bull; Choreography</li>
+										<li>&bull; Ramp walk</li>
+										<li>&bull; Thematic incorporation</li>
+										<li>&bull; Overall impact</li>
+									</ul>
+								</div>
+								<div class="item">
+									<h3>The Unused Beauty</h3>
+									<h5 style="font-weight:300;">(Trashion)</h5>
+									<h4 style="text-align:left;text-decoration:underline;">About</h4>
+									<p>
+										Rules can always be bent. Why dress the conventional way when we can make so many things from waste materials around us? So, cutting out all the clichéd stuff we bring to you a fashion designing competition with a twist, where you must produce a dress out of trash! A little piece of advice, whatever you make should be a relief to the sore eyes!
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Details</h4>
+									<p>
+										<ul>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">Venue: </span>Street Stage (GROUND)</li>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">Time Limit: </span>1 HOUR &amp 30 MINUTES</li>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">No. of participants: </span>2-4 Participants (NO CA is allowed)</li>
+										</ul>
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Structure(Both for XTACY and XAVOTSAV)</h4>
+									<p>
+										Final round: Teams have to design a costume using the materials provided by the organizers only and any one of the team members has to wear the costume at the end of the prescribed time limit and the other member has to accompany the presentation with a small explanation. Participants will have to design a costume depending upon a theme (which will be given on the spot) using the materials given.
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Theme</h4>
+									<p>
+										To be given ON SPOT.
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Materials to be provided</h4>
+									<p>
+										Disposable glasses, Thermocol items, Wrappers, Polythene, Cardboard, Posters, Newspapers, Flowers, Leaves, Colors, and Cans, etc.<br/>
+										Above list is indicative only.
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Rules</h4>
+									<ul>
+										<li>&bull; Participants in a team of at most four are required to make an outfit with materials provided by the organizers (limited materials). </li>
+										<li>&bull; Materials would be given by organizers prior to event and any other material is not allowed. </li>
+										<li>&bull; Decision of judges shall be final and binding. </li>
+										<li>&bull; One of the team members shall wear the dress after completion</li>
+										<li>&bull; Participants must strictly adhere to the time limit.</li>
+										<li>&bull; Only one team per college is allowed</li>
+										<li>&bull; Obscenity of any kind is not allowed and will lead to immediate disqualification. </li>
+									</ul>
+								</div>
+								<div class="item">
+									<h3>Master of the Universe</h3>
+									<h5 style="font-weight:300;">(Mr &amp Ms Xavotsav)</h5>
+									<h4 style="text-align:left;text-decoration:underline;">About</h4>
+									<p>
+										The personality contest of XAVOTSAV 2018. It is the single most coveted individual event of the festival, a fun filled path to the most sought after title of Ms. and Mr. XAVOTSAV. One can only imagine the battle of wits that ensues right from the initial stages where puzzling and questionnaires are distributed, to the crazy and fun-filled tasks, all the way to the jam-packed finals in the auditorium with participants showcasing their talent and impressing the audience and judges. So, it’s the battle to be the ultimate King and Queen of Xavotsav 2018.
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Details</h4>
+									<p>
+										<ul>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">Venue: </span>FR. DEPELCHIN AUDITORIUM (TENTATIVE)</li>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">Time Limit: </span>NA</li>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">No. of participants: </span>2 Participants (A maximum of 1 CA is allowed)</li>
+										</ul>
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Structure(Both for XTACY and XAVOTSAV)</h4>
+									<p>
+										To be mailed to the participants upon their registration.
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Rules</h4>
+									<ul>
+										<li>&bull; Participant should be a college student only.</li>
+										<li>&bull; Upon registering the participant shall receive a mail from TEAM XAVOTSAV regarding the rounds, rules, and judging criteria of the event.</li>
+										<li>&bull; Vulgarity in any form is not permitted. </li>
+										<li>&bull; Only one participant per college is allowed in each category</li>
+										<li>&bull; Any kind of fluid, powder, flame or heavy object is not allowed on stage. </li>
+										<li>&bull; The decision of the judges shall be final and binding.</li>
+										<li>&bull; Obscenity of any kind is not allowed and will lead to immediate disqualification. </li>
+									</ul>
+								</div>
+							</div>
+
+							<!-- Controls -->
+							<a class="left carousel-control" href="#carousel-lifestyle" role="button" data-slide="prev" style="width:7%;">
+								<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="right carousel-control" href="#carousel-lifestyle" role="button" data-slide="next" style="width:7%;">
+								<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary" style="width:20%;background:#1b2735;" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<!-- Literary Arts -->
+		<div class="modal" tabindex="-1" id="literaryModal" role="dialog" style="height:100%;width:100%;z-index:50000;">
+			<div class="modal-dialog">
+				<!-- Modal content-->
+				<div class="modal-content" style="height:100%;width:100%;">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Literary Arts</h4>
+					</div>
+					<div class="modal-body">
+						<div id="carousel-literary" class="carousel slide" data-ride="carousel" data-interval="false" style="padding-left:7%;padding-right:7%;">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li data-target="#carousel-literary" data-slide-to="0" class="active"></li>
+								<li data-target="#carousel-literary" data-slide-to="1"></li>
+								<li data-target="#carousel-literary" data-slide-to="2"></li>
+								<li data-target="#carousel-literary" data-slide-to="3"></li>
+								<li data-target="#carousel-literary" data-slide-to="4"></li>
+							</ol>
+
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner" role="listbox" style="height:100%;overflow-y:auto;">
+								<div class="item active">
+									<h3>Creative Yet Deceptive</h3>
+									<h5 style="font-weight:300;">(Creative Writing)</h5>
+									<h4 style="text-align:left;text-decoration:underline;">About</h4>
+									<p>
+										“There is no greater agony than bearing an untold story inside you.” ― Maya Angelou. Writing, as easy as it seems is an intricate art. It’s not just about putting words on paper but feeling those words. One needs a little bit of talent some innovation and a lot of imagination to work wonders. Do you think you have it in you? Can you weave a web of sentences that will enthrall the reader? So pen down your imagination and show your universe of through the verses of your tale.
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Details</h4>
+									<p>
+										<ul>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">Venue: </span>ROOM 10-MAIN BUILDING (TENTATIVE)</li>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">Time Limit: </span>75 Minutes</li>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">No. of participants: </span>3 (1 each for English, Hindi, Bengali Languages) [1 team per college]</li>
+										</ul>
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Structure(BOTH FOR XTACY AND XAVOTSAV)</h4>
+									<p>
+										FINAL ROUND: The teams will be given a topic on which each participant of the teams will have to write in their selected language within the prescribed time limit.
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Theme</h4>
+									<p>
+										On Spot
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Rules</h4>
+									<ul>
+										<li>&bull; Each team should consist of 3 participants. One participant will have to write in English, one participant will have to write in Bengali and one participant will have to write in Hindi.</li>
+										<li>&bull; Each TEAM will have to write in all the 3 languages (English, Bengali, and Hindi).</li>
+										<li>&bull; Each TEAM will have to have 3 participants, and one participant will have to write in only one language.</li>
+										<li>&bull; TEAMS which fail to produce 3 participants, shall not be allowed to take part in the event.</li>
+										<li>&bull; Participants will be given a theme on spot on the basis of which they will have to write a story.</li>
+										<li>&bull; The time used by the participants in planning or structuring the storyline is included within the time allotted.</li>
+										<li>&bull; The judging will be done, per team wise, by adding the scores of all the 3 participants of that team.</li>
+										<li>&bull; Any use/display of vulgarity/obscenity/expletives/controversial sentiments, etc. shall be penalized and shall lead to immediate disqualification.</li>
+										<li>&bull; Only two A4 sheets of paper will be provided per participant; all the other necessary materials are to be brought in by the participants themselves.</li>
+									</ul>
+									<h4 style="text-align:left;text-decoration:underline;">Judgment Criteria</h4>
+									<ul>
+										<li>&bull; Storyline</li>
+										<li>&bull; Originality</li>
+										<li>&bull; Innovation</li>
+										<li>&bull; Style of writing</li>
+										<li>&bull; Good vocabulary</li>
+										<li>&bull; Expression of emotions</li>
+										<li>&bull; Wit</li>
+									</ul>
+								</div>
+								<div class="item">
+									<h3>Wordsworth</h3>
+									<h5 style="font-weight:300;">(Word Games)</h5>
+									<h4 style="text-align:left;text-decoration:underline;">About</h4>
+									<p>
+										There would be hurdles; there would be quagmires and also impasses. Do not lose your way through these literal sentries and you would be crowned The Universal Champion of Words.
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Details</h4>
+									<p>
+										<ul>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">Venue: </span>ARRUPE HALL (TENTATIVE)</li>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">Time Limit: </span>NA</li>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">No. of participants: </span>2</li>
+										</ul>
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Structure</h4>
+									<p>
+										FINAL ROUND:
+										<p>ROUND 1:</p>
+										<p>“What’s the good word” --- The auditions will consist of three rounds. For the first round, participants will be given an envelope each, consisting of scrambled letters that make a word. The teams will have to put together the word within 2 minutes. The first team to do so will get 15 points, the second 10, and the third 5. The teams unable to unscramble the word will get no points.</p>
+										<p>Five teams will make it to the second round. For the third round, the teams will be quizzed on palindromic and/or portmanteau words. Similarly, the first team to answer within 2 minutes will get 15 marks, the second 10 and the third 5.</p>
+										<p>Three teams will make it to the third round. For the third round, participants will be shown certain series of pictures, based on which they will have to guess the idiom or the proverb. Points and time allotted will be the same as the previous rounds. The two teams with the highest marks will be selected for the finals.</p>
+										<p>ROUND 2: “TABOO” ---</p> 	
+										<p>There will be a total of THREE rounds. A particular word will be projected on the screen with four other words related to the given word. (For instance, if the given word is 'password', the ancillary words may be 'secret', 'type', 'computer', 'key').</p>
+										<p>In a given round, one member from the team will face the screen while the other would face the audience. The participant facing the screen would have to get across the given word to her/his team member without using the ancillary words (the taboo words). Even if the guessing member of the team has correctly guessed a taboo word, the other member MUST NOT use the word himself/herself to explain the given word. Each team gets ONE MINUTE per turn. Except in the first round, each team will get multiple turns in each round. The team member explaining the word may pass on the given word, but that will lead to a loss of 5 points.</p>
+										<p>If a team member while conveying the word uses any taboo word by mistake, he/she will be made aware of the mistake by the moderator and will lose 5 points.</p>
+										<p>For each word correctly guessed, the team will be awarded 10 points. While conveying a word; participants must not resort to abusing, demeaning or indulge in mockery of any individual. Use of vernacular language is also prohibited.</p>
+										<p>Violation of these rules might lead to disqualification. </p>
+										<p>At the end of 1 minute allotted to each team, an appointed Time Keeper will ring a bell. Any word guessed after this time period will not be counted.</p>
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Rules</h4>
+									<ul>
+										<li>&bull; If there is a tie between two teams at the end of any round there shall be a surprise tie breaker round.</li>
+										<li>&bull; In case of any confusion, the decision of the moderator will be final. The decision of the moderator is not open to any form of debate.</li>
+										<li>&bull; Teams are requested not to shout out the answers or assist other teams during the event. Teams found doing so shall be heavily penalized and subject to immediate disqualification.</li>
+										<li>&bull; The time limit of every round will be informed prior to the commencement of the event and should be strictly adhered to by the participants.</li>
+									</ul>
+								</div>
+								<div class="item">
+									<h3>The Budding Poets</h3>
+									<h5 style="font-weight:300;">(Poetry Slam)</h5>
+									<h4 style="text-align:left;text-decoration:underline;">About</h4>
+									<p>
+										It’s not just what you write; it’s also important how you use it to capture the audience’s imagination. To all the aspiring poets, this is your call from Xavotsav, to show the Multiverse the poet which lives inside you.
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Details</h4>
+									<p>
+										<ul>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">Venue: </span>FR. DEPELCHIN AUDITORIUM (TENTATIVE)</li>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">Time Limit: </span>3+1 Minutes</li>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">No. of participant(s): </span>1</li>
+										</ul>
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Structure</h4>
+									<p>
+										FINAL ROUND:
+										<p>Each participant has to recite or act out his/her self-written poem on stage within the given time limit.</p>
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Rules</h4>
+									<ul>
+										<li>&bull; The poems must be self-written. Plagiarism will not be entertained.</li>
+										<li>&bull; The poems can be written in English, Hindi or Bengali.</li>
+										<li>&bull; Each poet gets three minute, plus a ten-second grace period, to read one poem. If the poet goes over time, points will be deducted from the total score.</li>
+										<li>&bull; No props, costumes, musical instruments can be used by the poet.</li>
+										<li>&bull; Must relate to the theme. </li>
+										<li>&bull; The author of the content should be the one performing the piece. </li>
+										<li>&bull; Must not be sexist, racist, homophobic, transphobic, cissexist or perpetuate/propagate hate towards any minority or target any race, religion, and ethnicity otherwise. </li>
+										<li>&bull; Performances that exceed the time limit will be penalised. </li>
+										<li>&bull; Only one participant allowed per college.</li>
+										<li>&bull; Obscenity/vulgarity of any kind is not allowed and will subject to immediate disqualification.</li>
+									</ul>
+									<h4 style="text-align:left;text-decoration:underline;">Judgment Criteria</h4>
+									<ul>
+										<li>&bull; Performance- (Delivery and Impact) </li>
+										<li>&bull; Content – (Originality and Composition)</li>
+										<li>&bull; Timing</li>
+									</ul>
+								</div>
+								<div class="item">
+									<h3>Tiny Tales</h3>
+									<h5 style="font-weight:300;">(Scribbled Storied)</h5>
+									<h4 style="text-align:left;text-decoration:underline;">About</h4>
+									<p>
+										Popular micro tale sites in recent time have given birth to a new brand of writers- The Micro Authors. They possess the insane ability to convey thoughts, feelings and emotions within 3 sentences. Easy to read, easier to remember, the tales are. Hope to cement your tale in the minds of people? Tell your tales at Xavotsav 2018 and the top three contestants will have their entries posted on the official Xavotsav Facebook page!! So start scribbling!!
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Details</h4>
+									<p>
+										<ul>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">Time Limit: </span>NA</li>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">No. of participant(s): </span>1</li>
+										</ul>
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Structure</h4>
+									<p>
+										FINAL ROUND:
+										<p>The participants will have to write short stories or scribbled stories in a 10 to 25 words. They need to write it in an A4 size paper and submit in a sealed envelope (Name, College Name written) to the PR DESK.</p>
+										<p>The best stories will be shared from our official XAVOTSAV Facebook page.</p>
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Theme</h4>
+									<p>
+										To be informed to the Contingent Leader
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Rules</h4>
+									<ul>
+										<li>&bull; The participants must strictly adhere to the word limit.</li>
+										<li>&bull; Participants need to send their work , written in A4 paper, in a sealed envelope</li>
+										<li>&bull; The participants should adhere to the theme given.</li>
+									</ul>
+									<h4 style="text-align:left;text-decoration:underline;">Judgment Criteria</h4>
+									<ul>
+										<li>&bull; Phrases used</li>
+										<li>&bull; Relation with the theme</li>
+										<li>&bull; Innovation</li>
+										<li>&bull; Style of writing</li>
+										<li>&bull; Good vocabulary</li>
+										<li>&bull; Expression of emotions</li>
+									</ul>
+								</div>
+								<div class="item">
+									<h3>Spell Bound</h3>
+									<h5 style="font-weight:300;">(Spell Bee)</h5>
+									<h4 style="text-align:left;text-decoration:underline;">About</h4>
+									<p>
+										An oft neglected part of our education, a good vocab makes all the difference between through and thorough, between a good read and a nightmare. Think you have one? Then this event will be your hunting grounds. Delve in to the roots, for when the bee stings, you would do good to be prepared.
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Details</h4>
+									<p>
+										<ul>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">Venue: </span>ARRUPE HALL</li>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">Time Limit: </span>NA</li>
+											<li><span style="font-weight:bold;color:#ddd;text-transform:uppercase;">No. of participant(s): </span>2</li>
+										</ul>
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Structure(BOTH FOR XTACY AND XAVOTSAV)</h4>
+									<p>
+										FINAL ROUND:
+										<p>A set of 25 spellings will be called out. Teams will have to write down the correct spellings on paper. Ties will be broken by another set of 5 -10 spellings. </p>
+									</p>
+									<h4 style="text-align:left;text-decoration:underline;">Rules</h4>
+									<ul>
+										<li>&bull; Any team caught using unfair means and/or assisting other teams during the contest will face disqualification.</li>
+										<li>&bull; Adjudication of the moderator present in both rounds will be final and binding.</li>
+										<li>&bull; Only one team of 2 members can be sent from each college.</li>
+										<li>&bull; Participants are advised to have knowledge of Scrabble.</li>
+										<li>&bull; Comprehensive preparation on the part of the participants is expected.</li>
+										<li>&bull; Organisers reserve the right to modify the rules of the event at any time. Contestants will be duly informed.</li>
+									</ul>
+								</div>
+							</div>
+
+							<!-- Controls -->
+							<a class="left carousel-control" href="#carousel-literary" role="button" data-slide="prev" style="width:7%;">
+								<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="right carousel-control" href="#carousel-literary" role="button" data-slide="next" style="width:7%;">
+								<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary" style="width:20%;background:#1b2735;" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<!-- Music -->
+		<div class="modal" tabindex="-1" id="musicModal" role="dialog" style="height:100%;width:100%;z-index:50000;">
+			<div class="modal-dialog">
+				<!-- Modal content-->
+				<div class="modal-content" style="height:100%;width:100%;">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Music</h4>
+					</div>
+					<div class="modal-body">
+						<ul class="list-group" style="background:#1b2735;color:white;">
+								<a href="#" class="eventList list-group-item">Voice of the Galaxy<span class="eventmain">(Solo Vocals)</span></a>
+								<a href="#" class="eventList list-group-item">Tune of Two Worlds<span class="eventmain">(Fusion Band)</span></a>
+								<a href="#" class="eventList list-group-item">Beat Badshahs<span class="eventmain">(Beatboxing &amp Rapping)</span></a>
+								<a href="#" class="eventList list-group-item">Clouds of Cacophony<span class="eventmain">(Unconventional Band)</span></a>
+								<a href="#" class="eventList list-group-item">Let's mix it<span class="eventmain">(War of the DJs)</span></a>
+								<a href="#" class="eventList list-group-item">Oriental Tunes<span class="eventmain">(Folk Band)</span></a>
+								<a href="#" class="eventList list-group-item">Strike a Chord<span class="eventmain">(Solo Instrumental)</span></a>
+						</ul>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary" style="width:20%;background:#1b2735;" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		<!-- Quiz -->
+		<div class="modal" tabindex="-1" id="quizModal" role="dialog" style="height:100%;width:100%;z-index:50000;">
+			<div class="modal-dialog">
+				<!-- Modal content-->
+				<div class="modal-content" style="height:100%;width:100%;">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Quiz</h4>
+					</div>
+					<div class="modal-body">
+						<ul class="list-group" style="background:#1b2735;color:white;">
+								<a href="#" class="eventList list-group-item">Inquisitive<span class="eventmain">(General Quiz)</span></a>
+								<a href="#" class="eventList list-group-item">Fantasy Freakout<span class="eventmain">(Entertainment Quiz)</span></a>
+								<a href="#" class="eventList list-group-item">Here lies the answer<span class="eventmain">(Googly Quiz)</span></a>
+								<a href="#" class="eventList list-group-item">MVQ Most Valuable Quizzer<span class="eventmain">(Sports Quiz)</span></a>
+						</ul>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary" style="width:20%;background:#1b2735;" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<!-- Speaking Arts -->
+		<div class="modal" tabindex="-1" id="speakingArtModal" role="dialog" style="height:100%;width:100%;z-index:50000;">
+			<div class="modal-dialog">
+				<!-- Modal content-->
+				<div class="modal-content" style="height:100%;width:100%;">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Speaking Arts</h4>
+					</div>
+					<div class="modal-body">
+						<ul class="list-group" style="background:#1b2735;color:white;">
+								<a href="#" class="eventList list-group-item">JAM - Just a Minute<span class="eventmain">(Extempore)</span></a>
+								<a href="#" class="eventList list-group-item">Is the Laugh Loud?<span class="eventmain">(Stand Up Comedy)</span></a>
+								<a href="#" class="eventList list-group-item">The Senate<span class="eventmain">(English Debate)</span></a>
+								<a href="#" class="eventList list-group-item">Shudh Desi Vitark<span class="eventmain">(Parliamentary Debate)</span></a>
+								<a href="#" class="eventList list-group-item">Frequency JAM<span class="eventmain">(RJ Hunt)</span></a>
+								<a href="#" class="eventList list-group-item">Fast Forward<span class="eventmain">(Channel Surfing)</span></a>
+						</ul>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary" style="width:20%;background:#1b2735;" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<!-- Sports -->
+		<div class="modal" tabindex="-1" id="sportsModal" role="dialog" style="height:100%;width:100%;z-index:50000;">
+			<div class="modal-dialog">
+				<!-- Modal content-->
+				<div class="modal-content" style="height:100%;width:100%;">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Sports</h4>
+					</div>
+					<div class="modal-body">
+						<ul class="list-group" style="background:#1b2735;color:white;">
+								<a href="#" class="eventList list-group-item">Basketeer<span class="eventmain">(Basketball)</span></a>
+								<a href="#" class="eventList list-group-item">Collosal Forces<span class="eventmain">(Tug of War)</span></a>
+								<a href="#" class="eventList list-group-item">The Run<span class="eventmain">(Relay Race)</span></a>
+								<a href="#" class="eventList list-group-item">Around the World<span class="eventmain">(Freestyle Football)</span></a>
+								<a href="#" class="eventList list-group-item">First Blood<span class="eventmain">(Counter Strike)</span></a>
+								<a href="#" class="eventList list-group-item">Shatranj Ke Khiladi<span class="eventmain">(Chess)</span></a>
+								<a href="#" class="eventList list-group-item">Art of War<span class="eventmain">(DOTA)</span></a>
+						</ul>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary" style="width:20%;background:#1b2735;" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<!-- Business & Management -->
+		<div class="modal" tabindex="-1" id="businessModal" role="dialog" style="height:100%;width:100%;z-index:50000;">
+			<div class="modal-dialog">
+				<!-- Modal content-->
+				<div class="modal-content" style="height:100%;width:100%;">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Business &amp Management</h4>
+					</div>
+					<div class="modal-body">
+						<ul class="list-group" style="background:#1b2735;color:white;">
+								<a href="#" class="eventList list-group-item">Corporate Showdown<span class="eventmain">(Crisis Management)</span></a>
+								<a href="#" class="eventList list-group-item">Invincible<span class="eventmain">(Stress Interview)</span></a>
+								<a href="#" class="eventList list-group-item">Envisage<span class="eventmain">(Entrepreneurship)</span></a>
+								<a href="#" class="eventList list-group-item">Exposition<span class="eventmain">(Marketing)</span></a>
+								<a href="#" class="eventList list-group-item">Concord<span class="eventmain">(Human Resource)</span></a>
+								<a href="#" class="eventList list-group-item">Impersonate<span class="eventmain">(Public Relations)</span></a>
+								<a href="#" class="eventList list-group-item">Sustained<span class="eventmain">(CSR)</span></a>
+						</ul>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary" style="width:20%;background:#1b2735;" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<!-- Informals -->
+		<div class="modal" tabindex="-1" id="informalsModal" role="dialog" style="height:100%;width:100%;z-index:50000;">
+			<div class="modal-dialog">
+				<!-- Modal content-->
+				<div class="modal-content" style="height:100%;width:100%;">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Informals</h4>
+					</div>
+					<div class="modal-body">
+						<ul class="list-group" style="background:#1b2735;color:white;">
+								<h3 style="font-family:Jura">Oops.. No formality here.. Come back later..</h3>
+						</ul>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary" style="width:20%;background:#1b2735;" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- END MODALS -->
+		
+		
+		
+		
+
+<!-- Contact Section -->
 		<section id="contact" style="background-attachment:fixed;">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-4 text-center" style="text-decoration:none;text-transform:uppercase;letter-spacing:1px;font-weight:400;font-family:'Jura',sans-serif;color:#CCC;">
-						<h5>Contact</h5>
-						<p>e-mail : <a href="mailto:gsec@sxccal.edu">gsec@sxccal.edu</a></p>
-						<p>phone : <a href="tel:+919038634869">+91 90386 34869</a></p>
-						<h6>For events :</h6>
-						<p>e-mail : <a href="mailto:eventsxavo18@gmail.com?subject=Ref-Xavotsav%20Website">eventsxavo18@gmail.com</a></p>
-						<h6>For PR :</h6>
-						<p>e-mail : <a href="mailto:pr.xavo18@gmail.com?subject=Ref-Xavotsav%20Website">pr.xavo18@gmail.com</a></p>
+						<div class="row">
+							<div class="col-md-12">
+								<h5>CONTACT:</h5>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12" style="vertical-align:middle;text-align:center;">
+								<span class="contactHead">Partnerships</span>
+							</div>
+							<div class="col-md-12" style="vertical-align:middle;text-align:center;">
+								<span class="contactBody"><a href="mailto:gsec@sxccal.edu">gsec@sxccal.edu</a></span><br/>
+								<span class="contactBody"><a href="tel:+919038634869">+91 90386 34869</a></span>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12" style="vertical-align:middle;text-align:center;">
+								<span class="contactHead">Events</span>
+							</div>
+							<div class="col-md-12" style="vertical-align:middle;text-align:center;">
+								<span class="contactBody"><a href="mailto:eventsxavo18@gmail.com?subject=Ref-Xavotsav%20Website">eventsxavo18@gmail.com</a></span>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12" style="vertical-align:middle;text-align:center;">
+								<span class="contactHead">Public Relations</span>
+							</div>
+							<div class="col-md-12" style="vertical-align:middle;text-align:center;">
+								<span class="contactBody"><a href="mailto:pr.xavo18@gmail.com?subject=Ref-Xavotsav%20Website">pr.xavo18@gmail.com</a></span>
+							</div>
+							<div class="col-md-12" style="vertical-align:middle;text-align:center;">
+								<span class="contactBody"><a href="mailto:pr.xavotsav2018@gmail.com?subject=Ref-Xavotsav%20Website">pr.xavotsav2018@gmail.com</a></span>
+							</div>
+						</div>
 					</div>
 					
-					<div class="col-md-4" id="googleMap">
+					<div class="col-md-4" id="googleMap" style="text-shadow:none;font-family:Jura;">
 					</div>
 					
 					<div class="col-md-4 text-center" style="text-decoration:none;text-transform:uppercase;letter-spacing:1px;font-weight:400;font-family:'Jura',sans-serif;color:#CCC;">
 						<h5>Useful Links:</h5>
-						<p><a href="#events">Event Details</a></p>
-						<p><a href="#college">College Details</a></p>
-						<p><a href="#login"><span class="glyphicon glyphicon-log-in"></span>&nbsp;&nbsp;Log-in</a></p>
+						<p class="contactBody"><a href="events.html">Event Details</a></p>
+						<p class="contactBody"><a href="events.html">Event Schedule</a></p>
+						<p class="contactBody"><a href="college.html">College Details</a></p>
+						<p class="contactBody"><a href="index.html#details">Latest News</a></p>
+						<p class="contactBody"><a href="team.html">Contact our Team</a></p>
 					</div>
 				</div>
 			</div>
@@ -145,7 +2051,10 @@
 					</div>
 					<div class="col-md-4">
 						<ul class="list-inline quicklinks">
-							<li>Designed and Developed by Team SXCSC
+							<li>
+								<span style="cursor:pointer;" data-toggle="tooltip" data-placement="top" data-html="true" title="<div style='cursor:pointer;font-size:15px;font-family:Jura,sans-serif;'>Kalyan Majumdar<br>Bikash Pandey<br>Arion Mitra<br>Souptik Majumdar<br>Akash Manna<br>Jimut Bahan Pal</div>">
+									Designed and Developed by Team SXCSC
+								</span>
 							</li>
 						</ul>
 					</div>
@@ -162,18 +2071,21 @@
 
 		<!-- Plugin JavaScript -->
 		<script src="js/jquery.easing.min.js"></script>
+		<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js'></script>
 		<script src="js/classie.js"></script>
 		<script src="js/cbpAnimatedHeader.js"></script>
+		<script src="js/contactTiles.js"></script>
 
 		<!-- Custom Theme JavaScript -->
 		<script src="js/spacex.js"></script>
+		
 		
 		<!-- LOADER -->
 		<script>
 			var myVar;
 
 			function myFunction() {
-				myVar = setTimeout(showPage, 200);
+				myVar = setTimeout(showPage, 3000);
 			}
 
 			function showPage() {
@@ -181,17 +2093,23 @@
 				document.getElementById("totality").style.display = "block";
 			}
 		</script>
-				
+			
 		
 		<!-- Google Maps API -->
 		<script type="text/javascript">
-			function myMap() {
+			function myMap(){
+				$(document).ready(function(){
+					setTimeout(myMap2, 6000);
+				});
+				$('.contactButton').fadeIn();
+			}
+			function myMap2() {
 				var location = new google.maps.LatLng(22.548844,88.355837);
 
 				var mapCanvas = document.getElementById('googleMap');
 				
 				var mapOptions = {
-					center:new google.maps.LatLng(22.557821,88.345999),
+					center:new google.maps.LatLng(22.548844,88.355837),//22.557821,88.345999),
 					zoom:14,
 					panControl: false,
 					mapTypeId: google.maps.MapTypeId.ROADMAP
@@ -217,5 +2135,25 @@
 		</script>
 		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBK_nsGp6o6i0sYC73mB6BHzlGXVynPNxU&callback=myMap" type="text/javascript"></script>
 
+		<script type="text/javascript">
+			$(document).ready( function(){
+				$('[data-toggle="tooltip"]').tooltip();
+			});
+		</script>
+		
+		
+		<script type="text/javascript">
+			$(".carousel").swipe({
+
+			  swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+
+				if (direction == 'left') $(this).carousel('next');
+				if (direction == 'right') $(this).carousel('prev');
+
+			  },
+			  allowPageScroll:"vertical"
+
+			});
+		</script>
 	</body>
 </html>
