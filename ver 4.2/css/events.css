@@ -171,6 +171,8 @@ a.list-group-item.active:focus .list-group-item-text {
 	color:white;
 	overflow-y:auto;
 	padding-bottom:50px;
+	background:rgba(0,0,0,0.1);
+	border-radius:5px;
 }
 
 .carousel-inner>li{
